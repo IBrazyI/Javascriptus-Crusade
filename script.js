@@ -1,36 +1,50 @@
 /* Intro Segemnt */
 
-let text = document.querySelector(".intro-text");
-let strText = text.textContent;
-let splitText =strText.split("");
-text.textContent ="";
-for(let i=0; i < splitText.length; i++){
-    text.innerHTML += "<span>"+ splitText[i] + "</span>";
-}
+function introPage(){
 
-let char = 0;
-let timer =setInterval(onTick, 50);
+    let text = document.querySelector(".intro-text");
+    let strText = text.textContent;
+    let splitText =strText.split("");
+    text.textContent ="";
+    for(let i=0; i < splitText.length; i++){
+        text.innerHTML += "<span>"+ splitText[i] + "</span>";
+    }
 
-function onTick(){
-    let span = text.querySelectorAll('span')[char];
-    span.classList.add('fade');
-    char++
-    if(char === splitText.length){
-        complete();
-        return;
+    let char = 0;
+    let timer =setInterval(onTick, 50);
+
+    function onTick(){
+        let span = text.querySelectorAll('span')[char];
+        span.classList.add('fade');
+        char++
+        if(char === splitText.length){
+            complete();
+            return;
+        }
+    }
+
+    function complete(){
+        clearInterval(timer);
+        timer = null;
+
+        let introBtn = document.getElementById("intro-btn");
+        introBtn.classList.remove("hide");
     }
 }
 
-function complete(){
-    clearInterval(timer);
-    timer = null;
+/* Title Page */
 
-    let introBtn = document.getElementById("intro-btn");
-    introBtn.classList.remove("hide");
+function titlePage(){
+
+    document.getElementById("intro-btn").addEventListener("click", revealTitle);
+
+    function revealTitle() {
+        document.getElementById("intro-page").classList.add('remove');
+        document.getElementById("title-page").classList.remove('remove');
+    };
 }
 
-/*
-titlePage()
+/* titlePage()
 
 talkingHead()
 
@@ -45,3 +59,6 @@ playGame()
 endScreen()
 
 emailSubmit() */
+
+introPage();
+titlePage();
