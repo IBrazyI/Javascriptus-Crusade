@@ -167,6 +167,28 @@ body {
     }
 }
 
+/* Talking Head */
+
+.talking-head-box {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+.talking-head-image {
+    background-color: #29d619;
+    width: 30vw;
+}
+
+.talking-head-text {
+    margin: auto;
+    text-align: center;
+}
+
 
 
 
