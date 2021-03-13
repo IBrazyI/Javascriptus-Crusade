@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
 }
 
+
 /* Intro Segment */
 
 .intro-page {
@@ -157,7 +158,7 @@ body {
 .nav-element{
     color: #cfd7db;
     text-transform: uppercase;
-    font-size: 15pxpx;
+    font-size: 15px;
     text-shadow: 2px 2px #000000;  
 }
 
@@ -171,24 +172,67 @@ body {
 
 .talking-head-box {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     bottom: 0;
     background-color: #000000;
     color: #fff;
+    border: 5px solid;
+    border-radius: 5px;
+    border-top-color: #a36513;
+    border-bottom-color: #a36513;
+    border-left-color: #7c2c26;
+    border-right-color: #7c2c26;
+    box-shadow: 2px 2px #000000;
 }
 
 .talking-head-image {
-    background-color: #29d619;
-    width: 30vw;
+    background-image: url(../assets/images/talkingskullsmall.jpg);
+    background-size: cover;
+    height: 150px;
+    width: 150px;
 }
 
 .talking-head-text {
-    margin: auto;
     text-align: center;
+    width: 70%;
 }
 
+.talking-head-text > p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#talking-head-btn {
+    color: #fafafa;
+    background-color: #ad2020;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 15px;
+    text-shadow: 1px 1px #000000;
+    padding: 5px;
+    margin: auto;
+}
+
+@media (min-width: 900px) {
+    .talking-head-box {
+        width: 75%;
+        position: fixed;
+        left: 50%;
+        margin-left: -37.5%;
+    }
+
+    .talking-head-image {
+        width: 225px;
+        height: 225px;
+    }
+
+    .talking-head-text {
+        margin: auto;
+    }
+}
 
 
 
