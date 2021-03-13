@@ -51,6 +51,15 @@ body {
     margin: auto;
 }
 
+.intro-text > span {
+    opacity: 0;
+    transition: all 5s ease;
+}
+
+.intro-text > span.fade {
+    opacity: 1;
+}
+
 @media (min-width: 900px) {
     .intro-page{
         max-width: 50%;
@@ -69,6 +78,13 @@ body {
     }
 }
 
+/* Title Segment */
+
+
 .hide {
+    visibility: hidden;
+}
+
+.remove {
     display: none;
 }
