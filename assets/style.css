@@ -139,6 +139,40 @@ body {
         padding: 20px;
     }
 }
+
+/* Header */
+
+.header {
+    width: 100vw;
+    max-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color:#54758a;
+    border-radius: 5px;
+    box-shadow: 1px 1px #000000;
+}
+
+.nav-element{
+    color: #cfd7db;
+    text-transform: uppercase;
+    font-size: 15pxpx;
+    text-shadow: 2px 2px #000000;  
+}
+
+@media (min-width: 900px){
+    .nav-element {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
 /* Extra Utilties */
 
 .hide {
