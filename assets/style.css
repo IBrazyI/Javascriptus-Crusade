@@ -80,6 +80,66 @@ body {
 
 /* Title Segment */
 
+.title-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.title-container {
+    padding: 0px 20px 20px 10px;
+    text-align: center;
+}
+
+.title-text {
+    margin: 0;
+    font-size: 40px;
+    color:#000000;
+    text-transform: uppercase;
+    animation: glow 1s ease-in-out infinite alternate;
+    }
+@keyframes glow {
+    from { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #cfe600, 0 0 40px #cfe600, 0 0 50px #d7e600, 0 0 60px #d7e600, 0 0 70px #e6e200;}
+    to {text-shadow: 0 0 20px #fff, 0 0 30px #edff4d, 0 0 40px #f3ff4d, 0 0 50px #fcff4d, 0 0 60px #fcff4d, 0 0 70px #fffc4d, 0 0 80px #edff4d;}
+}
+
+.title-btn-container {
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#title-btn {
+    color: #fafafa;
+    background-color: #ad2020;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 20px;
+    text-shadow: 1px 1px #000000;
+    padding: 10px;
+    margin: auto;
+}
+
+@media (min-width: 900px) {
+    .title-page{
+        max-width: 50%;
+    }
+    .title-text {
+        font-size: 70px;
+    }
+
+    .title-btn-container {
+        margin: 40px;
+    }
+
+    #title-btn {
+        font-size: 30px;
+        padding: 20px;
+    }
+}
+/* Extra Utilties */
 
 .hide {
     visibility: hidden;
