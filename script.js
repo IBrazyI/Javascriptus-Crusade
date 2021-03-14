@@ -180,3 +180,42 @@ let chaosDescription =
  "The Chaos Space Marines were once loyal, superhuman warriors of the Emperor, but turned their backs on the Master of Mankind when his foremost son and Primarch, the Warmaster Horus, was corrupted by the Chaos Gods. Now, as champions of the Dark Gods infused with the infernal power of the warp, they seek only to destroy the very empire they once fought to build more than 10 thousand years ago."
 let tyranidsDescription =
  "The Tyranids are an extragalactic alien race, whose sole purpose is the consumption of all forms of genetic and biological material in order to evolve and reproduce. Every function is carried out by living, engineered creatures, each of which collectively forms the Hive Fleet, directed by a single Hive Mind.The Tyranids are seen as one of the gravest threats to the entire Galaxy."
+
+/* Game Objects */
+
+let spaceMarine = {
+    health: 125
+};
+
+let adMech = {
+    health: 100
+}
+
+let imperialGuard = {
+    health: 75 
+}
+
+let orksQuestionOne = {
+    text: "Ork activity has been reported in some of the more uninhabited parts of the planet.",
+    dammage: 20
+};
+
+let orksQuestionTwo = {
+    text: "Small warbands of Orks have been attacking fringe settlements.",
+    dammage: 40
+};
+
+let orksQuestionThree = {
+    text: "The Orks have grouped up and are attacking the planatary capital.",
+    dammage: 60
+};
+
+let orksQuestionFour = {
+    text: "The Orks have broken through our lines, if we do not stop them now we will be destroyed.",
+    dammage: 80
+};
+
+let orksQuestionFive = {
+    text: "The Ork warboss has revealed himself and is taking part in the attack. If we eliminate him the orks will scatter.",
+    dammage: 100
+};
