@@ -68,6 +68,7 @@ function factionSelection() {
         adMech.onmouseenter = function(){
             document.getElementById("admech-title").classList.add('remove');
             document.getElementById("admech-info").classList.remove('remove');
+            document.getElementById("admech-info").innerHTML = admechDescription;
         };
         adMech.onmouseleave = function(){
             document.getElementById("admech-title").classList.remove('remove');
@@ -77,6 +78,7 @@ function factionSelection() {
         guard.onmouseenter = function(){
             document.getElementById("guard-title").classList.add('remove');
             document.getElementById("guard-info").classList.remove('remove');
+            document.getElementById("guard-info").innerHTML = guardDescription;
         };
         guard.onmouseleave = function(){
             document.getElementById("guard-title").classList.remove('remove');
@@ -131,6 +133,6 @@ enemySelection();
 let spacemarineDescription =
  "Spacemarines are the genetically enhanced super soldiers of the Imperium of man. Feared through the galaxy and one of humanity's greatest defenders, they know no fear wear thick ceramite armour that makes them almost invunrable to small arms fire."
 let admechDescription =
- "The Adeptus Mechanicus is one of the most powerful organisations in the Imperium. More machine than human, they field large number machine enhanced troops with technologically advanced weapons while thier gigantic warmachines stalk the battlefield"
+ "The Adeptus Mechanicus is one of the most powerful organisations in the Imperium. More machine than human, they field large number machine enhanced troops with technologically advanced weapons while thier gigantic warmachines stalk the battlefield."
  let guardDescription =
   "The Guard forms the very backbone of the Imperium; without it, Mankind would surely perish. Fighting neither with the advantages of genetic enhancement or the most powerful personal weaponry, the Guard possesses the courage and the manpower to face and annihilate the enemies of the Emperor across the galaxy."
