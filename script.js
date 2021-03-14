@@ -56,12 +56,30 @@ function factionSelection() {
     console.log(spaceMarine, adMech, guard);
 
         spaceMarine.onmouseenter = function(){
-            document.querySelector(".faction-title").classList.add('remove');
-            document.querySelector(".faction-info").classList.remove('remove');
+            document.getElementById("spacemarine-title").classList.add('remove');
+            document.getElementById("spacemarine-info").classList.remove('remove');
         };
         spaceMarine.onmouseleave = function(){
-            document.querySelector(".faction-title").classList.remove('remove');
-            document.querySelector(".faction-info").classList.add('remove');
+            document.getElementById("spacemarine-title").classList.remove('remove');
+            document.getElementById("spacemarine-info").classList.add('remove');
+        };
+
+        adMech.onmouseenter = function(){
+            document.getElementById("admech-title").classList.add('remove');
+            document.getElementById("admech-info").classList.remove('remove');
+        };
+        adMech.onmouseleave = function(){
+            document.getElementById("admech-title").classList.remove('remove');
+            document.getElementById("admech-info").classList.add('remove');
+        };
+
+        guard.onmouseenter = function(){
+            document.getElementById("guard-title").classList.add('remove');
+            document.getElementById("guard-info").classList.remove('remove');
+        };
+        guard.onmouseleave = function(){
+            document.getElementById("guard-title").classList.remove('remove');
+            document.getElementById("guard-info").classList.add('remove');
         };
 
     spaceMarine.addEventListener("click", revealEnemy);
