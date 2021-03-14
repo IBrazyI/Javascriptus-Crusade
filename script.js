@@ -47,6 +47,8 @@ function introSequence(){
     };
 }
 
+/* Faction Selection */
+
 function factionSelection() {
     let spaceMarine = document.getElementById("spacemarine-image");
     let adMech = document.getElementById("admech-image");
@@ -60,7 +62,22 @@ function factionSelection() {
     function revealEnemy() {
         document.getElementById("faction-selection").classList.add('remove');
         document.getElementById("enemy-selection").classList.remove('remove');
-    }
+    };
+}
+
+function enemySelection() {
+    let orks = document.getElementById("orks-image");
+    let chaos = document.getElementById("chaos-image");
+    let tyranids = document.getElementById("tyranids-image");
+
+    orks.addEventListener("click", enemySelected);
+    chaos.addEventListener("click", enemySelected);
+    tyranids.addEventListener("click", enemySelected);
+
+    function enemySelected() {
+        document.getElementById("enemy-selection").classList.add('remove');
+        document.getElementById("game-area").classList.remove('remove');
+    };
 }
 /*
 talkingHead()
@@ -79,3 +96,4 @@ emailSubmit() */
 
 introSequence();
 factionSelection();
+enemySelection();
