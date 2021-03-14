@@ -187,35 +187,45 @@ let spaceMarine = {
     health: 125
 };
 
-let adMech = {
-    health: 100
-}
-
-let imperialGuard = {
-    health: 75 
-}
 
 let orksQuestionOne = {
     text: "Ork activity has been reported in some of the more uninhabited parts of the planet.",
     dammage: 20
 };
 
+let spaceMarineOrksOne = {
+    responseOne: "Send scouting forces to confirm the reports.",
+    defenceOne: 10,
+    responseTwo: "Begin to fortify larger settlements incase of attacks.",
+    defenceTwo: 15,
+    responseThree: "Organise strike forces to prempitivley attack them.",
+    defenceThree: 20,
+}
+
 let orksQuestionTwo = {
     text: "Small warbands of Orks have been attacking fringe settlements.",
     dammage: 40
 };
+
+let spaceMarineOrksTwo
 
 let orksQuestionThree = {
     text: "The Orks have grouped up and are attacking the planatary capital.",
     dammage: 60
 };
 
+let spaceMarineOrksThree
+
 let orksQuestionFour = {
     text: "The Orks have broken through our lines, if we do not stop them now we will be destroyed.",
     dammage: 80
 };
 
+let spaceMarineOrksFour
+
 let orksQuestionFive = {
     text: "The Ork warboss has revealed himself and is taking part in the attack. If we eliminate him the orks will scatter.",
     dammage: 100
 };
+
+let spaceMarineOrksFive
