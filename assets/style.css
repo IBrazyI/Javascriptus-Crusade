@@ -255,6 +255,7 @@ body {
     height: 200px;
     justify-content: center;
     align-items: center;
+    line-height: 200px;
 }    
 
 .faction-title {
