@@ -58,6 +58,7 @@ function factionSelection() {
         spaceMarine.onmouseenter = function(){
             document.getElementById("spacemarine-title").classList.add('remove');
             document.getElementById("spacemarine-info").classList.remove('remove');
+            document.getElementById("spacemarine-info").innerHTML = spacemarineDescription;
         };
         spaceMarine.onmouseleave = function(){
             document.getElementById("spacemarine-title").classList.remove('remove');
@@ -124,3 +125,8 @@ emailSubmit() */
 introSequence();
 factionSelection();
 enemySelection();
+
+/* Text for HTML */
+
+let spacemarineDescription =
+ "Spacemarines are the genetically enhanced super soldiers of the Imperium of man. Feared through the galaxy and one of humanity's greatest defenders, they know no fear wear thick ceramite armour that makes them almost invunrable to small arms fire."
