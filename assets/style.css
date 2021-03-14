@@ -5,7 +5,7 @@
 
 body {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: 0;
     background-color: #555555;
     min-height: 100vh;
@@ -145,7 +145,7 @@ body {
 
 .header {
     width: 100vw;
-    max-height: 100px;
+    height: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -238,10 +238,78 @@ body {
 
 /* Faction Selection */
 
+.faction-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 50px auto;
+}
 
 
+.faction-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}    
+
+.faction-title {
+    color: #fafafa;
+    font-size: 30px;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.faction-info {
+    margin: 0px;
+    padding: 0px;
+}
 
 
+#spacemarine-image {
+    background-image: url(../assets/images/spacemarines5.jpg);
+}
+
+#admech-image {
+    background-image: url(../assets/images/admech2.jpg);
+}
+
+#guard-image {
+    background-image: url(../assets/images/guard2.jpg);
+} 
+
+@media (min-width:700px) {
+    .faction-selection {
+        width: 90vw;
+        height: auto;
+        margin: auto;
+    }
+    
+    .faction-image {
+        width: 90vw;
+        background-position: 0% 25%;
+    }
+}
+
+@media (min-width:1200px) {
+    .faction-selection {
+        flex-direction: row;
+        width: 80vw;
+    }
+
+    .faction-image {
+        background-size: cover;
+        width: 700px;
+        height: 500px;
+    }
+}
 
 /* Extra Utilties */
 
