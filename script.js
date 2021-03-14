@@ -59,6 +59,10 @@ function factionSelection() {
             document.getElementById("spacemarine-title").classList.add('remove');
             document.getElementById("spacemarine-info").classList.remove('remove');
             document.getElementById("spacemarine-info").innerHTML = spacemarineDescription;
+            document.getElementById("spacemarine-info").style.backgroundColor = "#b6b5b591";
+           
+
+
         };
         spaceMarine.onmouseleave = function(){
             document.getElementById("spacemarine-title").classList.remove('remove');
@@ -69,6 +73,7 @@ function factionSelection() {
             document.getElementById("admech-title").classList.add('remove');
             document.getElementById("admech-info").classList.remove('remove');
             document.getElementById("admech-info").innerHTML = admechDescription;
+            document.getElementById("admech-info").style.backgroundColor = "#b6b5b591";
         };
         adMech.onmouseleave = function(){
             document.getElementById("admech-title").classList.remove('remove');
@@ -79,6 +84,7 @@ function factionSelection() {
             document.getElementById("guard-title").classList.add('remove');
             document.getElementById("guard-info").classList.remove('remove');
             document.getElementById("guard-info").innerHTML = guardDescription;
+            document.getElementById("guard-info").style.backgroundColor = "#b6b5b591";
         };
         guard.onmouseleave = function(){
             document.getElementById("guard-title").classList.remove('remove');

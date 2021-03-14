@@ -278,16 +278,19 @@ body {
 
 .faction-info {
     margin: 0px;
-    padding: 0px;
     color: #fafafa;
     font-size: 25px;
+    text-align: center;
     text-shadow: 1px 1px #000000;
+    padding: 0px 15px 0px 15px;
+    filter: none;
 }
 
 
 #spacemarine-image {
     background-image: url(../assets/images/spacemarines5.jpg);
 }
+
 
 #admech-image {
     background-image: url(../assets/images/admech2.jpg);
