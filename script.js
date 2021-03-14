@@ -55,6 +55,15 @@ function factionSelection() {
     let guard = document.getElementById("guard-image");
     console.log(spaceMarine, adMech, guard);
 
+        spaceMarine.onmouseenter = function(){
+            document.querySelector(".faction-title").classList.add('remove');
+            document.querySelector(".faction-info").classList.remove('remove');
+        };
+        spaceMarine.onmouseleave = function(){
+            document.querySelector(".faction-title").classList.remove('remove');
+            document.querySelector(".faction-info").classList.add('remove');
+        };
+
     spaceMarine.addEventListener("click", revealEnemy);
     adMech.addEventListener("click", revealEnemy);
     guard.addEventListener("click", revealEnemy);

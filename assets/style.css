@@ -155,11 +155,17 @@ body {
     box-shadow: 1px 1px #000000;
 }
 
-.nav-element{
+.nav-element {
     color: #cfd7db;
     text-transform: uppercase;
     font-size: 15px;
     text-shadow: 2px 2px #000000;  
+    cursor: pointer;
+}
+
+.nav-element:hover {
+    color: black;
+    transition: .4 ease-in-out;
 }
 
 @media (min-width: 900px){
@@ -248,6 +254,7 @@ body {
 
 
 .faction-image {
+    display: flex;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -255,22 +262,26 @@ body {
     height: 200px;
     justify-content: center;
     align-items: center;
-    line-height: 200px;
-}    
+    cursor: pointer;
+}
+
 
 .faction-title {
     color: #fafafa;
-    font-size: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
     text-shadow: 1px 1px #000000;
     text-align: center;
     margin: 0px;
     padding: 0px;
-
 }
 
 .faction-info {
     margin: 0px;
     padding: 0px;
+    color: #fafafa;
+    font-size: 25px;
+    text-shadow: 1px 1px #000000;
 }
 
 
@@ -312,6 +323,83 @@ body {
     }
 }
 
+/* Enemy Selection */
+
+.enemy-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 50px auto;
+}
+
+
+.enemy-image {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.enemy-title {
+    color: #fafafa;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.enemy-info {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#orks-image {
+    background-image: url(../assets/images/orks2.jpg);
+}
+
+#chaos-image {
+    background-image: url(../assets/images/chaos3.jpg);
+}
+
+#tyranids-image {
+    background-image: url(../assets/images/tyranids2.jpg);
+} 
+
+@media (min-width:700px) {
+    .enemy-selection {
+        width: 90vw;
+        height: auto;
+        margin: auto;
+    }
+    
+    .enemy-image {
+        width: 90vw;
+        background-position: 0% 25%;
+    }
+}
+
+@media (min-width:1200px) {
+    .enemy-selection {
+        flex-direction: row;
+        width: 80vw;
+    }
+
+    .enemy-image {
+        background-size: cover;
+        width: 700px;
+        height: 500px;
+    }
+}
 /* Extra Utilties */
 
 .hide {
