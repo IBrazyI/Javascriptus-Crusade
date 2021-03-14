@@ -48,7 +48,19 @@ function introSequence(){
 }
 
 function factionSelection() {
-    
+    let spaceMarine = document.getElementById("spacemarine-image");
+    let adMech = document.getElementById("admech-image");
+    let guard = document.getElementById("guard-image");
+    console.log(spaceMarine, adMech, guard);
+
+    spaceMarine.addEventListener("click", revealEnemy);
+    adMech.addEventListener("click", revealEnemy);
+    guard.addEventListener("click", revealEnemy);
+
+    function revealEnemy() {
+        document.getElementById("faction-selection").classList.add('remove');
+        document.getElementById("enemy-selection").classList.remove('remove');
+    }
 }
 /*
 talkingHead()
@@ -66,3 +78,4 @@ endScreen()
 emailSubmit() */
 
 introSequence();
+factionSelection();
