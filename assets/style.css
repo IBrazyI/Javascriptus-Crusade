@@ -225,14 +225,18 @@ body {
     }
 
     .talking-head-image {
+        background-position: center;
         width: 225px;
         height: 225px;
     }
 
     .talking-head-text {
         margin: auto;
+        font-size: 25px;
     }
 }
+
+/* Faction Selection */
 
 
 
