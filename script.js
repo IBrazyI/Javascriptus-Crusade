@@ -51,10 +51,16 @@ function introSequence(){
 
 function factionSelection() {
     let spaceMarine = document.getElementById("spacemarine-image");
-    let spaceMarineTitle = document.getElementById("spacemarine-title")
-    let spaceMarineInfo = document.getElementById("spacemarine-info")
+    let spaceMarineTitle = document.getElementById("spacemarine-title");
+    let spaceMarineInfo = document.getElementById("spacemarine-info");
+
     let adMech = document.getElementById("admech-image");
+    let adMechTitle = document.getElementById("admech-title");
+    let adMechInfo = document.getElementById("admech-info");
+
     let guard = document.getElementById("guard-image");
+    let guardTitle = document.getElementById("guard-title");
+    let guardInfo =  document.getElementById("guard-info");
 
         spaceMarine.onmouseenter = function(){
             spaceMarineTitle.classList.add('remove');
@@ -64,30 +70,30 @@ function factionSelection() {
         };
 
         spaceMarine.onmouseleave = function(){
-            document.getElementById("spacemarine-title").classList.remove('remove');
-            document.getElementById("spacemarine-info").classList.add('remove');
+           spaceMarineTitle.classList.remove('remove');
+            spaceMarineInfo.classList.add('remove');
         };
 
         adMech.onmouseenter = function(){
-            document.getElementById("admech-title").classList.add('remove');
-            document.getElementById("admech-info").classList.remove('remove');
-            document.getElementById("admech-info").innerHTML = admechDescription;
-            document.getElementById("admech-info").style.backgroundColor = "#b6b5b591";
+            adMechTitle.classList.add('remove');
+            adMechInfo.classList.remove('remove');
+            adMechInfo.innerHTML = admechDescription;
+            adMechInfo.style.backgroundColor = "#b6b5b591";
         };
         adMech.onmouseleave = function(){
-            document.getElementById("admech-title").classList.remove('remove');
-            document.getElementById("admech-info").classList.add('remove');
+            adMechTitle.classList.remove('remove');
+            adMechInfo.classList.add('remove');
         };
 
         guard.onmouseenter = function(){
-            document.getElementById("guard-title").classList.add('remove');
-            document.getElementById("guard-info").classList.remove('remove');
-            document.getElementById("guard-info").innerHTML = guardDescription;
-            document.getElementById("guard-info").style.backgroundColor = "#b6b5b591";
+            guardTitle.classList.add('remove');
+            guardInfo.classList.remove('remove');
+            guardInfo.innerHTML = guardDescription;
+            guardInfo.style.backgroundColor = "#b6b5b591";
         };
         guard.onmouseleave = function(){
-            document.getElementById("guard-title").classList.remove('remove');
-            document.getElementById("guard-info").classList.add('remove');
+            guardTitle.classList.remove('remove');
+            guardInfo.classList.add('remove');
         };
 
     let choseSpacemarine = spaceMarine.addEventListener("click", revealEnemy);
