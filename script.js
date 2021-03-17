@@ -51,15 +51,16 @@ function introSequence(){
 
 function factionSelection() {
     let spaceMarine = document.getElementById("spacemarine-image");
+    let spaceMarineTitle = document.getElementById("spacemarine-title")
+    let spaceMarineInfo = document.getElementById("spacemarine-info")
     let adMech = document.getElementById("admech-image");
     let guard = document.getElementById("guard-image");
-    console.log(spaceMarine, adMech, guard);
 
         spaceMarine.onmouseenter = function(){
-            document.getElementById("spacemarine-title").classList.add('remove');
-            document.getElementById("spacemarine-info").classList.remove('remove');
-            document.getElementById("spacemarine-info").innerHTML = spacemarineDescription;
-            document.getElementById("spacemarine-info").style.backgroundColor = "#b6b5b591";
+            spaceMarineTitle.classList.add('remove');
+            spaceMarineInfo.classList.remove('remove');
+            spaceMarineInfo.innerHTML = spacemarineDescription;
+            spaceMarineInfo.style.backgroundColor = "#b6b5b591";
         };
 
         spaceMarine.onmouseleave = function(){
@@ -89,9 +90,9 @@ function factionSelection() {
             document.getElementById("guard-info").classList.add('remove');
         };
 
-    spaceMarine.addEventListener("click", revealEnemy);
-    adMech.addEventListener("click", revealEnemy);
-    guard.addEventListener("click", revealEnemy);
+    let choseSpacemarine = spaceMarine.addEventListener("click", revealEnemy);
+    let choseAdmech = adMech.addEventListener("click", revealEnemy);
+    let choseGuard = guard.addEventListener("click", revealEnemy);
 
     function revealEnemy() {
         document.getElementById("faction-selection").classList.add('remove');
@@ -147,14 +148,21 @@ function enemySelection() {
         document.getElementById("game-area").classList.remove('remove');
     };
 }
-/*
+
+/*Game Selected */
+
+function gameSelected() {
+    if (choseSpacemarine === true) {
+        answers
+    }
+}
+
+/* Play Game 
+
+
 talkingHead()
 
 navBarMouseOver()
-
-selectFaction()
-
-selectEnemy()
 
 playGame()
 
@@ -181,7 +189,7 @@ let chaosDescription =
 let tyranidsDescription =
  "The Tyranids are an extragalactic alien race, whose sole purpose is the consumption of all forms of genetic and biological material in order to evolve and reproduce. Every function is carried out by living, engineered creatures, each of which collectively forms the Hive Fleet, directed by a single Hive Mind.The Tyranids are seen as one of the gravest threats to the entire Galaxy."
 
-/* Game Objects */
+/* Game Objects *
 
 let spaceMarine = {
     health: 125
@@ -200,7 +208,7 @@ let spaceMarineOrksOne = {
     defenceTwo: 15,
     responseThree: "Organise strike forces to prempitivley attack them.",
     defenceThree: 20,
-}
+};
 
 let orksQuestionTwo = {
     text: "Small warbands of Orks have been attacking fringe settlements.",
@@ -228,4 +236,4 @@ let orksQuestionFive = {
     dammage: 100
 };
 
-let spaceMarineOrksFive
+let spaceMarineOrksFive */
