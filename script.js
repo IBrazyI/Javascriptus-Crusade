@@ -108,41 +108,49 @@ function factionSelection() {
 
 function enemySelection() {
     let orks = document.getElementById("orks-image");
+    let orksTitle = document.getElementById("orks-title");
+    let orksInfo = document.getElementById("orks-info");
+
     let chaos = document.getElementById("chaos-image");
+    let chaosTitle =  document.getElementById("chaos-title");
+    let chaosInfo = document.getElementById("chaos-info");
+
     let tyranids = document.getElementById("tyranids-image");
+    let tyranidsTitle = document.getElementById("tyranids-title");
+    let tyranidsInfo = document.getElementById("tyranids-info");
 
     orks.onmouseenter = function(){
-        document.getElementById("orks-title").classList.add('remove');
-        document.getElementById("orks-info").classList.remove('remove');
-        document.getElementById("orks-info").innerHTML = orksDescription;
-        document.getElementById("orks-info").style.backgroundColor = "#b6b5b591";
+        orksTitle.classList.add('remove');
+        orksInfo.classList.remove('remove');
+        orksInfo.innerHTML = orksDescription;
+        orksInfo.style.backgroundColor = "#b6b5b591";
     };
     
     orks.onmouseleave = function(){
-        document.getElementById("orks-title").classList.remove('remove');
-        document.getElementById("orks-info").classList.add('remove');
+        orksTitle.classList.remove('remove');
+        orksInfo.classList.add('remove');
     };
 
     chaos.onmouseenter = function(){
-        document.getElementById("chaos-title").classList.add('remove');
-        document.getElementById("chaos-info").classList.remove('remove');
-        document.getElementById("chaos-info").innerHTML = chaosDescription;
-        document.getElementById("chaos-info").style.backgroundColor = "#b6b5b591";
+        chaosTitle.classList.add('remove');
+        chaosInfo.classList.remove('remove');
+        chaosInfo.innerHTML = chaosDescription;
+        chaosInfo.style.backgroundColor = "#b6b5b591";
     };
     chaos.onmouseleave = function(){
-        document.getElementById("chaos-title").classList.remove('remove');
-        document.getElementById("chaos-info").classList.add('remove');
+        chaosTitle.classList.remove('remove');
+        chaosInfo.classList.add('remove');
     };
 
     tyranids.onmouseenter = function(){
-        document.getElementById("tyranids-title").classList.add('remove');
-        document.getElementById("tyranids-info").classList.remove('remove');
-        document.getElementById("tyranids-info").innerHTML = tyranidsDescription;
-        document.getElementById("tyranids-info").style.backgroundColor = "#b6b5b591";
+        tyranidsTitle.classList.add('remove');
+        tyranidsInfo.classList.remove('remove');
+        tyranidsInfo.innerHTML = tyranidsDescription;
+        tyranidsInfo.style.backgroundColor = "#b6b5b591";
     };
     tyranids.onmouseleave = function(){
-        document.getElementById("tyranids-title").classList.remove('remove');
-        document.getElementById("tyranids-info").classList.add('remove');
+        tyranidsTitle.classList.remove('remove');
+        tyranidsInfo.classList.add('remove');
     };
 
     orks.addEventListener("click", enemySelected);
