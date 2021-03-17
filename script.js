@@ -203,51 +203,18 @@ let chaosDescription =
 let tyranidsDescription =
  "The Tyranids are an extragalactic alien race, whose sole purpose is the consumption of all forms of genetic and biological material in order to evolve and reproduce. Every function is carried out by living, engineered creatures, each of which collectively forms the Hive Fleet, directed by a single Hive Mind.The Tyranids are seen as one of the gravest threats to the entire Galaxy."
 
-/* Game Objects *
+/* Game Objects */
 
-let spaceMarine = {
-    health: 125
-};
+let spaceMarinesVsOrks = [
+    {
+        question: 'Ork activity has been reported in the more uninhabited parts of the planet. What is the first step we should take?',
+        questionPower: 20,
+        choiceOne: 'Send a small scouting force to confirm the reports.',
+        choiseOnePower: 10,
+        choiceTwo: 'Begin to fortify larger settlements on the plannet and brace for an attack.',
+        choiseTwoPower: 15,
+        choiceThree: 'Organise rapid strike forces to premptilvey attack the orks before thier numbers can grow.',
+        choiseThreePower: 20,
+    }
+]
 
-
-let orksQuestionOne = {
-    text: "Ork activity has been reported in some of the more uninhabited parts of the planet.",
-    dammage: 20
-};
-
-let spaceMarineOrksOne = {
-    responseOne: "Send scouting forces to confirm the reports.",
-    defenceOne: 10,
-    responseTwo: "Begin to fortify larger settlements incase of attacks.",
-    defenceTwo: 15,
-    responseThree: "Organise strike forces to prempitivley attack them.",
-    defenceThree: 20,
-};
-
-let orksQuestionTwo = {
-    text: "Small warbands of Orks have been attacking fringe settlements.",
-    dammage: 40
-};
-
-let spaceMarineOrksTwo
-
-let orksQuestionThree = {
-    text: "The Orks have grouped up and are attacking the planatary capital.",
-    dammage: 60
-};
-
-let spaceMarineOrksThree
-
-let orksQuestionFour = {
-    text: "The Orks have broken through our lines, if we do not stop them now we will be destroyed.",
-    dammage: 80
-};
-
-let spaceMarineOrksFour
-
-let orksQuestionFive = {
-    text: "The Ork warboss has revealed himself and is taking part in the attack. If we eliminate him the orks will scatter.",
-    dammage: 100
-};
-
-let spaceMarineOrksFive */
