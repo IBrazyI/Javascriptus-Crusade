@@ -44,6 +44,7 @@ function introSequence(){
         document.getElementById("title-page").classList.add('remove');
         document.getElementById("faction-selection").classList.remove('remove');
         document.getElementById("header").classList.remove('remove');
+        document.querySelector(".talking-head-box").classList.remove('remove');
     };
 }
 
@@ -165,11 +166,6 @@ function enemySelection() {
 
 /*Game Selected */
 
-function gameSelected() {
-    if (choseSpacemarine === true) {
-        answers
-    }
-}
 
 /* Play Game 
 
@@ -205,6 +201,10 @@ let tyranidsDescription =
 
 /* Game Objects */
 
+const question = document.querySelector(".question-box");
+const choices = Array.from(document.querySelectorAll(".answer"));
+
+
 let spaceMarinesVsOrks = [
     {
         question: 'Ork activity has been reported in the more uninhabited parts of the planet. What is the first step we should take?',
@@ -215,18 +215,18 @@ let spaceMarinesVsOrks = [
         choiseTwoPower: 15,
         choiceThree: 'Organise rapid strike forces to premptilvey attack the orks before thier numbers can grow.',
         choiseThreePower: 20,
-    }
+    },
 
     {
         question: 'The Orks numbers have grown considrably and they are attacking fringe settlements. How do we handle this menance?',
         questionPower: 40,
         choiceOne: 'Strike them hard and fast elminating thier leaders.',
-        choiseOnePower: 30,
+        choiceOnePower: 30,
         choiceTwo: 'Pull back all civilains and our forces to the planetary capital.',
-        choiseTwoPower: 20,
+        choiceTwoPower: 20,
         choiceThree: 'Organise a defence in depth, try to hold and defend the settlements.',
-        choiseThreePower: 10,
-    }
+        choiceThreePower: 10,
+    },
 
     {
         question: 'The Orks have pushed us back and are now attacking the planetrary capital with all thier might.',
@@ -237,7 +237,7 @@ let spaceMarinesVsOrks = [
         choiseTwoPower: 50,
         choiceThree: 'Bolster the line at key points using Dreadnoughts.',
         choiseThreePower: 40,
-    }
+    },
 
     {
         question: 'The Orks have broken through our lines in multiple areas how do we counter this threat?',
@@ -248,7 +248,7 @@ let spaceMarinesVsOrks = [
         choiseTwoPower: 60,
         choiceThree: 'Send our initiates to plug the gaps and prove themselves.',
         choiseThreePower: 30,
-    }
+    },
 
     {
         question: 'The Ork Warboss has been seen on the battlefield leading his horde. Elimnating him will cause the Orks to scatter and end the battle.',
@@ -262,3 +262,18 @@ let spaceMarinesVsOrks = [
     }
 ]
 
+startGame = () => {
+    avaliableQuestions = [...question];
+    getNewQuestion ()
+}
+
+getNewQuestion = () => {
+    currentQuestion = avaliableQuestions[0];
+    question.innerText = currentQuestion.question;
+    choices.forEach(answer =>{
+        const number = answer.dataset['number'];
+        choices.innerText = currentQuestion['answer' + number]
+    });
+}
+
+startGame()
