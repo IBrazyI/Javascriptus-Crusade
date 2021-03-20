@@ -1,3 +1,31 @@
+/* Variables */
+
+/* Text for HTML */
+
+let spacemarineDescription =
+ "Spacemarines are the genetically enhanced super soldiers of the Imperium of man. Feared through the galaxy and one of humanity's greatest defenders, they know no fear wear thick ceramite armour that makes them almost invunrable to small arms fire.";
+let admechDescription =
+ "The Adeptus Mechanicus is one of the most powerful organisations in the Imperium. More machine than human, they field large number machine enhanced troops with technologically advanced weapons while thier gigantic warmachines stalk the battlefield.";
+let guardDescription =
+  "The Guard forms the very backbone of the Imperium; without it, Mankind would surely perish. Fighting neither with the advantages of genetic enhancement or the most powerful personal weaponry, the Guard possesses the courage and the manpower to face and annihilate the enemies of the Emperor across the galaxy.";
+let orksDescription =
+ "Orks are a warlike, crude, and highly aggressive green-skinned Xenos race. Although their society is entirely primitive and brutal, the Ork race is also the most successful species in the whole Galaxy, outnumbering possibly every other race. However, due to their aggressive and warlike nature, warring as much between themselves as against other races.";
+let chaosDescription =
+ "The Chaos Space Marines were once loyal, superhuman warriors of the Emperor, but turned their backs on the Master of Mankind when his foremost son and Primarch, the Warmaster Horus, was corrupted by the Chaos Gods. Now, as champions of the Dark Gods infused with the infernal power of the warp, they seek only to destroy the very empire they once fought to build more than 10 thousand years ago.";
+let tyranidsDescription =
+ "The Tyranids are an extragalactic alien race, whose sole purpose is the consumption of all forms of genetic and biological material in order to evolve and reproduce. Every function is carried out by living, engineered creatures, each of which collectively forms the Hive Fleet, directed by a single Hive Mind.The Tyranids are seen as one of the gravest threats to the entire Galaxy.";
+
+ let talkingHeadGreet =
+ "Greetings commander... you have been assigned to the defence of the planet OMACRON DONACUS 32... you will need to choose which of the Imperiums armys will command to defend it...";
+ let talkingHeadGreetTwo =
+ "Unfortunatley we only have the resourses to deploy one of the imperial factions... choose wisley not all forces are created equal...";
+ let talkingHeadEnemy = 
+ "Now you have selected your army we you need to decided what enemy we shall face... all are of equal importance but some may be harder to defeat than others...";
+ let talkingHeadGame = 
+ "Welcome to the battle screen commander... here you can see the enemys actions and what tactics are avaliable to counter them...";
+ let talkingHeadGameTwo = 
+ "Be aware... once you decide a plan of action it could have dire consequences... For the Emperor!...";
+
 /* Intro Segemnt */
 
 function introSequence(){
@@ -49,13 +77,35 @@ function introSequence(){
 }
 
 /* Talking Head */
-let talkingHead = document.querySelector(".talking-head-box");
-let talkingHeadTxt = document.querySelector(".talking-head-text");
-let talkingHeadBtn = document.querySelector("#talking-head-button")
 
+function talkingHead() {
+    let talkingHead = document.querySelector(".talking-head-box");
+    let talkingHeadTxt = document.querySelector("#talking-head-text");
+    let talkingHeadBtn = document.querySelector("#talking-head-btn");
+    talkingHeadTxt.innerHTML = talkingHeadGreet;
+    talkingHeadBtn.addEventListener("click", talkingHeadFaction);
 
+    function talkingHeadFaction() {
+        talkingHeadTxt.innerHTML = talkingHeadGreetTwo;
+        talkingHeadBtn.onclick = removeTalkingHead;
+    };
 
+    function removeTalkingHead() {
+        talkingHead.classList.add('remove');
+    }
+}   
 
+function talkingHeadOpponent() {
+    let talkingHead = document.querySelector(".talking-head-box");
+    let talkingHeadTxt = document.querySelector("#talking-head-text");
+    let talkingHeadBtn = document.querySelector("#talking-head-btn");
+    talkingHeadTxt.innerHTML = talkingHeadEnemy;
+    talkingHeadBtn.addEventListener("click", talkingEnemy);
+
+    function talkingEnemy() {
+        talkingHead.classList.add('remove');
+    }
+}
 
 /* Faction Selection */
 
@@ -173,51 +223,6 @@ function enemySelection() {
     };
 }
 
-/*Game Selected */
-
-
-/* Play Game 
-
-
-talkingHead()
-
-navBarMouseOver()
-
-playGame()
-
-endScreen()
-
-emailSubmit() */
-
-introSequence();
-factionSelection();
-enemySelection();
-
-/* Text for HTML */
-
-let spacemarineDescription =
- "Spacemarines are the genetically enhanced super soldiers of the Imperium of man. Feared through the galaxy and one of humanity's greatest defenders, they know no fear wear thick ceramite armour that makes them almost invunrable to small arms fire."
-let admechDescription =
- "The Adeptus Mechanicus is one of the most powerful organisations in the Imperium. More machine than human, they field large number machine enhanced troops with technologically advanced weapons while thier gigantic warmachines stalk the battlefield."
-let guardDescription =
-  "The Guard forms the very backbone of the Imperium; without it, Mankind would surely perish. Fighting neither with the advantages of genetic enhancement or the most powerful personal weaponry, the Guard possesses the courage and the manpower to face and annihilate the enemies of the Emperor across the galaxy."
-let orksDescription =
- "Orks are a warlike, crude, and highly aggressive green-skinned Xenos race. Although their society is entirely primitive and brutal, the Ork race is also the most successful species in the whole Galaxy, outnumbering possibly every other race. However, due to their aggressive and warlike nature, warring as much between themselves as against other races."
-let chaosDescription =
- "The Chaos Space Marines were once loyal, superhuman warriors of the Emperor, but turned their backs on the Master of Mankind when his foremost son and Primarch, the Warmaster Horus, was corrupted by the Chaos Gods. Now, as champions of the Dark Gods infused with the infernal power of the warp, they seek only to destroy the very empire they once fought to build more than 10 thousand years ago."
-let tyranidsDescription =
- "The Tyranids are an extragalactic alien race, whose sole purpose is the consumption of all forms of genetic and biological material in order to evolve and reproduce. Every function is carried out by living, engineered creatures, each of which collectively forms the Hive Fleet, directed by a single Hive Mind.The Tyranids are seen as one of the gravest threats to the entire Galaxy."
-
- let talkingHeadGreet =
- "Greetings commander... you have been assigned to the defence of the planet OMACRON DONACUS 32... you will need to choose which of the Imperiums armys will command to defend it..."
- let talkingHeadGreetTwo =
- "Unfortunatley we only have the resourses to deploy one of the imperial factions... choose wisley not all forces are created equal..."
- let talkingHeadEnemy = 
- "Now you have selected your army we you need to decided what enemy we shall face... all are of equal importance but some may be harder to defeat than others..."
- let talkingHeadGame = 
- "Welcome to the battle screen commander... here you can see the enemys actions and what tactics are avaliable to counter them..."
- let talkingHeadGameTwo = 
- "Be aware... once you decide a plan of action it could have dire consequences... For the Emperor!..."
 /* Game Objects */
 
 const question = document.querySelector(".question-box");
@@ -280,19 +285,9 @@ let spaceMarinesVsOrks = [
         choiseThreePower: 60,
     }
 ]
-/*
-startGame = () => {
-    avaliableQuestions = [...question];
-    getNewQuestion ()
-}
 
-getNewQuestion = () => {
-    currentQuestion = avaliableQuestions[0];
-    question.innerText = currentQuestion.question;
-    choices.forEach(answer =>{
-        const number = answer.dataset['number'];
-        choices.innerText = currentQuestion['answer' + number]
-    });
-}
-
-startGame() */
+introSequence();
+talkingHead();
+factionSelection();
+enemySelection();
+talkingHeadOpponent();
