@@ -84,7 +84,7 @@ function talkingHead() {
     let talkingHeadBtn = document.querySelector("#talking-head-btn");
     talkingHeadTxt.innerHTML = talkingHeadGreet;
     talkingHeadBtn.addEventListener("click", talkingHeadFaction);
-
+  
     function talkingHeadFaction() {
         talkingHeadTxt.innerHTML = talkingHeadGreetTwo;
         talkingHeadBtn.onclick = removeTalkingHead;
@@ -103,6 +103,20 @@ function enemyHead() {
     talkingHead.classList.remove('remove');
 }
 
+function headGame() {
+    let talkingHead = document.querySelector(".talking-head-box");
+    let talkingHeadTxt = document.querySelector("#talking-head-text");
+    let talkingHeadBtn = document.querySelector("#talking-head-btn");
+    talkingHeadTxt.innerHTML = talkingHeadGameTwo;
+    talkingHead.classList.remove('remove'); 
+    talkingHeadBtn.onclick = newText();
+
+    function newText() {
+        talkingHeadTxt.innerHTML = talkingHeadGame;
+    };
+
+    
+}
 
 
 
