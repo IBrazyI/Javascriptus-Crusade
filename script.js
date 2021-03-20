@@ -48,6 +48,15 @@ function introSequence(){
     };
 }
 
+/* Talking Head */
+let talkingHead = document.querySelector(".talking-head-box");
+let talkingHeadTxt = document.querySelector(".talking-head-text");
+let talkingHeadBtn = document.querySelector("#talking-head-button")
+
+
+
+
+
 /* Faction Selection */
 
 function factionSelection() {
@@ -199,6 +208,16 @@ let chaosDescription =
 let tyranidsDescription =
  "The Tyranids are an extragalactic alien race, whose sole purpose is the consumption of all forms of genetic and biological material in order to evolve and reproduce. Every function is carried out by living, engineered creatures, each of which collectively forms the Hive Fleet, directed by a single Hive Mind.The Tyranids are seen as one of the gravest threats to the entire Galaxy."
 
+ let talkingHeadGreet =
+ "Greetings commander... you have been assigned to the defence of the planet OMACRON DONACUS 32... you will need to choose which of the Imperiums armys will command to defend it..."
+ let talkingHeadGreetTwo =
+ "Unfortunatley we only have the resourses to deploy one of the imperial factions... choose wisley not all forces are created equal..."
+ let talkingHeadEnemy = 
+ "Now you have selected your army we you need to decided what enemy we shall face... all are of equal importance but some may be harder to defeat than others..."
+ let talkingHeadGame = 
+ "Welcome to the battle screen commander... here you can see the enemys actions and what tactics are avaliable to counter them..."
+ let talkingHeadGameTwo = 
+ "Be aware... once you decide a plan of action it could have dire consequences... For the Emperor!..."
 /* Game Objects */
 
 const question = document.querySelector(".question-box");
@@ -261,7 +280,7 @@ let spaceMarinesVsOrks = [
         choiseThreePower: 60,
     }
 ]
-
+/*
 startGame = () => {
     avaliableQuestions = [...question];
     getNewQuestion ()
@@ -276,4 +295,4 @@ getNewQuestion = () => {
     });
 }
 
-startGame()
+startGame() */
