@@ -92,20 +92,19 @@ function talkingHead() {
 
     function removeTalkingHead() {
         talkingHead.classList.add('remove');
-    }
+    };
 }   
 
-function talkingHeadOpponent() {
+function enemyHead() {
     let talkingHead = document.querySelector(".talking-head-box");
     let talkingHeadTxt = document.querySelector("#talking-head-text");
     let talkingHeadBtn = document.querySelector("#talking-head-btn");
     talkingHeadTxt.innerHTML = talkingHeadEnemy;
-    talkingHeadBtn.addEventListener("click", talkingEnemy);
-
-    function talkingEnemy() {
-        talkingHead.classList.add('remove');
-    }
+    talkingHead.classList.remove('remove');
 }
+
+
+
 
 /* Faction Selection */
 
@@ -156,9 +155,12 @@ function factionSelection() {
             guardInfo.classList.add('remove');
         };
 
-    let choseSpacemarine = spaceMarine.addEventListener("click", revealEnemy);
-    let choseAdmech = adMech.addEventListener("click", revealEnemy);
-    let choseGuard = guard.addEventListener("click", revealEnemy);
+     spaceMarine.addEventListener("click", revealEnemy);
+     adMech.addEventListener("click", revealEnemy);
+     guard.addEventListener("click", revealEnemy);
+     spaceMarine.addEventListener("click", enemyHead);
+     adMech.addEventListener("click", enemyHead);
+     guard.addEventListener("click", enemyHead);
 
     function revealEnemy() {
         document.getElementById("faction-selection").classList.add('remove');
@@ -216,6 +218,9 @@ function enemySelection() {
     orks.addEventListener("click", enemySelected);
     chaos.addEventListener("click", enemySelected);
     tyranids.addEventListener("click", enemySelected);
+    orks.addEventListener("click", headGame);
+    chaos.addEventListener("click", headGame);
+    tyranids.addEventListener("click", headGame);
 
     function enemySelected() {
         document.getElementById("enemy-selection").classList.add('remove');
@@ -290,4 +295,3 @@ introSequence();
 talkingHead();
 factionSelection();
 enemySelection();
-talkingHeadOpponent();
