@@ -118,8 +118,6 @@ function headGame() {
     
 }
 
-
-
 /* Faction Selection */
 
 function factionSelection() {
@@ -175,6 +173,7 @@ function factionSelection() {
      spaceMarine.addEventListener("click", enemyHead);
      adMech.addEventListener("click", enemyHead);
      guard.addEventListener("click", enemyHead);
+
 
     function revealEnemy() {
         document.getElementById("faction-selection").classList.add('remove');
@@ -242,13 +241,46 @@ function enemySelection() {
     };
 }
 
+/* Game */
+
+let spacemarine = document.getElementById("spacemarine-image");
+let admech = document.getElementById("admech-image");
+let guard = document.getElementById("guard-image");
+let orks = document.getElementById("orks-image");
+let chaos = document.getElementById("chaos-image");
+let tyranids = document.getElementById("tyranids-image");
+
+let spacemarineSelected = spacemarine.onclick;
+let admechSelected = admech.onclick;
+let guardSelected = guard.onclick; 
+let orksSelected = orks.onclick;
+let chaosSelected = chaos.onclick;
+let tyranidsSelected = tyranids.onclick;
+
+switch (spacemarineSelected === true) {
+    case orksSelected === true:
+        spaceMarinesVsOrks();
+        break;
+    case chaosSelected === true:
+        spaceMarinesVsChaos();
+        break;
+    case tyranidsSelected === true:
+        spacemarinesVsTyranids();
+        break;
+}
+
+function spaceMarinesVsOrks() {
+    let question = document.getElementsByClassName("question-box");
+    let answerOne = document.getElementsByClassName("answer-box-one");
+    let answerTwo = document.getElementsByClassName("answer-box-two");
+    let answerThree document.getElementsByClassName("answer-box-three");
+
+    
+}
+
 /* Game Objects */
 
-const question = document.querySelector(".question-box");
-const choices = Array.from(document.querySelectorAll(".answer"));
-
-
-let spaceMarinesVsOrks = [
+let spaceMarinesVsOrksQuestions = [
     {
         question: 'Ork activity has been reported in the more uninhabited parts of the planet. What is the first step we should take?',
         questionPower: 20,
