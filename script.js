@@ -194,39 +194,28 @@ function enemySelection() {
     let tyranidsTitle = document.getElementById("tyranids-title");
     let tyranidsInfo = document.getElementById("tyranids-info");
 
-    orks.onmouseenter = function(){
-        orksTitle.classList.add('remove');
-        orksInfo.classList.remove('remove');
-        orksInfo.innerHTML = orksDescription;
-        orksInfo.style.backgroundColor = "#b6b5b591";
-    };
-    
-    orks.onmouseleave = function(){
-        orksTitle.classList.remove('remove');
-        orksInfo.classList.add('remove');
-    };
+    function mouseEnterHandler(name) {
+        // let  = document.getElementById("tyranids-image");
+        const title = document.getElementById(`${name}-title`);
+        const info = document.getElementById(`${name}-info`);
+        title.classList.add('remove');
+        info.classList.remove('remove');
+        info.innerHTML = description.name;
+        info.style.backgroundColor = "#b6b5b591";
+        
+    }
 
-    chaos.onmouseenter = function(){
-        chaosTitle.classList.add('remove');
-        chaosInfo.classList.remove('remove');
-        chaosInfo.innerHTML = chaosDescription;
-        chaosInfo.style.backgroundColor = "#b6b5b591";
-    };
-    chaos.onmouseleave = function(){
-        chaosTitle.classList.remove('remove');
-        chaosInfo.classList.add('remove');
-    };
+    function mouseLeaveHandler(name) {
+        const title = document.getElementById(`${name}-title`);
+        const info = document.getElementById(`${name}-info`);
+        title.classList.remove('remove');
+        info.classList.add('remove');
+    }
+    orks.addEventListener('mouseenter', () => mouseEnterHandler("orks"));
+    orks.addEventListener('mouseleave', () => mouseLeaveHandler("orks"));
+    chaos.addEventListener('mouseenter', () => mouseEnterHandler("chaos"));
+    chaos.addEventListener('mouseleave', () => mouseLeaveHandler("chaos"));
 
-    tyranids.onmouseenter = function(){
-        tyranidsTitle.classList.add('remove');
-        tyranidsInfo.classList.remove('remove');
-        tyranidsInfo.innerHTML = tyranidsDescription;
-        tyranidsInfo.style.backgroundColor = "#b6b5b591";
-    };
-    tyranids.onmouseleave = function(){
-        tyranidsTitle.classList.remove('remove');
-        tyranidsInfo.classList.add('remove');
-    };
 
     orks.addEventListener("click", enemySelected);
     chaos.addEventListener("click", enemySelected);
@@ -235,9 +224,10 @@ function enemySelection() {
     chaos.addEventListener("click", headGame);
     tyranids.addEventListener("click", headGame);
 
-    function enemySelected() {
+    function enemySelected(name) {
         document.getElementById("enemy-selection").classList.add('remove');
         document.getElementById("game-area").classList.remove('remove');
+        localStorage.setItem("selectedEnemy", name)
     };
 }
 
