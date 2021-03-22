@@ -241,7 +241,7 @@ function enemySelection() {
     };
 }
 
-/* Game */
+/* Game */ 
 
 let spacemarine = document.getElementById("spacemarine-image");
 let admech = document.getElementById("admech-image");
@@ -256,7 +256,7 @@ let guardSelected = guard.onclick;
 let orksSelected = orks.onclick;
 let chaosSelected = chaos.onclick;
 let tyranidsSelected = tyranids.onclick;
-
+/*
 switch (spacemarineSelected === true) {
     case orksSelected === true:
         spaceMarinesVsOrks();
@@ -267,15 +267,24 @@ switch (spacemarineSelected === true) {
     case tyranidsSelected === true:
         spacemarinesVsTyranids();
         break;
-}
+}*/
 
 function spaceMarinesVsOrks() {
-    let question = document.getElementsByClassName("question-box");
-    let answerOne = document.getElementsByClassName("answer-box-one");
-    let answerTwo = document.getElementsByClassName("answer-box-two");
-    let answerThree document.getElementsByClassName("answer-box-three");
-
+    let question = document.querySelector(".question-box");
+    let answerOne = document.querySelector(".answer-one");
+    let answerTwo = document.querySelector(".answer-two");
+    let answerThree =  document.querySelector(".answer-three");
+    let health = 125;
+    let dammage = spaceMarinesVsOrksQuestions[0].questionPower
     
+
+    question.innerText = spaceMarinesVsOrksQuestions[0].question;
+    answerOne.innerHTML = spaceMarinesVsOrksQuestions[0].choiceOne;
+    answerTwo.innerHTML = spaceMarinesVsOrksQuestions[0].choiceTwo;
+    answerThree.innerHTML = spaceMarinesVsOrksQuestions[0].choiceThree;
+     
+    
+
 }
 
 /* Game Objects */
@@ -341,3 +350,4 @@ introSequence();
 talkingHead();
 factionSelection();
 enemySelection();
+spaceMarinesVsOrks();
