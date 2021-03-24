@@ -176,6 +176,42 @@ function enemySelection() {
 }
 
 /* Game */ 
+function campaignSelection() {
+const campaign = localStorage.getItem("selectedFaction") + localStorage.getItem("selectedEnemy");
+console.log(campaign)
+
+switch(campaign) {
+    case 'spacemarinesorks':
+        spaceMarinesVsOrks();
+        break;
+    case 'spacemarineschaos':
+        spaceMarinesVsChaos();
+        break;
+    case 'spacemarinestyranids':
+        spaceMarinesVsTyranids();
+        break;
+    case 'admechorks':
+        admechsVsOrks();
+        break;
+    case 'admechchaos':
+        admechVsChaos();
+        break;
+    case 'admechtyranids':
+        admechVsTyranids();
+        break; 
+    case 'guardorks':
+        guardVsOrks();
+        break;
+    case 'guardchaos':
+        guardVsChaos();
+        break;
+    case 'guardtyranids':
+        guardVsTyranids();
+        break;
+}
+
+
+}
 
 function spaceMarinesVsOrks() {
     let question = document.querySelector(".question-box");
@@ -199,4 +235,4 @@ introSequence();
 talkingHead();
 factionSelection();
 enemySelection();
-spaceMarinesVsOrks();
+campaignSelection();
