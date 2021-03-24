@@ -157,16 +157,8 @@ function factionSelection() {
 
 function enemySelection() {
     let orks = document.getElementById("orks-image");
-    let orksTitle = document.getElementById("orks-title");
-    let orksInfo = document.getElementById("orks-info");
-
     let chaos = document.getElementById("chaos-image");
-    let chaosTitle =  document.getElementById("chaos-title");
-    let chaosInfo = document.getElementById("chaos-info");
-
     let tyranids = document.getElementById("tyranids-image");
-    let tyranidsTitle = document.getElementById("tyranids-title");
-    let tyranidsInfo = document.getElementById("tyranids-info");
 
     function mouseEnterHandler(name) {
         const title = document.getElementById(`${name}-title`);
@@ -191,18 +183,15 @@ function enemySelection() {
     tyranids.addEventListener('mouseenter', () => mouseEnterHandler("tyranids"));
     tyranids.addEventListener('mouseleave', () => mouseLeaveHandler("tyranids"));
 
-
-    orks.addEventListener("click", enemySelected);
-    chaos.addEventListener("click", enemySelected);
-    tyranids.addEventListener("click", enemySelected);
-    orks.addEventListener("click", headGame);
-    chaos.addEventListener("click", headGame);
-    tyranids.addEventListener("click", headGame);
+    orks.addEventListener("click", () => enemySelected("orks"));
+    chaos.addEventListener("click", () => enemySelected("chaos")); 
+    tyranids.addEventListener("click",() => enemySelected("tyranids"));
 
     function enemySelected(name) {
         document.getElementById("enemy-selection").classList.add('remove');
         document.getElementById("game-area").classList.remove('remove');
-        localStorage.setItem("selectedEnemy", name)
+        localStorage.setItem("selectedEnemy", (`${name}`));
+        console.log(localStorage);
     };
 }
 
