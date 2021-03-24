@@ -169,12 +169,11 @@ function enemySelection() {
     let tyranidsInfo = document.getElementById("tyranids-info");
 
     function mouseEnterHandler(name) {
-        // let  = document.getElementById("tyranids-image");
         const title = document.getElementById(`${name}-title`);
         const info = document.getElementById(`${name}-info`);
         title.classList.add('remove');
         info.classList.remove('remove');
-        info.innerHTML = description.name;
+        info.innerHTML = enemies[name];
         info.style.backgroundColor = "#b6b5b591";
         
     }
@@ -189,6 +188,8 @@ function enemySelection() {
     orks.addEventListener('mouseleave', () => mouseLeaveHandler("orks"));
     chaos.addEventListener('mouseenter', () => mouseEnterHandler("chaos"));
     chaos.addEventListener('mouseleave', () => mouseLeaveHandler("chaos"));
+    tyranids.addEventListener('mouseenter', () => mouseEnterHandler("tyranids"));
+    tyranids.addEventListener('mouseleave', () => mouseLeaveHandler("tyranids"));
 
 
     orks.addEventListener("click", enemySelected);
@@ -220,18 +221,6 @@ let guardSelected = guard.onclick;
 let orksSelected = orks.onclick;
 let chaosSelected = chaos.onclick;
 let tyranidsSelected = tyranids.onclick;
-/*
-switch (spacemarineSelected === true) {
-    case orksSelected === true:
-        spaceMarinesVsOrks();
-        break;
-    case chaosSelected === true:
-        spaceMarinesVsChaos();
-        break;
-    case tyranidsSelected === true:
-        spacemarinesVsTyranids();
-        break;
-}*/
 
 function spaceMarinesVsOrks() {
     let question = document.querySelector(".question-box");
