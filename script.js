@@ -95,79 +95,25 @@ function headGame() {
 /* Faction Selection */
 
 function factionSelection() {
-    let spaceMarine = document.getElementById("spacemarine-image");
-    let spaceMarineTitle = document.getElementById("spacemarine-title");
-    let spaceMarineInfo = document.getElementById("spacemarine-info");
-
+    let spaceMarines = document.getElementById("spacemarines-image");
     let adMech = document.getElementById("admech-image");
-    let adMechTitle = document.getElementById("admech-title");
-    let adMechInfo = document.getElementById("admech-info");
-
     let guard = document.getElementById("guard-image");
-    let guardTitle = document.getElementById("guard-title");
-    let guardInfo =  document.getElementById("guard-info");
+    
+    spaceMarines.addEventListener('mouseenter', () => mouseEnterHandler("spacemarines"));
+    spaceMarines.addEventListener('mouseleave', () => mouseLeaveHandler("spacemarines"));
+    adMech.addEventListener('mouseenter', () => mouseEnterHandler("admech"));
+    adMech.addEventListener('mouseleave', () => mouseLeaveHandler("admech"));
+    guard.addEventListener('mouseenter', () => mouseEnterHandler("guard"));
+    guard.addEventListener('mouseleave', () => mouseLeaveHandler("guard"));
 
-        spaceMarine.onmouseenter = function(){
-            spaceMarineTitle.classList.add('remove');
-            spaceMarineInfo.classList.remove('remove');
-            spaceMarineInfo.innerHTML = spacemarineDescription;
-            spaceMarineInfo.style.backgroundColor = "#b6b5b591";
-        };
-
-        spaceMarine.onmouseleave = function(){
-           spaceMarineTitle.classList.remove('remove');
-            spaceMarineInfo.classList.add('remove');
-        };
-
-        adMech.onmouseenter = function(){
-            adMechTitle.classList.add('remove');
-            adMechInfo.classList.remove('remove');
-            adMechInfo.innerHTML = admechDescription;
-            adMechInfo.style.backgroundColor = "#b6b5b591";
-        };
-        adMech.onmouseleave = function(){
-            adMechTitle.classList.remove('remove');
-            adMechInfo.classList.add('remove');
-        };
-
-        guard.onmouseenter = function(){
-            guardTitle.classList.add('remove');
-            guardInfo.classList.remove('remove');
-            guardInfo.innerHTML = guardDescription;
-            guardInfo.style.backgroundColor = "#b6b5b591";
-        };
-        guard.onmouseleave = function(){
-            guardTitle.classList.remove('remove');
-            guardInfo.classList.add('remove');
-        };
-
-     spaceMarine.addEventListener("click", revealEnemy);
-     adMech.addEventListener("click", revealEnemy);
-     guard.addEventListener("click", revealEnemy);
-     spaceMarine.addEventListener("click", enemyHead);
-     adMech.addEventListener("click", enemyHead);
-     guard.addEventListener("click", enemyHead);
-
-
-    function revealEnemy() {
-        document.getElementById("faction-selection").classList.add('remove');
-        document.getElementById("enemy-selection").classList.remove('remove');
-    };
-}
-
-function enemySelection() {
-    let orks = document.getElementById("orks-image");
-    let chaos = document.getElementById("chaos-image");
-    let tyranids = document.getElementById("tyranids-image");
-
+    
     function mouseEnterHandler(name) {
         const title = document.getElementById(`${name}-title`);
         const info = document.getElementById(`${name}-info`);
         title.classList.add('remove');
         info.classList.remove('remove');
-        info.innerHTML = enemies[name];
+        info.innerHTML = faction[name];
         info.style.backgroundColor = "#b6b5b591";
-        
     }
 
     function mouseLeaveHandler(name) {
@@ -176,12 +122,46 @@ function enemySelection() {
         title.classList.remove('remove');
         info.classList.add('remove');
     }
+
+    spaceMarines.addEventListener("click", () => factionSelected("spacemarines"));
+    adMech.addEventListener("click", () => factionSelected("admech")); 
+    guard.addEventListener("click",() => factionSelected("guard"));
+
+    function factionSelected(name) {
+        document.getElementById("faction-selection").classList.add('remove');
+        document.getElementById("enemy-selection").classList.remove('remove');
+        localStorage.setItem("selectedFaction", name);
+        console.log(localStorage);
+    };
+}
+
+function enemySelection() {
+    let orks = document.getElementById("orks-image");
+    let chaos = document.getElementById("chaos-image");
+    let tyranids = document.getElementById("tyranids-image");
+
     orks.addEventListener('mouseenter', () => mouseEnterHandler("orks"));
     orks.addEventListener('mouseleave', () => mouseLeaveHandler("orks"));
     chaos.addEventListener('mouseenter', () => mouseEnterHandler("chaos"));
     chaos.addEventListener('mouseleave', () => mouseLeaveHandler("chaos"));
     tyranids.addEventListener('mouseenter', () => mouseEnterHandler("tyranids"));
     tyranids.addEventListener('mouseleave', () => mouseLeaveHandler("tyranids"));
+
+    function mouseEnterHandler(name) {
+        const title = document.getElementById(`${name}-title`);
+        const info = document.getElementById(`${name}-info`);
+        title.classList.add('remove');
+        info.classList.remove('remove');
+        info.innerHTML = enemies[name];
+        info.style.backgroundColor = "#b6b5b591";
+    }
+
+    function mouseLeaveHandler(name) {
+        const title = document.getElementById(`${name}-title`);
+        const info = document.getElementById(`${name}-info`);
+        title.classList.remove('remove');
+        info.classList.add('remove');
+    }
 
     orks.addEventListener("click", () => enemySelected("orks"));
     chaos.addEventListener("click", () => enemySelected("chaos")); 
@@ -190,26 +170,12 @@ function enemySelection() {
     function enemySelected(name) {
         document.getElementById("enemy-selection").classList.add('remove');
         document.getElementById("game-area").classList.remove('remove');
-        localStorage.setItem("selectedEnemy", (`${name}`));
+        localStorage.setItem("selectedEnemy", name);
         console.log(localStorage);
     };
 }
 
 /* Game */ 
-
-let spacemarine = document.getElementById("spacemarine-image");
-let admech = document.getElementById("admech-image");
-let guard = document.getElementById("guard-image");
-let orks = document.getElementById("orks-image");
-let chaos = document.getElementById("chaos-image");
-let tyranids = document.getElementById("tyranids-image");
-
-let spacemarineSelected = spacemarine.onclick;
-let admechSelected = admech.onclick;
-let guardSelected = guard.onclick; 
-let orksSelected = orks.onclick;
-let chaosSelected = chaos.onclick;
-let tyranidsSelected = tyranids.onclick;
 
 function spaceMarinesVsOrks() {
     let question = document.querySelector(".question-box");
