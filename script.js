@@ -98,6 +98,7 @@ function factionSelection() {
     let spaceMarines = document.getElementById("spacemarines-image");
     let adMech = document.getElementById("admech-image");
     let guard = document.getElementById("guard-image");
+
     
     spaceMarines.addEventListener('mouseenter', () => mouseEnterHandler("spacemarines"));
     spaceMarines.addEventListener('mouseleave', () => mouseLeaveHandler("spacemarines"));
@@ -218,16 +219,15 @@ function spaceMarinesVsOrks() {
     let answerOne = document.querySelector(".answer-one");
     let answerTwo = document.querySelector(".answer-two");
     let answerThree =  document.querySelector(".answer-three");
+    let answerAll = document.querySelectorAll(".answer");
     let health = 125;
-    let dammage = spaceMarinesVsOrksQuestions[0].questionPower
+    let dammage = spaceMarinesVsOrksQuestions[0].questionPower;
     
 
     question.innerText = spaceMarinesVsOrksQuestions[0].question;
     answerOne.innerHTML = spaceMarinesVsOrksQuestions[0].choiceOne;
     answerTwo.innerHTML = spaceMarinesVsOrksQuestions[0].choiceTwo;
     answerThree.innerHTML = spaceMarinesVsOrksQuestions[0].choiceThree;
-     
-    
 
 }
 
