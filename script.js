@@ -229,6 +229,53 @@ function spaceMarinesVsOrks() {
     answerTwo.innerHTML = spaceMarinesVsOrksQuestions[0].choiceTwo;
     answerThree.innerHTML = spaceMarinesVsOrksQuestions[0].choiceThree;
 
+    answerOne.addEventListener("click", () => questionTwo());
+    answerTwo.addEventListener("click", () => questionTwo());
+    answerThree.addEventListener("click", () => questionTwo());
+
+    function questionTwo() {
+        question.innerText = spaceMarinesVsOrksQuestions[1].question;
+        answerOne.innerHTML = spaceMarinesVsOrksQuestions[1].choiceOne;
+        answerTwo.innerHTML = spaceMarinesVsOrksQuestions[1].choiceTwo;
+        answerThree.innerHTML = spaceMarinesVsOrksQuestions[1].choiceThree;
+        answerOne.addEventListener("click", () => questionThree());
+        answerTwo.addEventListener("click", () => questionThree());
+        answerThree.addEventListener("click", () => questionThree());
+    }
+
+    function questionThree() {
+        question.innerText = spaceMarinesVsOrksQuestions[2].question;
+        answerOne.innerHTML = spaceMarinesVsOrksQuestions[2].choiceOne;
+        answerTwo.innerHTML = spaceMarinesVsOrksQuestions[2].choiceTwo;
+        answerThree.innerHTML = spaceMarinesVsOrksQuestions[2].choiceThree;
+        answerOne.addEventListener("click", () => questionFour());
+        answerTwo.addEventListener("click", () => questionFour());
+        answerThree.addEventListener("click", () => questionFour());
+    }
+
+    function questionFour() {
+        question.innerText = spaceMarinesVsOrksQuestions[3].question;
+        answerOne.innerHTML = spaceMarinesVsOrksQuestions[3].choiceOne;
+        answerTwo.innerHTML = spaceMarinesVsOrksQuestions[3].choiceTwo;
+        answerThree.innerHTML = spaceMarinesVsOrksQuestions[3].choiceThree;
+        answerOne.addEventListener("click", () => questionFive());
+        answerTwo.addEventListener("click", () => questionFive());
+        answerThree.addEventListener("click", () => questionFive());
+    }
+
+    function questionFive() {
+        question.innerText = spaceMarinesVsOrksQuestions[4].question;
+        answerOne.innerHTML = spaceMarinesVsOrksQuestions[4].choiceOne;
+        answerTwo.innerHTML = spaceMarinesVsOrksQuestions[4].choiceTwo;
+        answerThree.innerHTML = spaceMarinesVsOrksQuestions[4].choiceThree;
+    }
+
+    // Display victory page
+
+    // Take user back to faction selection screen
+
+    // Reset faction and enemy choices
+
 }
 
 introSequence();
