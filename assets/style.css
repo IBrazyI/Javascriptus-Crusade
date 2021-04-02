@@ -428,7 +428,6 @@ body {
     color: #fafafa;
     text-align: center;
     font-size: 20px;
-    background-color:blue;
 }
 
 .question-image {
@@ -441,7 +440,9 @@ body {
 
 .answer{
     margin: 20px 0px 20px 0px;
-    padding: 10px 20px 10px 20px;
+    vertical-align: middle;
+    min-width: auto;
+    min-height: 100px;
     color: #fafafa;
     text-align: center;
     font-size: 18px;
@@ -456,6 +457,27 @@ body {
     cursor: pointer;
     box-shadow: none;
 }
+
+/* Victory Page */
+
+.victory-page{
+    width: 400px;
+    height: 400px;
+    background-color: #000000;
+    color:#fafafa;
+}
+
+.victory-button{
+    justify-content: center;
+    align-items: center;
+}
+
+#victory-btn{
+    font-size: 30px;
+        padding: 20px;
+}
+
+/* Defeat Page */
 
 /* Extra Utilties */
 

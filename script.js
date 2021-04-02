@@ -268,9 +268,21 @@ function spaceMarinesVsOrks() {
         answerOne.innerHTML = spaceMarinesVsOrksQuestions[4].choiceOne;
         answerTwo.innerHTML = spaceMarinesVsOrksQuestions[4].choiceTwo;
         answerThree.innerHTML = spaceMarinesVsOrksQuestions[4].choiceThree;
+        answerOne.addEventListener("click", () => victoryPage());
+        answerTwo.addEventListener("click", () => victoryPage());
+        answerThree.addEventListener("click", () => victoryPage());
     }
 
     // Display victory page
+    function victoryPage() {
+        document.querySelector
+        localStorage.clear();
+        console.log(localStorage);
+    }
+
+    function defeatPage() {
+
+    }
 
     // Take user back to faction selection screen
 
