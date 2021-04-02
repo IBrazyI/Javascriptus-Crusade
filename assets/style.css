@@ -479,6 +479,23 @@ body {
 
 /* Defeat Page */
 
+.defeat-page{
+    width: 400px;
+    height: 400px;
+    background-color: #000000;
+    color:#fafafa;
+}
+
+.defeat-button{
+    justify-content: center;
+    align-items: center;
+}
+
+#defeat-btn{
+    font-size: 30px;
+        padding: 20px;
+}
+
 /* Extra Utilties */
 
 .hide {
