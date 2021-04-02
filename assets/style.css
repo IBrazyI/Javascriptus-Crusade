@@ -1,6 +1,6 @@
 *, *::before, *::after{
     box-sizing: border-box;
-    font-family: fantasy;
+    font-family: 'Brygada 1918', serif;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
     margin: 0;
     background-color: #555555;
     min-height: 100vh;
+    background-image: url(../assets/images/spacebackground2.jpg);
 }
 
 
@@ -29,6 +30,7 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     text-shadow: 2px 2px #000000;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
 
 .intro-message > p {
@@ -98,6 +100,7 @@ body {
 .title-text {
     margin: 0;
     font-size: 40px;
+    font-family: 'Pathway Gothic One', sans-serif;
     color:#000000;
     text-transform: uppercase;
     animation: glow 1s ease-in-out infinite alternate;
@@ -210,6 +213,7 @@ body {
 .talking-head-text > p {
     margin: 0;
     margin-bottom: 10px;
+    font-family: 'Recursive', sans-serif;
 }
 
 #talking-head-btn {
@@ -440,7 +444,10 @@ body {
 
 .answer{
     margin: 20px 0px 20px 0px;
-    vertical-align: middle;
+    background-color: #ad2020;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
     min-width: auto;
     min-height: 100px;
     color: #fafafa;
