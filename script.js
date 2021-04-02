@@ -275,7 +275,8 @@ function spaceMarinesVsOrks() {
 
     // Display victory page
     function victoryPage() {
-        document.querySelector
+        document.getElementById("game-area").classList.add('remove');
+        document.querySelector(".victory-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
     }

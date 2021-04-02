@@ -32,6 +32,12 @@ const faction = {
 
  /* Game Objects */
 
+ const spaceMarineHealth = 125;
+
+ const adMechHealth = 100;
+
+ const guardHealth = 75;
+
 let spaceMarinesVsOrksQuestions = [
     {
         question: 'Ork activity has been reported in the more uninhabited parts of the planet. What is the first step we should take?',
