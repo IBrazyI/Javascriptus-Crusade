@@ -102,9 +102,9 @@ body {
 
 .title-text {
     margin: 0;
-    font-size: 40px;
+    font-size: 60px;
     font-family: 'Pathway Gothic One', sans-serif;
-    color:#000000;
+    color:#555555;
     text-transform: uppercase;
     animation: glow 1s ease-in-out infinite alternate;
     }
@@ -136,7 +136,7 @@ body {
         max-width: 50%;
     }
     .title-text {
-        font-size: 70px;
+        font-size: 100px;
     }
 
     .title-btn-container {
@@ -177,7 +177,7 @@ body {
 
 @media (min-width: 900px){
     .nav-element {
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
@@ -435,6 +435,14 @@ body {
     color: #fafafa;
     text-align: center;
     font-size: 25px;
+    background-color: #555555;
+    border: 5px solid;
+    border-radius: 5px;
+    border-top-color: #a36513;
+    border-bottom-color: #a36513;
+    border-left-color: #7c2c26;
+    border-right-color: #7c2c26;
+    box-shadow: 2px 2px #000000;
 }
 
 .question-image {
@@ -447,10 +455,12 @@ body {
 
 .answer{
     margin: 20px 0px 20px 0px;
-    background-color: #ad2020;
+    background-color: #b81e03;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: row;
     min-width: auto;
     min-height: 100px;
     color: #fafafa;
@@ -495,12 +505,12 @@ body {
     }
 
     .answer{
-        font-size: 35px;
+        font-size: 30px;
         margin-left: 15%;
         margin-right: 15%;
     }
 }
-}
+
 /* Victory Page */
 
 .victory-page{
