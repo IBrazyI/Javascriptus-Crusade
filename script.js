@@ -219,9 +219,12 @@ function spaceMarinesVsOrks() {
     let answerOne = document.querySelector(".answer-one");
     let answerTwo = document.querySelector(".answer-two");
     let answerThree =  document.querySelector(".answer-three");
-    let answerAll = document.querySelectorAll(".answer");
-    let health = 125;
-    let dammage = spaceMarinesVsOrksQuestions[0].questionPower;
+    let spaceMarineHealth = 125;
+    let defence = 0;
+    let dammage = spaceMarinesVsOrksQuestions[0].questionPower - defence;
+    console.log(spaceMarineHealth);
+    console.log(defence);
+    console.log(dammage);
     
 
     question.innerText = spaceMarinesVsOrksQuestions[0].question;
@@ -229,15 +232,26 @@ function spaceMarinesVsOrks() {
     answerTwo.innerHTML = spaceMarinesVsOrksQuestions[0].choiceTwo;
     answerThree.innerHTML = spaceMarinesVsOrksQuestions[0].choiceThree;
 
-    answerOne.addEventListener("click", () => questionTwo());
+    answerOne.addEventListener("click",  () => {defence = spaceMarinesVsOrksQuestions[0].choiceOnePower});
+    answerTwo.addEventListener("click",  () => {defence = spaceMarinesVsOrksQuestions[0].choiceTwoPower});
+    answerThree.addEventListener("click",  () => {defence = spaceMarinesVsOrksQuestions[0].choiceThreePower});
+
+    answerOne.addEventListener("click",  () => questionTwo());
     answerTwo.addEventListener("click", () => questionTwo());
-    answerThree.addEventListener("click", () => questionTwo());
+    answerThree.addEventListener("click",  () => questionTwo());
+
 
     function questionTwo() {
+        console.log(defence);
+        spaceMarineHealth = spaceMarineHealth - dammage + defence;
+        console.log(spaceMarineHealth);
+        dammage = spaceMarinesVsOrksQuestions[1].questionPower;
+
         question.innerText = spaceMarinesVsOrksQuestions[1].question;
         answerOne.innerHTML = spaceMarinesVsOrksQuestions[1].choiceOne;
         answerTwo.innerHTML = spaceMarinesVsOrksQuestions[1].choiceTwo;
         answerThree.innerHTML = spaceMarinesVsOrksQuestions[1].choiceThree;
+
         answerOne.addEventListener("click", () => questionThree());
         answerTwo.addEventListener("click", () => questionThree());
         answerThree.addEventListener("click", () => questionThree());
@@ -248,6 +262,7 @@ function spaceMarinesVsOrks() {
         answerOne.innerHTML = spaceMarinesVsOrksQuestions[2].choiceOne;
         answerTwo.innerHTML = spaceMarinesVsOrksQuestions[2].choiceTwo;
         answerThree.innerHTML = spaceMarinesVsOrksQuestions[2].choiceThree;
+
         answerOne.addEventListener("click", () => questionFour());
         answerTwo.addEventListener("click", () => questionFour());
         answerThree.addEventListener("click", () => questionFour());
@@ -258,6 +273,7 @@ function spaceMarinesVsOrks() {
         answerOne.innerHTML = spaceMarinesVsOrksQuestions[3].choiceOne;
         answerTwo.innerHTML = spaceMarinesVsOrksQuestions[3].choiceTwo;
         answerThree.innerHTML = spaceMarinesVsOrksQuestions[3].choiceThree;
+
         answerOne.addEventListener("click", () => questionFive());
         answerTwo.addEventListener("click", () => questionFive());
         answerThree.addEventListener("click", () => questionFive());
@@ -268,6 +284,7 @@ function spaceMarinesVsOrks() {
         answerOne.innerHTML = spaceMarinesVsOrksQuestions[4].choiceOne;
         answerTwo.innerHTML = spaceMarinesVsOrksQuestions[4].choiceTwo;
         answerThree.innerHTML = spaceMarinesVsOrksQuestions[4].choiceThree;
+        
         answerOne.addEventListener("click", () => victoryPage());
         answerTwo.addEventListener("click", () => victoryPage());
         answerThree.addEventListener("click", () => victoryPage());
@@ -282,7 +299,10 @@ function spaceMarinesVsOrks() {
     }
 
     function defeatPage() {
-
+        document.getElementById("game-area").classList.add('remove');
+        document.querySelector(".defeat-page").classList.remove('remove');
+        localStorage.clear();
+        console.log(localStorage);
     }
 
     // Take user back to faction selection screen
