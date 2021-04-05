@@ -43,11 +43,11 @@ let spaceMarinesVsOrksQuestions = [
         question: 'Ork activity has been reported in the more uninhabited parts of the planet. What is the first step we should take?',
         questionPower: 20,
         choiceOne: 'Send a small scouting force to confirm the reports.',
-        choiseOnePower: 10,
+        choiceOnePower: 10,
         choiceTwo: 'Begin to fortify larger settlements on the plannet and brace for an attack.',
-        choiseTwoPower: 15,
+        choiceTwoPower: 15,
         choiceThree: 'Organise rapid strike forces to premptilvey attack the orks before thier numbers can grow.',
-        choiseThreePower: 20,
+        choiceThreePower: 20,
     },
 
     {
@@ -91,6 +91,120 @@ let spaceMarinesVsOrksQuestions = [
         choiceTwo: 'Send infiltrators to find and elimnate him at range.',
         choiseTwoPower: 50,
         choiceThree: 'Oblitrate him with a massive bombardment from our ships in orbit.',
+        choiseThreePower: 60,
+    }
+]
+
+let adMechVsOrksQuestions = [
+    {
+        question: 'Ork activity has been reported in the more uninhabited parts of the planet. What is the first step we should take?',
+        questionPower: 20,
+        choiceOne: 'Study past conflicts with the Orks and determine what stratergy would be best used to defeat them',
+        choiceOnePower: 20,
+        choiceTwo: 'Ignore the Orks the goal of gathering Knowledge is much more important',
+        choiceTwoPower: 5,
+        choiceThree: 'Deploy Skitarii rangers to determine weather the reports are true ',
+        choiceThreePower: 10,
+    },
+
+    {
+        question: 'The Orks numbers have grown considrably and they are attacking fringe settlements. How do we handle this menance?',
+        questionPower: 40,
+        choiceOne: 'Fully mobilise all ground forces similtaniousley attack the Orks and building defences around the larger settlements.',
+        choiceOnePower: 30,
+        choiceTwo: 'Deploy the Legio Cybernetica and have thier automatons destory the attacking Orks.',
+        choiceTwoPower: 20,
+        choiceThree: 'Send out the bombers and ironstriders on hit an run attacks while the rest of the troops organise the defence.',
+        choiceThreePower: 30,
+    },
+
+    {
+        question: 'The Orks have pushed us back and are now attacking the planetrary capital with all thier might.',
+        questionPower: 60,
+        choiceOne: 'Give local command to the Skitarri captains they will best know how to organise the troops',
+        choiseOnePower: 40,
+        choiceTwo: 'Use your tanks and other heavy vehicles to whittle down thier numbers as your Skitarii fall back.',
+        choiseTwoPower: 30,
+        choiceThree: 'Send in bombers and other air assets to strafe thier forces with bombs. ',
+        choiseThreePower: 30,
+    },
+
+    {
+        question: 'The Orks have broken through our lines in multiple areas how do we counter this threat?',
+        questionPower: 80,
+        choiceOne: 'Send in the Legio Titanica Titans to oblitiate them.',
+        choiseOnePower: 80,
+        choiceTwo: 'Send in the Vanguard reserves destory them with radiation',
+        choiseTwoPower: 50,
+        choiceThree: 'Set up crossfires using Rangers and thier sniper rifles',
+        choiseThreePower: 40,
+    },
+
+    {
+        question: 'The Ork Warboss has been seen on the battlefield leading his horde. Elimnating him will cause the Orks to scatter and end the battle.',
+        questionPower: 100,
+        choiceOne: 'Have the rustalkers infiltrate and eliminate him.',
+        choiseOnePower: 70,
+        choiceTwo: 'Launch a spearhead into the enemy lines with the imperial knights aim right for the Warboss.',
+        choiseTwoPower: 80,
+        choiceThree: 'Launch a desperate counter attack with all ground forces you have to spare.',
+        choiseThreePower: 50,
+    }
+]
+
+let guardVsOrksQuestions = [
+    {
+        question: 'Ork activity has been reported in the more uninhabited parts of the planet. What is the first step we should take?',
+        questionPower: 20,
+        choiceOne: 'Start conscripting the local population all people will be needed to hold back the Orks.',
+        choiceOnePower: 10,
+        choiceTwo: 'Call in support from other planets in the region but they may not get here in time',
+        choiceTwoPower: 5,
+        choiceThree: 'Amass your troops close to the planetary captial.',
+        choiceThreePower: 10,
+    },
+
+    {
+        question: 'The Orks numbers have grown considrably and they are attacking fringe settlements. How do we handle this menance?',
+        questionPower: 40,
+        choiceOne: 'Hold each settlement to the last man.',
+        choiceOnePower: 10,
+        choiceTwo: 'Use all air power to destory the Orks it is already too late to save those in the settlements',
+        choiceTwoPower: 15,
+        choiceThree: 'Smash the attacking forces using our tanks to blunt thier advance.',
+        choiceThreePower: 20,
+    },
+
+    {
+        question: 'The Orks have pushed us back and are now attacking the planetrary capital with all thier might.',
+        questionPower: 60,
+        choiceOne: 'Use artillery and gun enplacements to blunt any advance.',
+        choiseOnePower: 40,
+        choiceTwo: 'Amass troops at vital location with numbers we shall hold them off.',
+        choiseTwoPower: 30,
+        choiceThree: 'Hold the outside of the city at all costs, many will die in the trenches.',
+        choiseThreePower: 20,
+    },
+
+    {
+        question: 'The Orks have broken through our lines in multiple areas how do we counter this threat?',
+        questionPower: 80,
+        choiceOne: 'An armoured counter attack with our remaining tanks will thrust them out of the city',
+        choiseOnePower: 70,
+        choiceTwo: 'Deploy our elite storm troops the Orks wont know what hit them. ',
+        choiseTwoPower: 60,
+        choiceThree: 'Shoot the men that are running away, the others will hold firm.',
+        choiseThreePower: 80,
+    },
+
+    {
+        question: 'The Ork Warboss has been seen on the battlefield leading his horde. Elimnating him will cause the Orks to scatter and end the battle.',
+        questionPower: 100,
+        choiceOne: 'Charge the Warboss with our mutant Ogryn thier massive guns and strength will wear him down.',
+        choiseOnePower: 75,
+        choiceTwo: 'Anhilate there Warbosses location with all artiliery batterys, nothing would be able to withstand that.',
+        choiseTwoPower: 90,
+        choiceThree: 'Lead the charge yourself, our faith in the emperor will see us through this.',
         choiseThreePower: 60,
     }
 ]
