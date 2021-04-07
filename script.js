@@ -647,28 +647,28 @@ function guardVsOrks() {
     let answerTwo = document.querySelector(".answer-two");
     let answerThree =  document.querySelector(".answer-three");
     let i = 0;
-    let spaceMarineHealth = 125;
+    let guardHealth = 75;
     let defence = 0;
-    let optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;
-    let optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    let optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    let optionOne = guardVsOrksQuestions[i].choiceOnePower;
+    let optionTwo = guardVsOrksQuestions[i].choiceTwoPower;
+    let optionThree = guardVsOrksQuestions[i].choiceThreePower;
 
     console.log("start game");
-    console.log("starting health",spaceMarineHealth);
+    console.log("starting health",guardHealth);
     nextQuestion();
     
    
 
    function nextQuestion() {
 
-    question.innerHTML = spaceMarinesVsOrksQuestions[i].question;
-    answerOne.innerHTML = spaceMarinesVsOrksQuestions[i].choiceOne;
-    answerTwo.innerHTML = spaceMarinesVsOrksQuestions[i].choiceTwo;
-    answerThree.innerHTML = spaceMarinesVsOrksQuestions[i].choiceThree;
-    attack = spaceMarinesVsOrksQuestions[i].questionPower;
-    optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;  
-    optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    question.innerHTML = guardVsOrksQuestions[i].question;
+    answerOne.innerHTML = guardVsOrksQuestions[i].choiceOne;
+    answerTwo.innerHTML = guardVsOrksQuestions[i].choiceTwo;
+    answerThree.innerHTML = guardVsOrksQuestions[i].choiceThree;
+    attack = guardVsOrksQuestions[i].questionPower;
+    optionOne = guardVsOrksQuestions[i].choiceOnePower;  
+    optionTwo = guardVsOrksQuestions[i].choiceTwoPower;
+    optionThree = guardVsOrksQuestions[i].choiceThreePower;
 
    answerOne.onclick = function(){defence = optionOne; fight()};
    answerTwo.onclick = function(){defence = optionTwo; fight()}; 
@@ -677,19 +677,19 @@ function guardVsOrks() {
    };
 
    function fight() {
-       console.log("current health", spaceMarineHealth);
+       console.log("current health", guardHealth);
        console.log("attacked with", attack);
        console.log("defended with", defence);
-       spaceMarineHealth = spaceMarineHealth - (attack - defence);
-       console.log("new health",spaceMarineHealth);
+       guardHealth = guardHealth - (attack - defence);
+       console.log("new health",guardHealth);
 
-       if(spaceMarineHealth <= 0) {
+       if(guardHealth <= 0) {
            defeatPage();
        }  
        
-       if(i === 4 && spaceMarineHealth > 0){
+       if(i === 4 && guardHealth > 0){
            victoryPage();    
-       } else if (i < spaceMarinesVsOrksQuestions.length){
+       } else if (i < guardVsOrksQuestions.length){
            i++;
            console.log("next question: " + (i+1));
            nextQuestion();
