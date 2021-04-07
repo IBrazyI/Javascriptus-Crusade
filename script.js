@@ -195,13 +195,13 @@ function campaignSelection() {
         campaign = spaceMarinesVsTyranids();
         break;
     case 'admechorks':
-        campaign = admechsVsOrks();
+        campaign = adMechVsOrks();
         break;
     case 'admechchaos':
-        campaign = admechVsChaos();
+        campaign = adMechVsChaos();
         break;
     case 'admechtyranids':
-        campaign = admechVsTyranids();
+        campaign = adMechVsTyranids();
         break; 
     case 'guardorks':
         campaign = guardVsOrks();
