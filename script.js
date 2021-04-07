@@ -271,18 +271,29 @@ function spaceMarinesVsOrks() {
     };
     
     function victoryPage() {
+        let victoryBtn = document.querySelector("#victory-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".victory-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        victoryBtn.onclick = function(){
+            document.querySelector(".victory-page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };    
 
     function defeatPage() {
+        let defeatBtn = document.querySelector("#defeat-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".defeat-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        defeatBtn.onclick = function(){
+            document.querySelector(".defeat.page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };
+    
 
 }
 
