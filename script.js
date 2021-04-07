@@ -434,28 +434,28 @@ function adMechVsOrks() {
     let answerTwo = document.querySelector(".answer-two");
     let answerThree =  document.querySelector(".answer-three");
     let i = 0;
-    let spaceMarineHealth = 125;
+    let adMechHealth = 100;
     let defence = 0;
-    let optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;
-    let optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    let optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    let optionOne = adMechVsOrksQuestions[i].choiceOnePower;
+    let optionTwo = adMechVsOrksQuestions[i].choiceTwoPower;
+    let optionThree = adMechVsOrksQuestions[i].choiceThreePower;
 
     console.log("start game");
-    console.log("starting health",spaceMarineHealth);
+    console.log("starting health",adMechHealth);
     nextQuestion();
     
    
 
    function nextQuestion() {
 
-    question.innerHTML = spaceMarinesVsOrksQuestions[i].question;
-    answerOne.innerHTML = spaceMarinesVsOrksQuestions[i].choiceOne;
-    answerTwo.innerHTML = spaceMarinesVsOrksQuestions[i].choiceTwo;
-    answerThree.innerHTML = spaceMarinesVsOrksQuestions[i].choiceThree;
-    attack = spaceMarinesVsOrksQuestions[i].questionPower;
-    optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;  
-    optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    question.innerHTML = adMechVsOrksQuestions[i].question;
+    answerOne.innerHTML = adMechVsOrksQuestions[i].choiceOne;
+    answerTwo.innerHTML = adMechVsOrksQuestions[i].choiceTwo;
+    answerThree.innerHTML = adMechVsOrksQuestions[i].choiceThree;
+    attack = adMechVsOrksQuestions[i].questionPower;
+    optionOne = adMechVsOrksQuestions[i].choiceOnePower;  
+    optionTwo = adMechVsOrksQuestions[i].choiceTwoPower;
+    optionThree = adMechVsOrksQuestions[i].choiceThreePower;
 
    answerOne.onclick = function(){defence = optionOne; fight()};
    answerTwo.onclick = function(){defence = optionTwo; fight()}; 
@@ -464,19 +464,19 @@ function adMechVsOrks() {
    };
 
    function fight() {
-       console.log("current health", spaceMarineHealth);
+       console.log("current health", adMechHealth);
        console.log("attacked with", attack);
        console.log("defended with", defence);
-       spaceMarineHealth = spaceMarineHealth - (attack - defence);
-       console.log("new health",spaceMarineHealth);
+       adMechHealth = adMechHealth - (attack - defence);
+       console.log("new health",adMechHealth);
 
-       if(spaceMarineHealth <= 0) {
+       if(adMechHealth <= 0) {
            defeatPage();
        }  
        
-       if(i === 4 && spaceMarineHealth > 0){
+       if(i === 4 && adMechHealth > 0){
            victoryPage();    
-       } else if (i < spaceMarinesVsOrksQuestions.length){
+       } else if (i < adMechHealth.length){
            i++;
            console.log("next question: " + (i+1));
            nextQuestion();
