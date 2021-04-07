@@ -225,7 +225,7 @@ body {
     background-color: #ad2020;
     border: 2px solid #000000;
     border-radius: 5px;
-    font-size: 11px;
+    font-size: 15px;
     text-shadow: 1px 1px #000000;
     padding: 5px;
     margin: auto;
@@ -255,6 +255,10 @@ body {
 
     .talking-head-text {
         margin: auto;
+        font-size: 25px;
+    }
+
+    #talking-head-btn {
         font-size: 25px;
     }
 }
@@ -523,39 +527,69 @@ body {
 /* Victory Page */
 
 .victory-page{
-    width: 400px;
+    margin: auto;
+    width: 100vw;
     height: 400px;
-    background-color: #000000;
-    color:#fafafa;
+    text-align: center;
+    padding: 20px;
+}
+
+.victory-text{
+    font-size: 40px;
+    text-transform: uppercase;
+    color:#fcff4d;
 }
 
 .victory-button{
     justify-content: center;
     align-items: center;
+    margin-top: 200px;
 }
 
 #victory-btn{
-    font-size: 30px;
-        padding: 20px;
+    color: #fafafa;
+    background-color: #ad2020;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 20px;
+    text-shadow: 1px 1px #000000;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
 }
 
 /* Defeat Page */
 
 .defeat-page{
-    width: 400px;
+    margin: auto;
+    width: 100vw;
     height: 400px;
-    background-color: #000000;
-    color:#fafafa;
+    text-align: center;
+    padding: 20px;
+}
+
+.defeat-text{
+    font-size: 40px;
+    text-transform: uppercase;
+    color:#ad2020;
 }
 
 .defeat-button{
+    color: #fafafa;
     justify-content: center;
     align-items: center;
 }
 
 #defeat-btn{
-    font-size: 30px;
-        padding: 20px;
+    color: #fafafa;
+    background-color: #ad2020;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 20px;
+    text-shadow: 1px 1px #000000;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
 }
 
 /* Extra Utilties */
