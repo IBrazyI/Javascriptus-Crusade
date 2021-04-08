@@ -208,3 +208,345 @@ let guardVsOrksQuestions = [
         choiceThreePower: 60,
     }
 ]
+
+let spaceMarinesdVsChaosQuestions = [
+    {
+        question: '',
+        questionPower: 20,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower:,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 40,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 60,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 80,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 100,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    }
+]
+
+let adMechVsChaosQuestions = [
+    {
+        question: '',
+        questionPower: 20,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower:,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 40,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 60,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 80,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 100,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    }
+]
+
+let guardVsChaosQuestions = [
+    {
+        question: '',
+        questionPower: 20,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower:,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 40,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 60,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 80,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 100,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    }
+]
+
+let spaceMarinesVsTyranidsQuestions = [
+    {
+        question: '',
+        questionPower: 20,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower:,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 40,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 60,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 80,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 100,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    }
+]
+
+let adMechVsTyranidsQuestions = [
+    {
+        question: '',
+        questionPower: 20,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower:,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 40,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 60,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 80,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 100,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    }
+]
+
+let guardVsTyranidsQuestions = [
+    {
+        question: '',
+        questionPower: 20,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower:,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 40,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 60,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 80,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    },
+
+    {
+        question: '',
+        questionPower: 100,
+        choiceOne: '',
+        choiceOnePower: ,
+        choiceTwo: '',
+        choiceTwoPower: ,
+        choiceThree: '',
+        choiceThreePower: ,
+    }
+]
