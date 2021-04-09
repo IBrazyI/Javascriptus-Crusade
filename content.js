@@ -32,11 +32,14 @@ const faction = {
 
  /* Game Objects */
 
- const spaceMarineHealth = 125;
-
- const adMechHealth = 100;
-
- const guardHealth = 75;
+ let question = document.querySelector(".question-box");
+ let battleImage = document.querySelector(".question-image");
+ let answerOne = document.querySelector(".answer-one");
+ let answerTwo = document.querySelector(".answer-two");
+ let answerThree =  document.querySelector(".answer-three");
+ let i = 0;
+ let adMechHealth = 100;
+ let defence = 0;
 
 let spaceMarinesVsOrksQuestions = [
     {
@@ -209,7 +212,7 @@ let guardVsOrksQuestions = [
     }
 ]
 
-let spaceMarinesdVsChaosQuestions = [
+let spaceMarinesVsChaosQuestions = [
     {
         question: 'On arival to the planetary captial it is obvious somthing is not right. The populace are restless, many strange icons and idols adore the buildings in the lower part of the city. Bands of hooded men are roaming the streets chanting foul incantations and there have been clashes with local defence forces.',
         questionPower: 20,
