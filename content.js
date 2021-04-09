@@ -327,12 +327,12 @@ let adMechVsChaosQuestions = [
 //     {
 //         question: 'On arival to the planetary captial it is obvious somthing is not right. The populace are restless, many strange icons and idols adore the buildings in the lower part of the city. Bands of hooded men are roaming the streets chanting foul incantations and there have been clashes with local defence forces.',
 //         questionPower: 20,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower:,
-//         choiceThree: '',
-//         choiceThreePower: ,
+//         choiceOne: 'Intergrate your troops with the local defence forces and increase number of patrols and shakedowns of these areas.',
+//         choiceOnePower: 10,
+//         choiceTwo: 'Sanction local priests to enter the areas, their sermons and relegious feurvor shall settle the people.',
+//         choiceTwoPower: 10,
+//         choiceThree: 'Keep your troops out of these "corrupted" areas and make sure key personal and facilities are defended',
+//         choiceThreePower: 5,
 //     },
 
 //     {

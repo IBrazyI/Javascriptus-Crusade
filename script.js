@@ -305,9 +305,9 @@ function spaceMarinesVsChaos() {
     let i = 0;
     let spaceMarineHealth = 125;
     let defence = 0;
-    let optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;
-    let optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    let optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    let optionOne = spaceMarinesdVsChaosQuestions[i].choiceOnePower;
+    let optionTwo = spaceMarinesdVsChaosQuestions[i].choiceTwoPower;
+    let optionThree = spaceMarinesdVsChaosQuestions[i].choiceThreePower;
 
     console.log("start game");
     console.log("starting health",spaceMarineHealth);
@@ -317,14 +317,14 @@ function spaceMarinesVsChaos() {
 
    function nextQuestion() {
 
-    question.innerHTML = spaceMarinesVsOrksQuestions[i].question;
-    answerOne.innerHTML = spaceMarinesVsOrksQuestions[i].choiceOne;
-    answerTwo.innerHTML = spaceMarinesVsOrksQuestions[i].choiceTwo;
-    answerThree.innerHTML = spaceMarinesVsOrksQuestions[i].choiceThree;
-    attack = spaceMarinesVsOrksQuestions[i].questionPower;
-    optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;  
-    optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    question.innerHTML = spaceMarinesdVsChaosQuestions[i].question;
+    answerOne.innerHTML = spaceMarinesdVsChaosQuestions[i].choiceOne;
+    answerTwo.innerHTML = spaceMarinesdVsChaosQuestions[i].choiceTwo;
+    answerThree.innerHTML = spaceMarinesdVsChaosQuestions[i].choiceThree;
+    attack = sspaceMarinesdVsChaosQuestions[i].questionPower;
+    optionOne = spaceMarinesdVsChaosQuestions[i].choiceOnePower;  
+    optionTwo = spaceMarinesdVsChaosQuestions[i].choiceTwoPower;
+    optionThree = spaceMarinesdVsChaosQuestions[i].choiceThreePower;
 
    answerOne.onclick = function(){defence = optionOne; fight()};
    answerTwo.onclick = function(){defence = optionTwo; fight()}; 
@@ -345,7 +345,7 @@ function spaceMarinesVsChaos() {
        
        if(i === 4 && spaceMarineHealth > 0){
            victoryPage();    
-       } else if (i < spaceMarinesVsOrksQuestions.length){
+       } else if (i < spaceMarinesdVsChaosQuestions.length){
            i++;
            console.log("next question: " + (i+1));
            nextQuestion();
@@ -353,18 +353,28 @@ function spaceMarinesVsChaos() {
     };
     
     function victoryPage() {
+        let victoryBtn = document.querySelector("#victory-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".victory-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        victoryBtn.onclick = function(){
+            document.querySelector(".victory-page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };    
 
     function defeatPage() {
+        let defeatBtn = document.querySelector("#defeat-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".defeat-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        defeatBtn.onclick = function(){
+            document.querySelector(".defeat.page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };
 
 }
 
@@ -376,9 +386,9 @@ function spaceMarinesVsTyranids() {
     let i = 0;
     let spaceMarineHealth = 125;
     let defence = 0;
-    let optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;
-    let optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    let optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    let optionOne = spaceMarinesVsTyranidsQuestions[i].choiceOnePower;
+    let optionTwo = spaceMarinesVsTyranidsQuestions[i].choiceTwoPower;
+    let optionThree = spaceMarinesVsTyranidsQuestions[i].choiceThreePower;
 
     console.log("start game");
     console.log("starting health",spaceMarineHealth);
@@ -388,14 +398,14 @@ function spaceMarinesVsTyranids() {
 
    function nextQuestion() {
 
-    question.innerHTML = spaceMarinesVsOrksQuestions[i].question;
-    answerOne.innerHTML = spaceMarinesVsOrksQuestions[i].choiceOne;
-    answerTwo.innerHTML = spaceMarinesVsOrksQuestions[i].choiceTwo;
-    answerThree.innerHTML = spaceMarinesVsOrksQuestions[i].choiceThree;
-    attack = spaceMarinesVsOrksQuestions[i].questionPower;
-    optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;  
-    optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    question.innerHTML = spaceMarinesVsTyranidsQuestions[i].question;
+    answerOne.innerHTML = spaceMarinesVsTyranidsQuestions[i].choiceOne;
+    answerTwo.innerHTML = spaceMarinesVsTyranidsQuestions[i].choiceTwo;
+    answerThree.innerHTML = spaceMarinesVsTyranidsQuestions[i].choiceThree;
+    attack = spaceMarinesVsTyranidsQuestions[i].questionPower;
+    optionOne = spaceMarinesVsTyranidsQuestions[i].choiceOnePower;  
+    optionTwo = spaceMarinesVsTyranidsQuestions[i].choiceTwoPower;
+    optionThree = spaceMarinesVsTyranidsQuestions[i].choiceThreePower;
 
    answerOne.onclick = function(){defence = optionOne; fight()};
    answerTwo.onclick = function(){defence = optionTwo; fight()}; 
@@ -416,7 +426,7 @@ function spaceMarinesVsTyranids() {
        
        if(i === 4 && spaceMarineHealth > 0){
            victoryPage();    
-       } else if (i < spaceMarinesVsOrksQuestions.length){
+       } else if (i < spaceMarinesVsTyranidsQuestions.length){
            i++;
            console.log("next question: " + (i+1));
            nextQuestion();
@@ -424,18 +434,28 @@ function spaceMarinesVsTyranids() {
     };
     
     function victoryPage() {
+        let victoryBtn = document.querySelector("#victory-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".victory-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        victoryBtn.onclick = function(){
+            document.querySelector(".victory-page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };    
 
     function defeatPage() {
+        let defeatBtn = document.querySelector("#defeat-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".defeat-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        defeatBtn.onclick = function(){
+            document.querySelector(".defeat.page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };
 
 }
 
@@ -495,18 +515,28 @@ function adMechVsOrks() {
     };
     
     function victoryPage() {
+        let victoryBtn = document.querySelector("#victory-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".victory-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        victoryBtn.onclick = function(){
+            document.querySelector(".victory-page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };    
 
     function defeatPage() {
+        let defeatBtn = document.querySelector("#defeat-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".defeat-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        defeatBtn.onclick = function(){
+            document.querySelector(".defeat.page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };
 
 }
 
@@ -516,28 +546,28 @@ function adMechVsChaos() {
     let answerTwo = document.querySelector(".answer-two");
     let answerThree =  document.querySelector(".answer-three");
     let i = 0;
-    let spaceMarineHealth = 125;
+    let adMechHealth = 100;
     let defence = 0;
-    let optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;
-    let optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    let optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    let optionOne = adMechVsChaosQuestions[i].choiceOnePower;
+    let optionTwo = adMechVsChaosQuestions[i].choiceTwoPower;
+    let optionThree = adMechVsChaosQuestions[i].choiceThreePower;
 
     console.log("start game");
-    console.log("starting health",spaceMarineHealth);
+    console.log("starting health",adMechHealth);
     nextQuestion();
     
    
 
    function nextQuestion() {
 
-    question.innerHTML = spaceMarinesVsOrksQuestions[i].question;
-    answerOne.innerHTML = spaceMarinesVsOrksQuestions[i].choiceOne;
-    answerTwo.innerHTML = spaceMarinesVsOrksQuestions[i].choiceTwo;
-    answerThree.innerHTML = spaceMarinesVsOrksQuestions[i].choiceThree;
-    attack = spaceMarinesVsOrksQuestions[i].questionPower;
-    optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;  
-    optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    question.innerHTML = adMechVsChaosQuestions[i].question;
+    answerOne.innerHTML = adMechVsChaosQuestions[i].choiceOne;
+    answerTwo.innerHTML = adMechVsChaosQuestions[i].choiceTwo;
+    answerThree.innerHTML = adMechVsChaosQuestions[i].choiceThree;
+    attack = adMechVsChaosQuestions[i].questionPower;
+    optionOne = adMechVsChaosQuestions[i].choiceOnePower;  
+    optionTwo = adMechVsChaosQuestions[i].choiceTwoPower;
+    optionThree = adMechVsChaosQuestions[i].choiceThreePower;
 
    answerOne.onclick = function(){defence = optionOne; fight()};
    answerTwo.onclick = function(){defence = optionTwo; fight()}; 
@@ -546,19 +576,19 @@ function adMechVsChaos() {
    };
 
    function fight() {
-       console.log("current health", spaceMarineHealth);
+       console.log("current health", adMechHealth);
        console.log("attacked with", attack);
        console.log("defended with", defence);
-       spaceMarineHealth = spaceMarineHealth - (attack - defence);
-       console.log("new health",spaceMarineHealth);
+       adMechHealth = adMechHealth - (attack - defence);
+       console.log("new health",adMechHealth);
 
-       if(spaceMarineHealth <= 0) {
+       if(adMechHealth <= 0) {
            defeatPage();
        }  
        
-       if(i === 4 && spaceMarineHealth > 0){
+       if(i === 4 && adMechHealth > 0){
            victoryPage();    
-       } else if (i < spaceMarinesVsOrksQuestions.length){
+       } else if (i < adMechVsChaosQuestions.length){
            i++;
            console.log("next question: " + (i+1));
            nextQuestion();
@@ -566,18 +596,28 @@ function adMechVsChaos() {
     };
     
     function victoryPage() {
+        let victoryBtn = document.querySelector("#victory-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".victory-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        victoryBtn.onclick = function(){
+            document.querySelector(".victory-page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };    
 
     function defeatPage() {
+        let defeatBtn = document.querySelector("#defeat-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".defeat-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        defeatBtn.onclick = function(){
+            document.querySelector(".defeat.page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };
 
 }
 
@@ -587,28 +627,28 @@ function adMechVsTyranids() {
     let answerTwo = document.querySelector(".answer-two");
     let answerThree =  document.querySelector(".answer-three");
     let i = 0;
-    let spaceMarineHealth = 125;
+    let adMechHealth = 100;
     let defence = 0;
-    let optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;
-    let optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    let optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    let optionOne = adMechVsTyranidsQuestions[i].choiceOnePower;
+    let optionTwo = adMechVsTyranidsQuestions[i].choiceTwoPower;
+    let optionThree = adMechVsTyranidsQuestions[i].choiceThreePower;
 
     console.log("start game");
-    console.log("starting health",spaceMarineHealth);
+    console.log("starting health",adMechHealth);
     nextQuestion();
     
    
 
    function nextQuestion() {
 
-    question.innerHTML = spaceMarinesVsOrksQuestions[i].question;
-    answerOne.innerHTML = spaceMarinesVsOrksQuestions[i].choiceOne;
-    answerTwo.innerHTML = spaceMarinesVsOrksQuestions[i].choiceTwo;
-    answerThree.innerHTML = spaceMarinesVsOrksQuestions[i].choiceThree;
-    attack = spaceMarinesVsOrksQuestions[i].questionPower;
-    optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;  
-    optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    question.innerHTML = adMechVsTyranidsQuestions[i].question;
+    answerOne.innerHTML = adMechVsTyranidsQuestions[i].choiceOne;
+    answerTwo.innerHTML = adMechVsTyranidsQuestions[i].choiceTwo;
+    answerThree.innerHTML = adMechVsTyranidsQuestions[i].choiceThree;
+    attack = adMechVsTyranidsQuestions[i].questionPower;
+    optionOne = adMechVsTyranidsQuestions[i].choiceOnePower;  
+    optionTwo = adMechVsTyranidsQuestions[i].choiceTwoPower;
+    optionThree = adMechVsTyranidsQuestions[i].choiceThreePower;
 
    answerOne.onclick = function(){defence = optionOne; fight()};
    answerTwo.onclick = function(){defence = optionTwo; fight()}; 
@@ -617,19 +657,19 @@ function adMechVsTyranids() {
    };
 
    function fight() {
-       console.log("current health", spaceMarineHealth);
+       console.log("current health", adMechHealth);
        console.log("attacked with", attack);
        console.log("defended with", defence);
-       spaceMarineHealth = spaceMarineHealth - (attack - defence);
-       console.log("new health",spaceMarineHealth);
+       adMechHealth = adMechHealth - (attack - defence);
+       console.log("new health",adMechHealth);
 
-       if(spaceMarineHealth <= 0) {
+       if(adMechHealth <= 0) {
            defeatPage();
        }  
        
-       if(i === 4 && spaceMarineHealth > 0){
+       if(i === 4 && adMechHealth > 0){
            victoryPage();    
-       } else if (i < spaceMarinesVsOrksQuestions.length){
+       } else if (i < adMechVsTyranidsQuestions.length){
            i++;
            console.log("next question: " + (i+1));
            nextQuestion();
@@ -637,18 +677,28 @@ function adMechVsTyranids() {
     };
     
     function victoryPage() {
+        let victoryBtn = document.querySelector("#victory-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".victory-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        victoryBtn.onclick = function(){
+            document.querySelector(".victory-page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };    
 
     function defeatPage() {
+        let defeatBtn = document.querySelector("#defeat-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".defeat-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        defeatBtn.onclick = function(){
+            document.querySelector(".defeat.page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };
 
 }
 
@@ -708,18 +758,28 @@ function guardVsOrks() {
     };
     
     function victoryPage() {
+        let victoryBtn = document.querySelector("#victory-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".victory-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        victoryBtn.onclick = function(){
+            document.querySelector(".victory-page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };    
 
     function defeatPage() {
+        let defeatBtn = document.querySelector("#defeat-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".defeat-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        defeatBtn.onclick = function(){
+            document.querySelector(".defeat.page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };
 
 }
 
@@ -729,28 +789,28 @@ function guardVsChaos() {
     let answerTwo = document.querySelector(".answer-two");
     let answerThree =  document.querySelector(".answer-three");
     let i = 0;
-    let spaceMarineHealth = 125;
+    let guardHealth = 75;
     let defence = 0;
-    let optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;
-    let optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    let optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    let optionOne = guardVsChaosQuestions[i].choiceOnePower;
+    let optionTwo = guardVsChaosQuestions[i].choiceTwoPower;
+    let optionThree = guardVsChaosQuestions[i].choiceThreePower;
 
     console.log("start game");
-    console.log("starting health",spaceMarineHealth);
+    console.log("starting health",guardHealth);
     nextQuestion();
     
    
 
    function nextQuestion() {
 
-    question.innerHTML = spaceMarinesVsOrksQuestions[i].question;
-    answerOne.innerHTML = spaceMarinesVsOrksQuestions[i].choiceOne;
-    answerTwo.innerHTML = spaceMarinesVsOrksQuestions[i].choiceTwo;
-    answerThree.innerHTML = spaceMarinesVsOrksQuestions[i].choiceThree;
-    attack = spaceMarinesVsOrksQuestions[i].questionPower;
-    optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;  
-    optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    question.innerHTML = guardVsChaosQuestions[i].question;
+    answerOne.innerHTML = guardVsChaosQuestions[i].choiceOne;
+    answerTwo.innerHTML = guardVsChaosQuestions[i].choiceTwo;
+    answerThree.innerHTML = guardVsChaosQuestions[i].choiceThree;
+    attack = guardVsChaosQuestions[i].questionPower;
+    optionOne = guardVsChaosQuestions[i].choiceOnePower;  
+    optionTwo = guardVsChaosQuestions[i].choiceTwoPower;
+    optionThree = guardVsChaosQuestions[i].choiceThreePower;
 
    answerOne.onclick = function(){defence = optionOne; fight()};
    answerTwo.onclick = function(){defence = optionTwo; fight()}; 
@@ -759,19 +819,19 @@ function guardVsChaos() {
    };
 
    function fight() {
-       console.log("current health", spaceMarineHealth);
+       console.log("current health", guardHealth);
        console.log("attacked with", attack);
        console.log("defended with", defence);
-       spaceMarineHealth = spaceMarineHealth - (attack - defence);
-       console.log("new health",spaceMarineHealth);
+       guardHealth = guardHealth - (attack - defence);
+       console.log("new health",guardHealth);
 
-       if(spaceMarineHealth <= 0) {
+       if(guardHealth <= 0) {
            defeatPage();
        }  
        
-       if(i === 4 && spaceMarineHealth > 0){
+       if(i === 4 && guardHealth > 0){
            victoryPage();    
-       } else if (i < spaceMarinesVsOrksQuestions.length){
+       } else if (i < guardVsChaosQuestions.length){
            i++;
            console.log("next question: " + (i+1));
            nextQuestion();
@@ -779,18 +839,28 @@ function guardVsChaos() {
     };
     
     function victoryPage() {
+        let victoryBtn = document.querySelector("#victory-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".victory-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        victoryBtn.onclick = function(){
+            document.querySelector(".victory-page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };    
 
     function defeatPage() {
+        let defeatBtn = document.querySelector("#defeat-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".defeat-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        defeatBtn.onclick = function(){
+            document.querySelector(".defeat.page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };
 
 }
 
@@ -802,26 +872,26 @@ function guardVsTyranids() {
     let i = 0;
     let spaceMarineHealth = 125;
     let defence = 0;
-    let optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;
-    let optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    let optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    let optionOne = guardVsTyranidsQuestions[i].choiceOnePower;
+    let optionTwo = guardVsTyranidsQuestions[i].choiceTwoPower;
+    let optionThree = guardVsTyranidsQuestions[i].choiceThreePower;
 
     console.log("start game");
-    console.log("starting health",spaceMarineHealth);
+    console.log("starting health",guardHealth);
     nextQuestion();
     
    
 
    function nextQuestion() {
 
-    question.innerHTML = spaceMarinesVsOrksQuestions[i].question;
-    answerOne.innerHTML = spaceMarinesVsOrksQuestions[i].choiceOne;
-    answerTwo.innerHTML = spaceMarinesVsOrksQuestions[i].choiceTwo;
-    answerThree.innerHTML = spaceMarinesVsOrksQuestions[i].choiceThree;
-    attack = spaceMarinesVsOrksQuestions[i].questionPower;
-    optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;  
-    optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
-    optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
+    question.innerHTML = guardVsTyranidsQuestions[i].question;
+    answerOne.innerHTML = guardVsTyranidsQuestions[i].choiceOne;
+    answerTwo.innerHTML = guardVsTyranidsQuestions[i].choiceTwo;
+    answerThree.innerHTML = guardVsTyranidsQuestions[i].choiceThree;
+    attack = guardVsTyranidsQuestions[i].questionPower;
+    optionOne = guardVsTyranidsQuestions[i].choiceOnePower;  
+    optionTwo = guardVsTyranidsQuestions[i].choiceTwoPower;
+    optionThree = guardVsTyranidsQuestions[i].choiceThreePower;
 
    answerOne.onclick = function(){defence = optionOne; fight()};
    answerTwo.onclick = function(){defence = optionTwo; fight()}; 
@@ -830,19 +900,19 @@ function guardVsTyranids() {
    };
 
    function fight() {
-       console.log("current health", spaceMarineHealth);
+       console.log("current health", guardHealth);
        console.log("attacked with", attack);
        console.log("defended with", defence);
-       spaceMarineHealth = spaceMarineHealth - (attack - defence);
-       console.log("new health",spaceMarineHealth);
+       guardHealth = guardHealth - (attack - defence);
+       console.log("new health",guardHealth);
 
-       if(spaceMarineHealth <= 0) {
+       if(guardHealth <= 0) {
            defeatPage();
        }  
        
-       if(i === 4 && spaceMarineHealth > 0){
+       if(i === 4 && guardHealth > 0){
            victoryPage();    
-       } else if (i < spaceMarinesVsOrksQuestions.length){
+       } else if (i < guardVsTyranidsQuestions.length){
            i++;
            console.log("next question: " + (i+1));
            nextQuestion();
@@ -850,18 +920,28 @@ function guardVsTyranids() {
     };
     
     function victoryPage() {
+        let victoryBtn = document.querySelector("#victory-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".victory-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        victoryBtn.onclick = function(){
+            document.querySelector(".victory-page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };    
 
     function defeatPage() {
+        let defeatBtn = document.querySelector("#defeat-btn");
         document.getElementById("game-area").classList.add('remove');
         document.querySelector(".defeat-page").classList.remove('remove');
         localStorage.clear();
         console.log(localStorage);
-     };
+        defeatBtn.onclick = function(){
+            document.querySelector(".defeat.page").classList.add('remove');
+            document.getElementById("faction-selection").classList.remove('remove');
+        };
+    };
 
 }
 introSequence();
