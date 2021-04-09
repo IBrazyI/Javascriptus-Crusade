@@ -19,6 +19,10 @@ const faction = {
 
  /* Talking Head */
 
+ let talkingHead = document.querySelector(".talking-head-box");
+ let talkingHeadTxt = document.querySelector("#talking-head-text");
+ let talkingHeadBtn = document.querySelector("#talking-head-btn");
+
  let talkingHeadGreet =
  "Greetings commander... you have been assigned to the defence of the planet OMACRON DONACUS 32... you will need to choose which of the Imperiums armys will command to defend it...";
  let talkingHeadGreetTwo =

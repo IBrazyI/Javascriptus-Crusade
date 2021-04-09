@@ -46,48 +46,44 @@ function introSequence(){
         document.getElementById("faction-selection").classList.remove('remove');
         document.getElementById("header").classList.remove('remove');
         document.querySelector(".talking-head-box").classList.remove('remove');
+        factionSelection();
+        toggleTalkingHead();
     };
 
 }
 
 /* Talking Head */
+function removeTalkingHead() {
+    talkingHead.classList.add('remove');
+};
 
-function talkingHead() {
-    let talkingHead = document.querySelector(".talking-head-box");
-    let talkingHeadTxt = document.querySelector("#talking-head-text");
-    let talkingHeadBtn = document.querySelector("#talking-head-btn");
+function toggleTalkingHead() {
     talkingHeadTxt.innerHTML = talkingHeadGreet;
-    talkingHeadBtn.addEventListener("click", talkingHeadFaction);
+    talkingHeadBtn.onclick = factionText;
   
-    function talkingHeadFaction() {
+    function factionText() {
         talkingHeadTxt.innerHTML = talkingHeadGreetTwo;
         talkingHeadBtn.onclick = removeTalkingHead;
     };
-
-    function removeTalkingHead() {
-        talkingHead.classList.add('remove');
-    };
 }   
 
-function enemyHead() {
-    let talkingHead = document.querySelector(".talking-head-box");
-    let talkingHeadTxt = document.querySelector("#talking-head-text");
-    let talkingHeadBtn = document.querySelector("#talking-head-btn");
+function enemyText() {
     talkingHeadTxt.innerHTML = talkingHeadEnemy;
     talkingHead.classList.remove('remove');
+    talkingHeadBtn.onclick = removeTalkingHead;
 }
 
-function headGame() {
-    let talkingHead = document.querySelector(".talking-head-box");
-    let talkingHeadTxt = document.querySelector("#talking-head-text");
-    let talkingHeadBtn = document.querySelector("#talking-head-btn");
-    talkingHeadTxt.innerHTML = talkingHeadGameTwo;
+function gameText() {
+    talkingHeadTxt.innerHTML = talkingHeadGame;
     talkingHead.classList.remove('remove'); 
-    talkingHeadBtn.onclick = newText();
+    talkingHeadBtn.onclick = newText;
 
     function newText() {
-        talkingHeadTxt.innerHTML = talkingHeadGame;
+        talkingHeadTxt.innerHTML = talkingHeadGameTwo;
+        talkingHeadBtn.onclick = removeTalkingHead;
     };
+
+    
 
     
 }
@@ -133,6 +129,8 @@ function factionSelection() {
         document.getElementById("enemy-selection").classList.remove('remove');
         localStorage.setItem("selectedFaction", name);
         console.log(localStorage);
+        enemyText();
+        enemySelection();
     };
     
 }
@@ -141,6 +139,7 @@ function enemySelection() {
     let orks = document.getElementById("orks-image");
     let chaos = document.getElementById("chaos-image");
     let tyranids = document.getElementById("tyranids-image");
+
 
     orks.addEventListener('mouseenter', () => mouseEnterHandler("orks"));
     orks.addEventListener('mouseleave', () => mouseLeaveHandler("orks"));
@@ -174,6 +173,8 @@ function enemySelection() {
         document.getElementById("game-area").classList.remove('remove');
         localStorage.setItem("selectedEnemy", name);
         console.log(localStorage);
+        campaignSelection();
+        gameText();
     };
 
 }
@@ -888,7 +889,4 @@ function guardVsTyranids() {
 
 }
 introSequence();
-talkingHead();
-factionSelection();
-enemySelection();
-campaignSelection();
+
