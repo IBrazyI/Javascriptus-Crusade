@@ -38,7 +38,9 @@ const faction = {
  let answerTwo = document.querySelector(".answer-two");
  let answerThree =  document.querySelector(".answer-three");
  let i = 0;
+ let spaceMarineHealth = 125;
  let adMechHealth = 100;
+ let guardHealth = 75;
  let defence = 0;
 
 let spaceMarinesVsOrksQuestions = [

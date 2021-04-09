@@ -216,14 +216,6 @@ function campaignSelection() {
 };
 
 function spaceMarinesVsOrks() {
-    let question = document.querySelector(".question-box");
-    let battleImage = document.querySelector(".question-image");
-    let answerOne = document.querySelector(".answer-one");
-    let answerTwo = document.querySelector(".answer-two");
-    let answerThree =  document.querySelector(".answer-three");
-    let i = 0;
-    let spaceMarineHealth = 125;
-    let defence = 0;
     let optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;
     let optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
     let optionThree = spaceMarinesVsOrksQuestions[i].choiceThreePower;
@@ -231,8 +223,6 @@ function spaceMarinesVsOrks() {
     console.log("start game");
     console.log("starting health",spaceMarineHealth);
     nextQuestion();
-    
-   
 
    function nextQuestion() {
 
@@ -299,14 +289,6 @@ function spaceMarinesVsOrks() {
 }
 
 function spaceMarinesVsChaos() {
-    let question = document.querySelector(".question-box");
-    let battleImage = document.querySelector(".question-image");
-    let answerOne = document.querySelector(".answer-one");
-    let answerTwo = document.querySelector(".answer-two");
-    let answerThree =  document.querySelector(".answer-three");
-    let i = 0;
-    let spaceMarineHealth = 125;
-    let defence = 0;
     let optionOne = spaceMarinesVsChaosQuestions[i].choiceOnePower;
     let optionTwo = spaceMarinesVsChaosQuestions[i].choiceTwoPower;
     let optionThree = spaceMarinesVsChaosQuestions[i].choiceThreePower;
@@ -316,8 +298,6 @@ function spaceMarinesVsChaos() {
     console.log("start game");
     console.log("starting health",spaceMarineHealth);
     nextQuestion();
-    
-   
 
    function nextQuestion() {
 
@@ -383,14 +363,6 @@ function spaceMarinesVsChaos() {
 }
 
 function spaceMarinesVsTyranids() {
-    let question = document.querySelector(".question-box");
-    let battleImage = document.querySelector(".question-image")
-    let answerOne = document.querySelector(".answer-one");
-    let answerTwo = document.querySelector(".answer-two");
-    let answerThree =  document.querySelector(".answer-three");
-    let i = 0;
-    let spaceMarineHealth = 125;
-    let defence = 0;
     let optionOne = spaceMarinesVsTyranidsQuestions[i].choiceOnePower;
     let optionTwo = spaceMarinesVsTyranidsQuestions[i].choiceTwoPower;
     let optionThree = spaceMarinesVsTyranidsQuestions[i].choiceThreePower;
@@ -401,8 +373,6 @@ function spaceMarinesVsTyranids() {
     console.log("starting health",spaceMarineHealth);
     nextQuestion();
     
-   
-
    function nextQuestion() {
 
     question.innerHTML = spaceMarinesVsTyranidsQuestions[i].question;
@@ -543,13 +513,6 @@ function adMechVsOrks() {
 }
 
 function adMechVsChaos() {
-    let question = document.querySelector(".question-box");
-    let answerOne = document.querySelector(".answer-one");
-    let answerTwo = document.querySelector(".answer-two");
-    let answerThree =  document.querySelector(".answer-three");
-    let i = 0;
-    let adMechHealth = 100;
-    let defence = 0;
     let optionOne = adMechVsChaosQuestions[i].choiceOnePower;
     let optionTwo = adMechVsChaosQuestions[i].choiceTwoPower;
     let optionThree = adMechVsChaosQuestions[i].choiceThreePower;
@@ -558,7 +521,7 @@ function adMechVsChaos() {
     console.log("starting health",adMechHealth);
     nextQuestion();
     
-   
+    battleImage.style.backgroundImage = "url('../assets/images/admech6.jpg')";
 
    function nextQuestion() {
 
@@ -624,23 +587,16 @@ function adMechVsChaos() {
 }
 
 function adMechVsTyranids() {
-    let question = document.querySelector(".question-box");
-    let answerOne = document.querySelector(".answer-one");
-    let answerTwo = document.querySelector(".answer-two");
-    let answerThree =  document.querySelector(".answer-three");
-    let i = 0;
-    let adMechHealth = 100;
-    let defence = 0;
     let optionOne = adMechVsTyranidsQuestions[i].choiceOnePower;
     let optionTwo = adMechVsTyranidsQuestions[i].choiceTwoPower;
     let optionThree = adMechVsTyranidsQuestions[i].choiceThreePower;
+
+    battleImage.style.backgroundImage = "url('../assets/images/admech1.jpg')";
 
     console.log("start game");
     console.log("starting health",adMechHealth);
     nextQuestion();
     
-   
-
    function nextQuestion() {
 
     question.innerHTML = adMechVsTyranidsQuestions[i].question;
@@ -705,16 +661,11 @@ function adMechVsTyranids() {
 }
 
 function guardVsOrks() {
-    let question = document.querySelector(".question-box");
-    let answerOne = document.querySelector(".answer-one");
-    let answerTwo = document.querySelector(".answer-two");
-    let answerThree =  document.querySelector(".answer-three");
-    let i = 0;
-    let guardHealth = 75;
-    let defence = 0;
     let optionOne = guardVsOrksQuestions[i].choiceOnePower;
     let optionTwo = guardVsOrksQuestions[i].choiceTwoPower;
     let optionThree = guardVsOrksQuestions[i].choiceThreePower;
+
+    battleImage.style.backgroundImage = "url('../assets/images/orks3.jpg')";
 
     console.log("start game");
     console.log("starting health",guardHealth);
@@ -786,16 +737,11 @@ function guardVsOrks() {
 }
 
 function guardVsChaos() {
-    let question = document.querySelector(".question-box");
-    let answerOne = document.querySelector(".answer-one");
-    let answerTwo = document.querySelector(".answer-two");
-    let answerThree =  document.querySelector(".answer-three");
-    let i = 0;
-    let guardHealth = 75;
-    let defence = 0;
     let optionOne = guardVsChaosQuestions[i].choiceOnePower;
     let optionTwo = guardVsChaosQuestions[i].choiceTwoPower;
     let optionThree = guardVsChaosQuestions[i].choiceThreePower;
+
+    battleImage.style.backgroundImage = "url('../assets/images/guard3.jpg')";
 
     console.log("start game");
     console.log("starting health",guardHealth);
@@ -867,16 +813,11 @@ function guardVsChaos() {
 }
 
 function guardVsTyranids() {
-    let question = document.querySelector(".question-box");
-    let answerOne = document.querySelector(".answer-one");
-    let answerTwo = document.querySelector(".answer-two");
-    let answerThree =  document.querySelector(".answer-three");
-    let i = 0;
-    let spaceMarineHealth = 125;
-    let defence = 0;
     let optionOne = guardVsTyranidsQuestions[i].choiceOnePower;
     let optionTwo = guardVsTyranidsQuestions[i].choiceTwoPower;
     let optionThree = guardVsTyranidsQuestions[i].choiceThreePower;
+
+    battleImage.style.backgroundImage = "url('../assets/images/tyranids1.jpg')";
 
     console.log("start game");
     console.log("starting health",guardHealth);
