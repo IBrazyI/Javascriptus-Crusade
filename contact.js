@@ -37,6 +37,7 @@ let nameInputText = document.createTextNode("Insert you name here!");
 let suggestionInput = document.createTextNode("What factions or enemies would you like to see in the game?");
 let mailListText = document.createTextNode("Register with us and be notified of all updates to the game!");
 let emailInput = document.createTextNode("Input your email here!");
+let submitText = document.createTextNode("Submit.");
 
 /*Containers Append*/
 document.body.appendChild(contactContainer);
@@ -67,6 +68,9 @@ nameInput.setAttribute('type', 'text');
 nameInput.placeholder = nameInputText.wholeText;
 userInput.setAttribute('type', 'text');
 userInput.placeholder = suggestionInput.wholeText;
+suggestionSubmit.setAttribute('type', 'button');
+suggestionSubmit.textContent = submitText.wholeText;
 emailAddressInput.setAttribute('type', 'email');
 emailAddressInput.placeholder = emailInput.wholeText;
-emailSumbitButton.setAttribute('type', 'button')
+emailSumbitButton.setAttribute('type', 'button');
+emailSumbitButton.textContent = submitText.wholeText;
