@@ -607,23 +607,28 @@ body {
 /*Contact Page*/
  .email-container{
      color: #fafafa;
+     background-color: #85858550;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
      text-align: center;
-     padding: 0px 15px 0px 15px;
+     padding: 20px 15px 20px 15px;
      margin: 10px 0px 10px 0px;
  }
 
  .title-container{
      color: #fafafa;
+     font-size: 16px;
+     text-transform: uppercase;
      text-align: center;
      padding: 0px;
+     font-family: 'Pathway Gothic One', sans-serif;
  }
 
  .para-container{
      color: #fafafa;
+     font-size: 16px;
      text-align: center;
      margin: 10px 0px 10px 0px;
  }
@@ -637,36 +642,97 @@ body {
  }
 
  #name-input{
-    background-color: red;
+    background-color: #000000;
+    font-size: 16px;
+    color: #fafafa;
     margin: 10px 0px 10px 0px;
+    font-family: 'Recursive', sans-serif;
+ }
+
+ #name-input:focus{
+     transition-duration: 1s;
+     border: 2px solid #ad2020;
  }
 
  #user-input{
-    background-color: green;
+    background-color: #000000;
+    text-align: left;
+    font-size: 16px;
+    color: #fafafa;
     margin: 10px 0px 10px 0px;
+    font-family: 'Recursive', sans-serif;
+    width: 70vw;
+    min-height: 150px;
+    resize: none;
+    
  }
 
- #suggeston-submit{
-    background-color: violet;
+ #user-input:focus{
+    transition-duration: 1s;
+    border: 2px solid #ad2020;
+    
+}
+
+ #suggestion-submit{
+    background-color: #000000;
+    color: #fafafa;
     margin: 10px auto 10px auto;
+    background-color: #ad2020;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 15px;
+    text-shadow: 1px 1px #000000;
+    padding: 5px;
+    margin: auto;
+ }
+
+ #suggestion-submit:hover{
+    transition-duration: 1s;
+    color: #000000;
+    border: 2px solid #fafafa;
+    cursor: pointer;
+    box-shadow: none;
  }
 
  .email-validation-container{
      color: #fafafa;
-     display: flex;
-     flex-direction: column;
      margin: 20px 0px 20px 0px;
 
  }
 
  #email-input{
-    background-color: blue;
-    margin: 10px auto 10px auto;
+    background-color: #000000;
+    font-size: 16px;
+    color: #fafafa;
+    margin: 10px 50px 10px 50px;
+    font-family: 'Recursive', sans-serif;
  }
 
+ #email-input:focus{
+    transition-duration: 1s;
+    border: 2px solid #ad2020;
+}
+
+
  #email-submit{
-    background-color: yellow;
+    background-color: #000000;
+    color: #fafafa;
     margin: 10px auto 10px auto;
+    background-color: #ad2020;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 15px;
+    text-shadow: 1px 1px #000000;
+    padding: 5px;
+    margin: auto;
+ }
+
+ #email-submit:hover{
+    transition-duration: 1s;
+    color: #000000;
+    border: 2px solid #fafafa;
+    cursor: pointer;
+    box-shadow: none;
  }
 
 

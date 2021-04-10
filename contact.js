@@ -17,7 +17,7 @@ emailValidationContainer.classList.add("email-validator-container");
 let titleElement =document.createElement('h1');
 let paraElement = document.createElement('p');
 let nameInput = document.createElement('input');
-let userInput = document.createElement('input');
+let userInput = document.createElement('textarea');
 let suggestionSubmit = document.createElement('button');
 let mailListElement = document.createElement('p');
 let emailAddressInput = document.createElement('input');
@@ -66,7 +66,7 @@ mailListElement.appendChild(mailListText);
 /*Input Type*/
 nameInput.setAttribute('type', 'text');
 nameInput.placeholder = nameInputText.wholeText;
-userInput.setAttribute('type', 'text');
+userInput.setAttribute('type', 'textarea');
 userInput.placeholder = suggestionInput.wholeText;
 suggestionSubmit.setAttribute('type', 'button');
 suggestionSubmit.textContent = submitText.wholeText;
