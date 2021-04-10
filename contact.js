@@ -38,6 +38,11 @@ titleContainer.appendChild(titleElement);
 
 paraContainer.appendChild(paraElement);
 
+formContainer.appendChild(nameInput);
+formContainer.appendChild(userInput);
+
+emailValidationContainer.appendChild(emailAddressInput);
+emailValidationContainer.appendChild(emailSumbitButton);
 /*Elements*/
 titleElement.appendChild(titleText);
 paraElement.appendChild(emailDescription);
