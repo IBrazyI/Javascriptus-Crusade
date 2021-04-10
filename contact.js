@@ -18,6 +18,7 @@ let titleElement =document.createElement('h1');
 let paraElement = document.createElement('p');
 let nameInput = document.createElement('input');
 let userInput = document.createElement('input');
+let suggestionSubmit = document.createElement('button');
 let mailListElement = document.createElement('p');
 let emailAddressInput = document.createElement('input');
 let emailSumbitButton = document.createElement('button');
@@ -25,6 +26,7 @@ let emailSumbitButton = document.createElement('button');
 /*Element Id's*/
 nameInput.id = "name-input";
 userInput.id = "user-input";
+suggestionSubmit.id = "suggestion-submit";
 emailAddressInput.id = "email-input";
 emailSumbitButton.id = "email-submit";
 
@@ -49,6 +51,7 @@ paraContainer.appendChild(paraElement);
 
 formContainer.appendChild(nameInput);
 formContainer.appendChild(userInput);
+formContainer.appendChild(suggestionSubmit);
 
 emailValidationContainer.appendChild(mailListElement);
 emailValidationContainer.appendChild(emailAddressInput);
@@ -61,6 +64,9 @@ mailListElement.appendChild(mailListText);
 
 /*Input Type*/
 nameInput.setAttribute('type', 'text');
+nameInput.placeholder = nameInputText.wholeText;
 userInput.setAttribute('type', 'text');
+userInput.placeholder = suggestionInput.wholeText;
 emailAddressInput.setAttribute('type', 'email');
+emailAddressInput.placeholder = emailInput.wholeText;
 emailSumbitButton.setAttribute('type', 'button')
