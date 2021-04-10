@@ -5,7 +5,7 @@ const paraContainer = document.createElement('div');
 const formContainer = document.createElement('div');
 const emailValidationContainer = document.createElement('div');
 
-/*Add Class*/
+/*Contianer Class*/
 contactContainer.classList.add("email-container");
 titleContainer.classList.add("title-container");
 paraContainer.classList.add("para-container");
@@ -35,9 +35,8 @@ let nameInputText = document.createTextNode("Insert you name here!");
 let suggestionInput = document.createTextNode("What factions or enemies would you like to see in the game?");
 let mailListText = document.createTextNode("Register with us and be notified of all updates to the game!");
 let emailInput = document.createTextNode("Input your email here!");
-/*Append Childs*/
 
-/*Containers*/
+/*Containers Append*/
 document.body.appendChild(contactContainer);
 contactContainer.appendChild(titleContainer);
 contactContainer.appendChild(paraContainer);
@@ -54,7 +53,14 @@ formContainer.appendChild(userInput);
 emailValidationContainer.appendChild(mailListElement);
 emailValidationContainer.appendChild(emailAddressInput);
 emailValidationContainer.appendChild(emailSumbitButton);
-/*Elements*/
+
+/*Elements Append*/
 titleElement.appendChild(titleText);
 paraElement.appendChild(emailDescription);
 mailListElement.appendChild(mailListText);
+
+/*Input Type*/
+nameInput.setAttribute('type', 'text');
+userInput.setAttribute('type', 'text');
+emailAddressInput.setAttribute('type', 'email');
+emailSumbitButton.setAttribute('type', 'button')
