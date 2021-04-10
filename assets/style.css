@@ -169,6 +169,7 @@ body {
     font-size: 15px;
     text-shadow: 2px 2px #000000;  
     cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-element:hover {
@@ -178,7 +179,6 @@ body {
 @media (min-width: 900px){
     .nav-element {
         font-size: 30px;
-        text-decoration: none;
     }
 }
 
@@ -603,6 +603,63 @@ body {
     margin: auto;
     cursor: pointer;
 }
+
+/*Contact Page*/
+ .email-container{
+     color: #fafafa;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 0px 15px 0px 15px;
+     margin: 10px 0px 10px 0px;
+ }
+
+ .title-container{
+     color: #fafafa;
+     text-align: center;
+     padding: 0px;
+ }
+
+ .para-container{
+     color: #fafafa;
+     text-align: center;
+     margin: 10px 0px 10px 0px;
+ }
+
+ .form-container{
+     color: #fafafa;
+     display: flex;
+     flex-direction: column;
+     margin: 20px 0px 20px 0px;
+
+ }
+
+ #name-input{
+    background-color: red;
+ }
+
+ #user-input{
+    background-color: green;
+ }
+
+ .email-validation-container{
+     color: #fafafa;
+     display: flex;
+     flex-direction: column;
+     margin: 20px 0px 20px 0px;
+
+ }
+
+ #email-input{
+    background-color: blue;
+ }
+
+ #email-submit{
+    background-color: yellow;
+ }
+
 
 /* Extra Utilties */
 

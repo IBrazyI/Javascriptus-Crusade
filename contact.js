@@ -22,6 +22,12 @@ let mailListElement = document.createElement('p');
 let emailAddressInput = document.createElement('input');
 let emailSumbitButton = document.createElement('button');
 
+/*Element Id's*/
+nameInput.id = "name-input";
+userInput.id = "user-input";
+emailAddressInput.id = "email-input";
+emailSumbitButton.id = "email-submit";
+
 /*Text Nodes*/
 let titleText = document.createTextNode("Want to have your say on the Javascriptus Crusade?");
 let emailDescription = document.createTextNode("What faction do you want to command? What enemies do you want to face? Let us know, there are always more crusades!");
