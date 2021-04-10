@@ -614,7 +614,7 @@ body {
      align-items: center;
      text-align: center;
      padding: 20px 15px 20px 15px;
-     margin: 10px 0px 10px 0px;
+     margin: 20px 0px 20px 0px;
  }
 
  .title-container{
@@ -684,6 +684,7 @@ body {
     text-shadow: 1px 1px #000000;
     padding: 5px;
     margin: auto;
+    cursor: pointer;
  }
 
  #suggestion-submit:hover{
@@ -725,6 +726,7 @@ body {
     text-shadow: 1px 1px #000000;
     padding: 5px;
     margin: auto;
+    cursor: pointer;
  }
 
  #email-submit:hover{
@@ -733,6 +735,16 @@ body {
     border: 2px solid #fafafa;
     cursor: pointer;
     box-shadow: none;
+ }
+
+ @media (min-width:700px){
+
+ }
+     
+ @media (min-width:1200px){
+     
+ }
+     
  }
 
 
