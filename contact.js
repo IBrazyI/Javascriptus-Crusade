@@ -2,8 +2,8 @@
 const contactContainer = document.createElement('div');
 const titleContainer = document.createElement('div');
 const paraContainer = document.createElement('div');
-const formContainer = document.createElement('div');
-const emailValidationContainer = document.createElement('div');
+const formContainer = document.createElement('form');
+const emailValidationContainer = document.createElement('form');
 
 /*Contianer Class*/
 contactContainer.classList.add("email-container");
@@ -17,10 +17,13 @@ emailValidationContainer.classList.add("email-validator-container");
 let titleElement =document.createElement('h1');
 let paraElement = document.createElement('p');
 let nameInput = document.createElement('input');
+let checkNameInput = document.createElement('span');
 let userInput = document.createElement('textarea');
+let checkUserInput = document.createElement('span');
 let suggestionSubmit = document.createElement('button');
 let mailListElement = document.createElement('p');
 let emailAddressInput = document.createElement('input');
+let emailValidText = document.createElement('span');
 let emailSumbitButton = document.createElement('button');
 
 /*Element Id's*/
@@ -28,6 +31,7 @@ nameInput.id = "name-input";
 userInput.id = "user-input";
 suggestionSubmit.id = "suggestion-submit";
 emailAddressInput.id = "email-input";
+emailValidText.id = "email-valid";
 emailSumbitButton.id = "email-submit";
 
 /*Text Nodes*/
@@ -51,12 +55,16 @@ titleContainer.appendChild(titleElement);
 paraContainer.appendChild(paraElement);
 
 formContainer.appendChild(nameInput);
+formContainer.appendChild(checkNameInput)
 formContainer.appendChild(userInput);
+formContainer.appendChild(checkUserInput);
 formContainer.appendChild(suggestionSubmit);
 
 emailValidationContainer.appendChild(mailListElement);
 emailValidationContainer.appendChild(emailAddressInput);
+emailValidationContainer.appendChild(emailValidText);
 emailValidationContainer.appendChild(emailSumbitButton);
+
 
 /*Elements Append*/
 titleElement.appendChild(titleText);
@@ -64,13 +72,24 @@ paraElement.appendChild(emailDescription);
 mailListElement.appendChild(mailListText);
 
 /*Input Type*/
+
+/*Suggestion Submit*/
 nameInput.setAttribute('type', 'text');
 nameInput.placeholder = nameInputText.wholeText;
+nameInput.required;
+checkNameInput.setAttribute('type', 'text');
 userInput.setAttribute('type', 'textarea');
 userInput.placeholder = suggestionInput.wholeText;
-suggestionSubmit.setAttribute('type', 'button');
+userInput.required;
+checkUserInput.setAttribute('type', 'text');
+suggestionSubmit.setAttribute('type', 'submit');
 suggestionSubmit.textContent = submitText.wholeText;
+
+/*Email Submit*/
 emailAddressInput.setAttribute('type', 'email');
 emailAddressInput.placeholder = emailInput.wholeText;
-emailSumbitButton.setAttribute('type', 'button');
+emailAddressInput.required;
+emailValidText.setAttribute('type', 'text');
+emailSumbitButton.setAttribute('type', 'submit');
 emailSumbitButton.textContent = submitText.wholeText;
+
