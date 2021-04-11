@@ -82,10 +82,7 @@ function gameText() {
         talkingHeadTxt.innerHTML = talkingHeadGameTwo;
         talkingHeadBtn.onclick = removeTalkingHead;
     };
-
-    
-
-    
+  
 }
 
 /* Faction Selection */

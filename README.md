@@ -1,2 +1,2 @@
 # Javascriptus-Crusade
-Milestone Porject 2
+Milestone Project 2

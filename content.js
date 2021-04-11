@@ -24,15 +24,17 @@ const faction = {
  let talkingHeadBtn = document.querySelector("#talking-head-btn");
 
  let talkingHeadGreet =
- "Greetings commander... you have been assigned to the defence of the planet OMACRON DONACUS 32... you will need to choose which of the Imperiums armys will command to defend it...";
+ "Greetings Commander... you have been assigned to the defence of the planet OMACRON DONACUS 32... you will need to choose which of the Imperiums armys will command to defend it...";
  let talkingHeadGreetTwo =
  "Unfortunatley we only have the resourses to deploy one of the imperial factions... choose wisley not all forces are created equal...";
  let talkingHeadEnemy = 
  "Now you have selected your army we you need to decided what enemy we shall face... all are of equal importance but some may be harder to defeat than others...";
  let talkingHeadGame = 
- "Welcome to the battle screen commander... here you can see the enemys actions and what tactics are avaliable to counter them...";
+ "Welcome to the 'Battle' screen Commander... here you can see the enemys actions and what tactics are avaliable to counter them...";
  let talkingHeadGameTwo = 
  "Be aware... once you decide a plan of action it could have dire consequences... For the Emperor!...";
+ let forcesIntro = 
+ "Welcome to the 'Forces' screen Commander...here you can find information on both the factions you command and the enemies you will face..."
 
  /* Game Objects */
 
