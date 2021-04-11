@@ -9,4 +9,7 @@ function forcesInformation(){
 forcesInformation();
 
 /*Containers*/
-
+const forcesContainer = document.createElement('div');
+const factionsContainer = document.createElement('div');
+const enemiesContainer = document.createElement('div');
+const informationContainer = document.createElement('div');
