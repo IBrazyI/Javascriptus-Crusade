@@ -907,6 +907,26 @@ body {
     justify-content: center;
 }
 
+@media (min-width: 1200px){
+    .forces-container{
+        width: 80vw;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+
+    .factions-container{
+        display: flex;
+    }
+
+    .eneimes-container{
+        display: flex;
+    }
+
+    .forces-select-image{
+        height: 400px
+    }
+}
+
 /* Extra Utilties */
 
 .hide {
