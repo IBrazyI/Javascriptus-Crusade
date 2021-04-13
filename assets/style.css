@@ -605,6 +605,7 @@ body {
 }
 
 /*Contact Page*/
+
  .email-container{
      color: #fafafa;
      background-color: #85858550;
@@ -805,8 +806,106 @@ body {
 
  }
      
+/*Forces Page*/
 
+.forces-container{
+    width: 100vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
 
+#forces-title{
+    font-size: 40px;
+    text-align: center;
+    color: #fafafa;
+}
+
+.faction-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.enemy-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.forces-select-image{
+    color: #fafafa;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    margin: auto;
+}
+
+.forces-label{
+    color: #fafafa;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.forces-select-image:hover{
+    transition: 1s;
+    background-color: unset;
+    box-shadow: inset 0 0 0 3px #fafafa;
+}
+
+#faction-space-marines{
+    background-image: url(../assets/images/spacemarines1.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+#faction-ad-mech{
+    background-image: url(../assets/images/admech5.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+#faction-guard{
+    background-image: url(../assets/images/guard1.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+
+}
+
+#faction-orks{
+   background-image: url(../assets/images/orks1.webp);
+   background-position: center;
+   background-size: cover;
+   justify-content: center;
+
+}
+
+#faction-chaos{
+    background-image: url(../assets/images/chaos5.png);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+#faction-tyranids{
+    background-image: url(../assets/images/tyranids3.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
 
 /* Extra Utilties */
 
