@@ -33,9 +33,6 @@ enemiesContainer.classList.add('eneimes-container');
 enemiesContainer.classList.add('focres-selection');
 informationContainer.classList.add('forces-info-container');
 
-
-
-
 /*Faction Container Elements*/
 let factionSpaceMarines = document.createElement('div');
 factionSpaceMarines.classList.add("forces-select-image");
@@ -96,3 +93,63 @@ guardLabel.innerHTML = "Imperial Guard";
 orksLabel.innerHTML = "Orks";
 chaosLabel.innerHTML = "Chaos";
 tyranidsLabel.innerHTML = "Tyranids";
+
+/*Info Containers*/
+let infoTitle = document.createElement('div');
+let infoSummary = document.createElement('div');
+let infoUnitTypes = document.createElement('div');
+
+informationContainer.appendChild(infoTitle);
+informationContainer.appendChild(infoSummary)
+informationContainer.appendChild(infoUnitTypes);
+
+infoTitle.classList.add('info-title');
+infoSummary.classList.add('info-summary');
+infoUnitTypes.classList.add('info-unit-types');
+
+
+/*Info Elements*/
+
+/*Title*/
+let titleText = document.createElement('h1');
+    infoTitle.appendChild(titleText);
+    titleText.innerHTML = info[0].factionName;
+
+/*Summary*/
+let summaryText = document.createElement('p');
+    infoSummary.appendChild(summaryText);
+    summaryText.innerText = info[0].summary;
+
+/*Unit Types*/
+let unitHeadingOne = document.createElement('h2');
+    infoUnitTypes.appendChild(unitHeadingOne);
+    unitHeadingOne.innerHTML = info[0].troopTitleOne;
+let unitTypesTextOne = document.createElement('p');
+    infoUnitTypes.appendChild(unitTypesTextOne);
+    unitTypesTextOne.innerHTML = info[0].troopDescriptionOne;
+
+let unitHeadingTwo = document.createElement('h2');
+    infoUnitTypes.appendChild(unitHeadingTwo);
+    unitHeadingTwo.innerHTML = info[0].troopTitleTwo;
+let unitTypesTextTwo = document.createElement('p');
+    infoUnitTypes.appendChild(unitTypesTextTwo);
+    unitTypesTextTwo.innerHTML = info[0].troopDescriptionTwo;
+
+let unitHeadingThree = document.createElement('h2');
+    infoUnitTypes.appendChild(unitHeadingThree);
+    unitHeadingThree.innerHTML = info[0].troopTitleThree;
+let unitTypesTextThree = document.createElement('p');
+    infoUnitTypes.appendChild(unitTypesTextThree);
+    unitTypesTextThree.innerHTML = info[0].troopDescriptionThree;
+
+
+    /*On Click Function*/
+factionSpaceMarines.addEventListener('click', () => factionInfoClick(info));
+
+function factionInfoClick(info) {
+    factionsContainer.classList.add('remove');
+    enemiesContainer.classList.add('remove');
+    forcesTitle.classList.add('remove');
+    informationContainer.classList.remove('remove');
+    console.log(info.factionName);
+}

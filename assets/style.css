@@ -927,6 +927,25 @@ body {
     }
 }
 
+.info-title{
+    color: #fafafa;
+    background-color: red;
+}
+
+.info-summary{
+    color: #fafafa;
+    background-color: red;
+}
+
+.info-unit-types{
+    color: #fafafa;
+    background-color: red;
+}
+
+.forces-info-container{
+    display: flex;
+}
+
 /* Extra Utilties */
 
 .hide {
