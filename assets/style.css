@@ -529,9 +529,10 @@ body {
     }
 
     .answer{
-        font-size: 30px;
-        margin-left: 15%;
-        margin-right: 15%;
+        font-size: 28px;
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 0px 20px 0px 20px;
     }
 }
@@ -588,6 +589,7 @@ body {
 
 .defeat-button{
     color: #fafafa;
+    margin-top: 200px;
     justify-content: center;
     align-items: center;
 }
