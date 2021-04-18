@@ -503,7 +503,7 @@ function adMechVsOrks() {
         localStorage.clear();
         console.log(localStorage);
         defeatBtn.onclick = function(){
-            document.querySelector(".defeat.page").classList.add('remove');
+            document.querySelector(".defeat-page").classList.add('remove');
             document.getElementById("faction-selection").classList.remove('remove');
         };
     };
@@ -803,7 +803,7 @@ function guardVsChaos() {
         localStorage.clear();
         console.log(localStorage);
         defeatBtn.onclick = function(){
-            document.querySelector(".defeat.page").classList.add('remove');
+            document.querySelector(".defeat-page").classList.add('remove');
             document.getElementById("faction-selection").classList.remove('remove');
         };
     };
@@ -855,7 +855,7 @@ function guardVsTyranids() {
            victoryPage();    
        } else if (i < guardVsTyranidsQuestions.length){
            i++;
-           console.log("next question: " + (i+1));
+           console.log("next question: " + (i++));
            nextQuestion();
            }
     };
