@@ -927,24 +927,50 @@ body {
     }
 }
 
+.forces-info-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+@media (min-width: 700px){
+    .forces-info-container{
+        font-size: 22px;
+    }
+}
+
 .info-title{
     color: #fafafa;
-    background-color: red;
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
 }
 
 .info-summary{
     color: #fafafa;
-    background-color: red;
+    background-color: #9494944b;
+    text-align: center;
+    padding: 15px
 }
 
 .info-unit-types{
     color: #fafafa;
-    background-color: red;
+    background-color: #707070a1;
+    padding: 15px;
 }
 
-.forces-info-container{
-    display: flex;
+.info-unit-types>h2{
+    color: #b81e03;
+    text-shadow: 1px 1px #000000;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
+
+.info-unit-types>p{
+    text-shadow: 1px 1px #000000;;
+}
+
+
 
 /* Extra Utilties */
 
