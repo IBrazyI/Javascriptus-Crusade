@@ -334,230 +334,245 @@ let adMechVsChaosQuestions = [
     }
 ]
 
-// let guardVsChaosQuestions = [
-//     {
-//         question: 'On arival to the planetary captial it is obvious somthing is not right. The populace are restless, many strange icons and idols adore the buildings in the lower part of the city. Bands of hooded men are roaming the streets chanting foul incantations and there have been clashes with local defence forces.',
-//         questionPower: 20,
-//         choiceOne: 'Intergrate your troops with the local defence forces and increase number of patrols and shakedowns of these areas.',
-//         choiceOnePower: 10,
-//         choiceTwo: 'Sanction local priests to enter the areas, their sermons and relegious feurvor shall settle the people.',
-//         choiceTwoPower: 10,
-//         choiceThree: 'Keep your troops out of these "corrupted" areas and make sure key personal and facilities are defended',
-//         choiceThreePower: 5,
-//     },
+let guardVsChaosQuestions = [
+    {
+        question: 'On arival to the planetary captial it is obvious somthing is not right. The populace are restless, many strange icons and idols adore the buildings in the lower part of the city. Bands of hooded men are roaming the streets chanting foul incantations and there have been clashes with local defence forces.',
+        questionPower: 20,
+        choiceOne: 'Intergrate your troops with the local defence forces and increase number of patrols and shakedowns of these areas.',
+        choiceOnePower: 10,
+        choiceTwo: 'Sanction local priests to enter the areas, their sermons and relegious feurvor shall settle the people.',
+        choiceTwoPower: 10,
+        choiceThree: 'Keep your troops out of these "corrupted" areas and make sure key personal and facilities are defended',
+        choiceThreePower: 5,
+    },
 
-//     {
-//         question: 'The clashes have become full blown riots, whole sections of the city have been barricaded and heads of local leaders adorn spikes.',
-//         questionPower: 40,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+    {
+        question: 'The clashes have become full blown riots, whole sections of the city have been barricaded and heads of local leaders adorn spikes.',
+        questionPower: 40,
+        choiceOne: 'Commit your forces to end the riots, break into the sealded areas of the city. Traitors to the Imperium will not be allowed to survive.',
+        choiceOnePower: 20,
+        choiceTwo: 'Seal off those areas of the city, we cannot spare the troops to take down these rebels down. Let them destory themseleves. None will leave the area.',
+        choiceTwoPower: 25,
+        choiceThree: 'Destroy the non compliant areas of the city, we do not have the resources to spare to deal with this issue conventially.',
+        choiceThreePower: 15,
+    },
 
-//     {
-//         question: 'A massive Chaos Spacemarine fleet has arrived in orbit, our fleet has been destoryed and their assult craft are rapidley approaching.',
-//         questionPower: 60,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+    {
+        question: 'A massive Chaos Spacemarine fleet has arrived in orbit, our fleet has been destoryed and their assult craft are rapidley approaching.',
+        questionPower: 60,
+        choiceOne: 'Focus all heavy weapons and gun batterys onto the assult craft, this will buy us time to muster the troops and set up stratigic defences.',
+        choiceOnePower: 40,
+        choiceTwo: 'Launch our own in atmosphere fighters and gunships to thin thier numbers, so all heavy weapons enplacements can be used to defend the walls.',
+        choiceTwoPower: 50,
+        choiceThree: 'Amass troops at strong points throughout the city there are already to many of them.',
+        choiceThreePower: 40,
+    },
 
-//     {
-//         question: 'Daemons attack the city from the inside while the Chaos Spacemarines are assulting the walls which will not hold for long.',
-//         questionPower: 80,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+    {
+        question: 'Daemons attack the city from the inside while the Chaos Spacemarines are assulting the walls which will not hold for long.',
+        questionPower: 80,
+        choiceOne: 'Send in all reserves to counter the daemon incursion, the city will quickley fall and the population fall to insanity.',
+        choiceOnePower: 50,
+        choiceTwo: 'Deploy what Psykers we have to assist the troops fighting the daemeons, they are our best weapon against them.',
+        choiceTwoPower: 60,
+        choiceThree: 'Call fourth our Superheavy tanks, Baneblades to smash the Chaos Spacemarines assult',
+        choiceThreePower: 70,
+    },
 
-//     {
-//         question: 'The Chaos Spacemarines have broken through our defences but thier numbers are low our final stand will determine the outcome of the battle!',
-//         questionPower: 100,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     }
-// ]
+    {
+        question: 'The Chaos Spacemarines have broken through our defences but thier numbers are low our final stand will determine the outcome of the battle!',
+        questionPower: 100,
+        choiceOne: 'For the Emperor!',
+        choiceOnePower: 80,
+        choiceTwo: 'Charge!',
+        choiceTwoPower: 80,
+        choiceThree: 'Purge the Heritics!',
+        choiceThreePower: 80,
+    }
+]
 
-// let spaceMarinesVsTyranidsQuestions = [
-//     {
-//         question: '',
-//         questionPower: 20,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower:,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+let spaceMarinesVsTyranidsQuestions = [
+    {
+        question: 'one',
+        questionPower: 20,
+        choiceOne: 'yes',
+        choiceOnePower: 5,
+        choiceTwo: 'yes',
+        choiceTwoPower:10,
+        choiceThree: 'yes',
+        choiceThreePower: 10,
+    },
 
-//     {
-//         question: '',
-//         questionPower: 40,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+    {
+        question: 'two',
+        questionPower: 40,
+        choiceOne: 'yes',
+        choiceOnePower: 20,
+        choiceTwo: 'yes',
+        choiceTwoPower: 30,
+        choiceThree: 'yes',
+        choiceThreePower: 10,
+    },
 
-//     {
-//         question: '',
-//         questionPower: 60,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+    {
+        question: 'three',
+        questionPower: 60,
+        choiceOne: 'yes',
+        choiceOnePower: 30,
+        choiceTwo: 'yes',
+        choiceTwoPower: 20,
+        choiceThree: 'yes',
+        choiceThreePower: 50,
+    },
 
-//     {
-//         question: '',
-//         questionPower: 80,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+    {
+        question: 'four',
+        questionPower: 80,
+        choiceOne: 'yes',
+        choiceOnePower: 70,
+        choiceTwo: 'yes',
+        choiceTwoPower: 60,
+        choiceThree: 'yes',
+        choiceThreePower: 50,
+    },
 
-//     {
-//         question: '',
-//         questionPower: 100,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     }
-// ]
+    {
+        question: 'five',
+        questionPower: 100,
+        choiceOne: 'yes',
+        choiceOnePower: 80,
+        choiceTwo: 'yes',
+        choiceTwoPower: 90,
+        choiceThree: 'yes',
+        choiceThreePower: 100,
+    }
+]
 
-// let adMechVsTyranidsQuestions = [
-//     {
-//         question: '',
-//         questionPower: 20,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower:,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+let adMechVsTyranidsQuestions = [
+    {
+        question: 'one',
+        questionPower: 20,
+        choiceOne: 'yes',
+        choiceOnePower: 5,
+        choiceTwo: 'yes',
+        choiceTwoPower:10,
+        choiceThree: 'yes',
+        choiceThreePower: 10,
+    },
 
-//     {
-//         question: '',
-//         questionPower: 40,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+    {
+        question: 'two',
+        questionPower: 40,
+        choiceOne: 'yes',
+        choiceOnePower: 20,
+        choiceTwo: 'yes',
+        choiceTwoPower: 30,
+        choiceThree: 'yes',
+        choiceThreePower: 10,
+    },
 
-//     {
-//         question: '',
-//         questionPower: 60,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+    {
+        question: 'three',
+        questionPower: 60,
+        choiceOne: 'yes',
+        choiceOnePower: 30,
+        choiceTwo: 'yes',
+        choiceTwoPower: 20,
+        choiceThree: 'yes',
+        choiceThreePower: 50,
+    },
 
-//     {
-//         question: '',
-//         questionPower: 80,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+    {
+        question: 'four',
+        questionPower: 80,
+        choiceOne: 'yes',
+        choiceOnePower: 70,
+        choiceTwo: 'yes',
+        choiceTwoPower: 60,
+        choiceThree: 'yes',
+        choiceThreePower: 50,
+    },
 
-//     {
-//         question: '',
-//         questionPower: 100,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     }
-// ]
+    {
+        question: 'five',
+        questionPower: 100,
+        choiceOne: 'yes',
+        choiceOnePower: 80,
+        choiceTwo: 'yes',
+        choiceTwoPower: 90,
+        choiceThree: 'yes',
+        choiceThreePower: 100,
+    }
+]
 
-// let guardVsTyranidsQuestions = [
-//     {
-//         question: '',
-//         questionPower: 20,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower:,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+let guardVsTyranidsQuestions = [
+    {
+        question: 'one',
+        questionPower: 20,
+        choiceOne: 'yes',
+        choiceOnePower: 5,
+        choiceTwo: 'yes',
+        choiceTwoPower:10,
+        choiceThree: 'yes',
+        choiceThreePower: 10,
+    },
 
-//     {
-//         question: '',
-//         questionPower: 40,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+    {
+        question: 'two',
+        questionPower: 40,
+        choiceOne: 'yes',
+        choiceOnePower: 20,
+        choiceTwo: 'yes',
+        choiceTwoPower: 30,
+        choiceThree: 'yes',
+        choiceThreePower: 10,
+    },
 
-//     {
-//         question: '',
-//         questionPower: 60,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+    {
+        question: 'three',
+        questionPower: 60,
+        choiceOne: 'yes',
+        choiceOnePower: 30,
+        choiceTwo: 'yes',
+        choiceTwoPower: 20,
+        choiceThree: 'yes',
+        choiceThreePower: 50,
+    },
 
-//     {
-//         question: '',
-//         questionPower: 80,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     },
+    {
+        question: 'four',
+        questionPower: 80,
+        choiceOne: 'yes',
+        choiceOnePower: 70,
+        choiceTwo: 'yes',
+        choiceTwoPower: 60,
+        choiceThree: 'yes',
+        choiceThreePower: 50,
+    },
 
-//     {
-//         question: '',
-//         questionPower: 100,
-//         choiceOne: '',
-//         choiceOnePower: ,
-//         choiceTwo: '',
-//         choiceTwoPower: ,
-//         choiceThree: '',
-//         choiceThreePower: ,
-//     }
-// ]
+    {
+        question: 'five',
+        questionPower: 100,
+        choiceOne: 'yes',
+        choiceOnePower: 80,
+        choiceTwo: 'yes',
+        choiceTwoPower: 90,
+        choiceThree: 'yes',
+        choiceThreePower: 100,
+    }
+]
+
+/* Forces Information*/
+
+let spaceMarineInfo = [
+    {
+        factionName: 'Spacemarines',
+        summary: "The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's warriors. They are barely Human at all, but superhuman; having been made superior in all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous training. Space Marines are untouched by plague or any natural disease and can suffer wounds that would kill a lesser being several times over, and live to fight again. Clad in ancient power armour and wielding the most potent weapons known to man, the Space Marines are terrifying foes and their devotion to the Emperor and the Imperium of Man is unyielding. They are the God-Emperor's Angels of Death, and they know no fear.The Astartes are physically stronger, far more resilient and often mentally far removed from the lot of most normal Human beings. In the presence of the Astartes, most people feel a combination of awe and fear, and many cultures on the more primitive worlds simply worship them outright as demigods or angels of the God-Emperor made flesh.",
+        troopTitleOne: 'Dreadnoughts',
+        troopDescriptionOne: 'A Space Marine Dreadnought is a large, walking tank which carries both powerful guns and lethal close combat weaponry, armoured to withstand all but the most powerful of enemy firepower and often relied on by Space Marine forces to tear an opening in enemy defenses. Each Dreadnought contains a living being, permanently interfaced with the machine through a form of Mind Impulse Unit. Dreadnoughts are surprisingly agile, able to walk and balance with the ease of a living creature.',
+        troopTitleTwo: 'Terminators',
+        troopDescriptionTwo: "Terminators are Space Marine Veterans who have earned the right to wear Tactical Dreadnought Armour, better known as Terminator Armour, and serve as their Chapter's greatest infantry assets, each essentially serving as a walking tank. Tactical Dreadnought Armour combines the technological developments of Power Armour with the sealed environmental suits designed for starship crews that work in highly unstable or corrosive environments such as inside the high pressure casings of Plasma Reactor shields.",
+        troopTitleThree: 'Initiates/Scouts',
+        troopDescriptionThree: "Scout Marines are the newest recruits in a Space Marine Chapter. Their duties are to infiltrate the enemy positions or to fight as lightly armed skirmishers ahead of the rest of the Chapter. Operating behind enemy lines, Space Marine Scouts set ambushes for their foes, spy out the enemy's movements, and gather what information they can about their opponent's plans. More lightly armed and armoured than their more experienced Battle-Brothers, Space Marine Scouts chiefly fight as skirmishers, relying on stealth rather than brute force to accomplish missions.",
+    }
+]
