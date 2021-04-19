@@ -508,6 +508,7 @@ body {
     }
 
     .question-image{
+        width: 900px;
         height: 450px;
         padding-left: 50px;
         padding-right: 50px;
@@ -528,12 +529,14 @@ body {
     }
 
     .question-image{
+        width: 1200px;
         height: 550px;
     }
 
     .answer{
         font-size: 28px;
         width: 900px;
+        height: 150px;
         margin-left: auto;
         margin-right: auto;
         padding: 0px 20px 0px 20px;
