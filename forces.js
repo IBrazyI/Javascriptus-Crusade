@@ -87,7 +87,7 @@ factionTyranids.appendChild(tyranidsLabel);
 /*Information Container Elements*/
 
 /*Text*/
-forcesTitle.innerHTML = "What Faction would you like to know more about?"
+forcesTitle.innerHTML = "Select a faction to learn more about."
 spaceMarinesLabel.innerHTML = "Spacemarines";
 adMechLabel.innerHTML = "Adeptus Mechanicus";
 guardLabel.innerHTML = "Imperial Guard";
@@ -101,7 +101,7 @@ let infoSummary = document.createElement('div');
 let infoUnitTypes = document.createElement('div');
 
 informationContainer.appendChild(infoTitle);
-informationContainer.appendChild(infoSummary)
+informationContainer.appendChild(infoSummary);
 informationContainer.appendChild(infoUnitTypes);
 
 infoTitle.classList.add('info-title');
