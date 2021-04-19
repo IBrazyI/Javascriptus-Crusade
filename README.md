@@ -160,7 +160,7 @@ With a minimalistic user interface and a space theme with both background and da
 
 ### Creating Repository
 1. Created new file inside documents folder named "Coding Course" and within that created a file called "Sharks-Under-Threat(Milestone Project 1)"
-2. Opened GibHub Desktop and selected "New Repository"
+2. Opened GitHub Desktop and selected "New Repository"
 3. Gave the project name "Sharks-Under-Threat" and clicked "Create Repository"
 4. Opened the repository in VS Code
 5. Created index.html and README.md pages
@@ -170,7 +170,7 @@ With a minimalistic user interface and a space theme with both background and da
 9. Opened my GitHib page to see the changes.
 
 ### Viewing Site
-1. After logging in to GibHub I went to the "settings" tab.
+1. After logging in to GitHub I went to the "settings" tab.
 2. Upon scrolling down to "Danger Zone" I set the repository to "Public".
 3. Scrolling back up to "GitHub Pages" set the source "Branch-main", "File-Root" and selected save.
 4. After reloading and scrolling back down to "GitHub Pages" selected the link where my site had been published.
