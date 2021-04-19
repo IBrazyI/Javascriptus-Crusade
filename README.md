@@ -1,10 +1,14 @@
-# Javascriptus-Crusade (Milestone Project 1)
+# Javascriptus-Crusade (Milestone Project 2)
 
-![SharksUnderThreat](assets/images/readmeimages/responsive.png)
+![Javascriptus Crusade](assets/images/readmeimages/responsive.png)
 
-[Visit My Site Here](https://ibrazyi.github.io/Sharks-Under-Threat/)
+[Visit My Site Here](https://ibrazyi.github.io/Javascriptus-Crusade/)
 
 ## Overview
+This website is both a old style text based game and a good starting point for those interested in learning about the Warhammer 40k universe. 
+Containing both information and a look into the Universe; who are the factions that populate it and the interactions between them.
+With a minimalistic user interface and a space theme with both background and dark colours it emanates the grim-dark theme of the setting.
+
 
 
 ## Table of Contents
@@ -25,9 +29,26 @@
 
 ## UX
 ### User Stories
-#### First Time Visitor
+#### A First Time Visitor
+- I want to be able to navigate the site easily and understand what it is for.
+- I want to be able to find information easily and not be confused by the websites layout.
+- I want to understand more about the Warhammer 40k Universe, understand the factions and the interactions between them.
+- I want to enjoy the game, understand how it works and beat it.
 
-#### Returning User
+#### A Returning User
+- I want to quickly access information that I have forgotten.
+- I want to complete the game again with different factions to play as or play against.
+- I want to suggest an new idea or faction for the game and submit it to the creator.
+- I want to sign up to the mailing list to see when new features and game modes are released.
+
+#### A User already with Warhammer 40k knowledge
+- I want the site information to be true to the knowledge I already have.
+- I want to see the factions I already know play against each other and be excited by the interactions between them.
+
+#### A User looking to spend time playing a game
+- I want to play a game that is fun and I enjoy spending time on.
+- I want the game play area to look good, be intuitive to use and navigate.
+- I want to be challenged by the game and complete all the modes, exploring more difficult content.
 
 
 ### Strategy
