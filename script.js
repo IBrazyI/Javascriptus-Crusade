@@ -664,7 +664,7 @@ function guardVsChaos() {
 
         };
 
-        if (i === 5 && guard > 0) {
+        if (i === 5 && guardHealth > 0) {
             victoryPage();
         };
         console.log(i);
@@ -743,6 +743,9 @@ function victoryPage() {
         document.querySelector(".victory-page").classList.add('remove');
         document.getElementById("faction-selection").classList.remove('remove');
         i = 0;
+        spaceMarineHealth = 125;
+        adMechHealth = 100;
+        guardHealth = 75;
     };
 };
 
@@ -756,6 +759,9 @@ function defeatPage() {
         document.querySelector(".defeat-page").classList.add('remove');
         document.getElementById("faction-selection").classList.remove('remove');
         i = 0;
+        spaceMarineHealth = 125;
+        adMechHealth = 100;
+        guardHealth = 75;
     };
 };
 
