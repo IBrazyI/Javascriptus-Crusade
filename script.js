@@ -721,7 +721,7 @@ function guardVsTyranids() {
 
         };
 
-        if (i === 5 && guard > 0) {
+        if (i === 5 && guardHealth > 0) {
             victoryPage();
         };
         console.log(i);
