@@ -102,18 +102,13 @@ With a minimalistic user interface and a space theme with both background and da
 ![Signup](assets/wireframes/pcsignup.jpg)
 
 #### Information Design
-- Information for each faction is dynamically obtained depending on which faction is selected.
-- Information layout is structured in a linear format, sub heading and information text.
-- Navigation and background information are represented using a smaller text box pinned to the bottom of the screen,
-- The game information is displayed in its own text box providing background and with an image below representing the situation.
+
 
 #### Interface Design
-- Images are used as selectors for both the main page and information pages of the site. Reducing page clutter and alowing easy interaction.
-- The game interface is basic with clear well structured options. With question and answers split with an image between them.
+
 
 #### Navigation Design
-- Navigation is located at the top of the page, with three options.
-- The navigation links are text even at smaller screen sizes so the user will know what option to select if they need more information.
+
 
 ### Surface
 #### Typography
