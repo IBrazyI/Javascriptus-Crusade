@@ -31,7 +31,7 @@ With a minimalistic user interface and a space theme with both background and da
 ### User Stories
 #### A First Time Visitor
 - I want to be able to navigate the site easily and understand what it is for.
-- I want to be able to find information easily and not be confused by the websites layout.
+- I want to be able to find information easily and not be confused by the websites content or structure.
 - I want to understand more about the Warhammer 40k Universe, understand the factions and the interactions between them.
 - I want to enjoy the game, understand how it works and beat it.
 
@@ -52,16 +52,23 @@ With a minimalistic user interface and a space theme with both background and da
 
 
 ### Strategy
+- The aim of the website is to provide the user with an intresting game experience that is fun to play while easy to pick up and understand.
+- The sites goal is also to provide users both with and without Warhammer 40k knowledge a basic foundation of information for all the factions involved in the game and how they interact with eachother.
 
 ### Scope
-
+- Provide the user with a basic but enjoyable text based game with replayability and role play.
+- Provide visitors with a clean and easy to navigate user interface.
+- Provide concise but factual information about the theme and the game itself.
+- Allow users to influence the content of the game and get in contact with the creator.
 
 ### Structure
 #### Interaction Design
-
-
+- Create a website/game that is responsive, works at all screen sizes and has mobile table and PC compatability.
+- Allow for easy navigation between pages of the webite.
+- Provide a easy to understand asetically pleasing game interface that makes it obvious what the user needs to do to progress.
 #### Information Architecture
-
+- Content is well structured, in line with the theme, easy to read and distinguish between.
+- Images are used mostly as navigation tool, each one representing a diffrent faction in the game, allowing for the user to physically see who they are chosing without having to guess.
 
 ### Skeleton
 #### Mobile Wireframes
@@ -95,13 +102,18 @@ With a minimalistic user interface and a space theme with both background and da
 ![Signup](assets/wireframes/pcsignup.jpg)
 
 #### Information Design
-
+- Information for each faction is dynamically obtained depending on which faction is selected.
+- Information layout is structured in a linear format, sub heading and information text.
+- Navigation and background information are represented using a smaller text box pinned to the bottom of the screen,
+- The game information is displayed in its own text box providing background and with an image below representing the situation.
 
 #### Interface Design
-
+- Images are used as selectors for both the main page and information pages of the site. Reducing page clutter and alowing easy interaction.
+- The game interface is basic with clear well structured options. With question and answers split with an image between them.
 
 #### Navigation Design
-
+- Navigation is located at the top of the page, with three options.
+- The navigation links are text even at smaller screen sizes so the user will know what option to select if they need more information.
 
 ### Surface
 #### Typography
