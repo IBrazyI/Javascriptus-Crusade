@@ -3,6 +3,16 @@
 /* Intro Segemnt */
 function introSequence() {
 
+
+    if (sessionStorage.getItem('intro') !== null){
+        document.getElementById("intro-page").classList.add('remove');
+        document.getElementById("title-page").classList.add('remove');
+        revealFaction();
+        return;
+    };
+
+    sessionStorage.setItem('intro', 'played');
+
     let text = document.querySelector(".intro-text");
     let strText = text.textContent;
     let splitText = strText.split("");
@@ -51,6 +61,19 @@ function introSequence() {
     };
 
 };
+
+introSequence();
+
+/* Nav Elements*/
+
+let navItem = document.getElementById("play-button");
+navItem.addEventListener('click', () => noIntro());
+    function noIntro(){
+        document.getElementById("into-page").classList.add('remove');
+        document.getElementById("title-page").classList.add('remove');
+    }
+
+
 
 /* Talking Head */
 function removeTalkingHead() {
@@ -736,5 +759,5 @@ function defeatPage() {
     };
 };
 
-introSequence();
+
 
