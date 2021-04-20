@@ -294,7 +294,7 @@ function spaceMarinesVsChaos() {
     let optionTwo = spaceMarinesVsChaosQuestions[i].choiceTwoPower;
     let optionThree = spaceMarinesVsChaosQuestions[i].choiceThreePower;
 
-    battleImage.style.backgroundImage = "url('../assets/images/chaos2.jpg')";
+    battleImage.style.backgroundImage = "url('/assets/images/chaos2.jpg')";
 
     console.log("start game");
     console.log("starting health", spaceMarineHealth);
@@ -348,7 +348,7 @@ function spaceMarinesVsTyranids() {
     let optionTwo = spaceMarinesVsTyranidsQuestions[i].choiceTwoPower;
     let optionThree = spaceMarinesVsTyranidsQuestions[i].choiceThreePower;
 
-    battleImage.style.backgroundImage = "url('../assets/images/tyranids3.jpg')";
+    battleImage.style.backgroundImage = "url('/assets/images/tyranids3.jpg')";
 
     console.log("start game");
     console.log("starting health", spaceMarineHealth);
@@ -402,7 +402,7 @@ function adMechVsOrks() {
     let optionTwo = adMechVsOrksQuestions[i].choiceTwoPower;
     let optionThree = adMechVsOrksQuestions[i].choiceThreePower;
 
-    battleImage.style.backgroundImage = "url('../assets/images/admech3.jpg')";
+    battleImage.style.backgroundImage = "url('/assets/images/admech3.jpg')";
 
     console.log("start game");
     console.log("starting health", adMechHealth);
@@ -456,7 +456,7 @@ function adMechVsChaos() {
     let optionTwo = adMechVsChaosQuestions[i].choiceTwoPower;
     let optionThree = adMechVsChaosQuestions[i].choiceThreePower;
 
-    battleImage.style.backgroundImage = "url('../assets/images/admech6.jpg')";
+    battleImage.style.backgroundImage = "url('/assets/images/admech6.jpg')";
 
     console.log("start game");
     console.log("starting health", adMechHealth);
@@ -511,7 +511,7 @@ function adMechVsTyranids() {
     let optionTwo = adMechVsTyranidsQuestions[i].choiceTwoPower;
     let optionThree = adMechVsTyranidsQuestions[i].choiceThreePower;
 
-    battleImage.style.backgroundImage = "url('../assets/images/admech1.jpg')";
+    battleImage.style.backgroundImage = "url('/assets/images/admech1.jpg')";
 
     console.log("start game");
     console.log("starting health", adMechHealth);
@@ -566,7 +566,7 @@ function guardVsOrks() {
     let optionTwo = guardVsOrksQuestions[i].choiceTwoPower;
     let optionThree = guardVsOrksQuestions[i].choiceThreePower;
 
-    battleImage.style.backgroundImage = "url('../assets/images/orks3.jpg')";
+    battleImage.style.backgroundImage = "url('/assets/images/orks3.jpg')";
 
     console.log("start game");
     console.log("starting health", guardHealth);
@@ -623,7 +623,7 @@ function guardVsChaos() {
     let optionTwo = guardVsChaosQuestions[i].choiceTwoPower;
     let optionThree = guardVsChaosQuestions[i].choiceThreePower;
 
-    battleImage.style.backgroundImage = "url('../assets/images/guard3.jpg')";
+    battleImage.style.backgroundImage = "url('/assets/images/guard3.jpg')";
 
     console.log("start game");
     console.log("starting health", guardHealth);
@@ -680,7 +680,7 @@ function guardVsTyranids() {
     let optionTwo = guardVsTyranidsQuestions[i].choiceTwoPower;
     let optionThree = guardVsTyranidsQuestions[i].choiceThreePower;
 
-    battleImage.style.backgroundImage = "url('../assets/images/tyranids1.jpg')";
+    battleImage.style.backgroundImage = "url('/assets/images/tyranids1.jpg')";
 
     console.log("start game");
     console.log("starting health", guardHealth);
