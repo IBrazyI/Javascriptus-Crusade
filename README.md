@@ -79,10 +79,10 @@ With a minimalistic user interface and a space theme with both background and da
 
 #### Desktop/Tablet Wireframes
 
-![Intro] (.\assets\readme\Into Page.jpg) ![Title] (.\assets\readme\Title Page.jpg)
-![Forces] (.\assets\readme\Forces Page.jpg) ![Enemy] (.\assets\readme\Chose Enemy.jpg)
-![Play] (.\assets\readme\Play Screen.jpg) ![Victory] (.\assets\readme\Victory-Defeat Page.jpg)
-![Forces] (.\assets\readme\Forces Page.jpg) ![Email] (.\assets\readme\Email Page.jpg)
+![Intro] (/assets/readme/Into Page.jpg) ![Title] (/assets/readme/Title Page.jpg)
+![Forces] (/assets/readme/Forces Page.jpg) ![Enemy] (/assets/readme/Chose Enemy.jpg)
+![Play] (/assets/readme/Play Screen.jpg) ![Victory] (/assets/readme/Victory-Defeat Page.jpg)
+![Forces] (/assets/readme/Forces Page.jpg) ![Email] (/assets/readme/Email Page.jpg)
 
 #### Information Design
 - Information for each faction is dynamically obtained depending on which faction is selected.
@@ -107,7 +107,7 @@ Three different fonts have been selected for use on this site/game. All fonts ha
 
 #### Colour Scheme
 
-![Colour Pallet](assets/images/readmeimages/colourpallet.png)
+![Colour Pallet](assets\readme\javascriptuscrusadepallet.png)
 
 
 ## Features
@@ -151,21 +151,20 @@ The site is split up into three different HTML pages, responsive at all screen s
 - Git Hub Desktop: Used to access the repository linking it to online Git Hub profile.
 - IAmResponsive: Used to test responsiveness of site.
 - Coolors: Used to display colour pallet used.
-- HTML Validator - Used to check HTML code for errors.
-- CSS Validator - Used to check CSS code for errors.
-- Java Script Validator - Used to check Java Script code for errors.
+- [HTML Validator](https://validator.w3.org/) - Used to check HTML code for errors.
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) - Used to check CSS code for errors.
 
 <a name="Testing"></a>
 
 ## Testing
 
 ### Nav Bar
+- Checked that all links work correctly, taking the user to the desired page.
+- Nav bar loads after the intro sequence, and upon refreshing into sequence does not run.
 
-### Footer
-
-### Carousel
-
-### Sign-Up
+### Contact Us
+- Both links work and submit correctly.
+- Email validation works, only email addresses are allowed to be submitted.
 
 ### Code Validators
 
