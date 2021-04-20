@@ -52,8 +52,8 @@ With a minimalistic user interface and a space theme with both background and da
 
 
 ### Strategy
-- The aim of the website is to provide the user with an intresting game experience that is fun to play while easy to pick up and understand.
-- The sites goal is also to provide users both with and without Warhammer 40k knowledge a basic foundation of information for all the factions involved in the game and how they interact with eachother.
+- The aim of the website is to provide the user with an interesting game experience that is fun to play while easy to pick up and understand.
+- The sites goal is also to provide users both with and without Warhammer 40k knowledge a basic foundation of information for all the factions involved in the game and how they interact with each other.
 
 ### Scope
 - Provide the user with a basic but enjoyable text based game with replayability and role play.
@@ -63,43 +63,23 @@ With a minimalistic user interface and a space theme with both background and da
 
 ### Structure
 #### Interaction Design
-- Create a website/game that is responsive, works at all screen sizes and has mobile table and PC compatability.
-- Allow for easy navigation between pages of the webite.
-- Provide a easy to understand asetically pleasing game interface that makes it obvious what the user needs to do to progress.
+- Create a website/game that is responsive, works at all screen sizes and has mobile table and PC compatibility.
+- Allow for easy navigation between pages of the website.
+- Provide a easy to understand ascetically pleasing game interface that makes it obvious what the user needs to do to progress.
 #### Information Architecture
 - Content is well structured, in line with the theme, easy to read and distinguish between.
-- Images are used mostly as navigation tool, each one representing a diffrent faction in the game, allowing for the user to physically see who they are chosing without having to guess.
+- Images are used mostly as navigation tool, each one representing a different faction in the game, allowing for the user to physically see who they are choosing without having to guess.
 
 ### Skeleton
 #### Mobile Wireframes
 
-##### Home
-
-![Home](/assets/wireframes/mobilehome.jpg) 
-##### Threats
-
-![Threats](/assets/wireframes/mobileactions.jpg) 
-##### Actions
-
-![Actions](/assets/wireframes/mobilethreats.jpg) 
-##### Signup
-
-![Signup](/assets/wireframes/mobilesignup.jpg)
+![Intro Mobile](assets\readme\Intro Page.jpg) ![Title Mobile](assets\readme\Title Page-1.jpg) ![Forces Mobile](assets\readme\Forces Page-1.jpg)
+![Enemy Mobile](assets\readme\Chose Enemy-1.jpg) ![Play Mobile](assets\readme\Play Screen-1.jpg) ![Victory Mobile](assets\readme\Victory-Defeat Page-1.jpg)
+![Forces Mobile](assets\readme\Forces Page-1.jpg) ![Email Mobile](assets\readme\Email Page-1.jpg)
 
 #### Desktop/Tablet Wireframes
 
-##### Home
 
-![Home](assets/wireframes/pchome.jpg) 
-##### Threats
-
-![Threats](assets/wireframes/pcthreats.jpg)
-##### Actions
-
-![Actions](assets/wireframes/pcactions.jpg)
-##### Signup
-
-![Signup](assets/wireframes/pcsignup.jpg)
 
 #### Information Design
 - Information for each faction is dynamically obtained depending on which faction is selected.
@@ -108,7 +88,7 @@ With a minimalistic user interface and a space theme with both background and da
 - The game information is displayed in its own text box providing background and with an image below representing the situation.
 
 #### Interface Design
-- Images are used as selectors for both the main page and information pages of the site. Reducing page clutter and alowing easy interaction.
+- Images are used as selectors for both the main page and information pages of the site. Reducing page clutter and allowing easy interaction.
 - The game interface is basic with clear well structured options. With question and answers split with an image between them.
 
 #### Navigation Design
@@ -117,7 +97,10 @@ With a minimalistic user interface and a space theme with both background and da
 
 ### Surface
 #### Typography
-
+Three different fonts have been selected for use on this site/game. All fonts have been obtained from [Google Fonts](https://fonts.google.com/).
+- Pathway Gothic: Used for all headings and titles, bold and stand out font.
+- Brygada 1918: Used for all paragraph text and used in game section for question and answers. Easy to read and has a slight military appearance.
+- Recursive: Used for "talking head" text box, keeps to the grim dark theme of the site/game and has a military/typewriter style.
 
 #### Colour Scheme
 
