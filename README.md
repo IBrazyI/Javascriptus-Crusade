@@ -73,13 +73,16 @@ With a minimalistic user interface and a space theme with both background and da
 ### Skeleton
 #### Mobile Wireframes
 
-![Intro Mobile](assets\readme\Intro Page.jpg) ![Title Mobile](assets\readme\Title Page-1.jpg) ![Forces Mobile](assets\readme\Forces Page-1.jpg)
-![Enemy Mobile](assets\readme\Chose Enemy-1.jpg) ![Play Mobile](assets\readme\Play Screen-1.jpg) ![Victory Mobile](assets\readme\Victory-Defeat Page-1.jpg)
-![Forces Mobile](assets\readme\Forces Page-1.jpg) ![Email Mobile](assets\readme\Email Page-1.jpg)
+![IntroMobile](assets\readme\Intro Page.jpg) ![TitleMobile](assets\readme\Title Page-1.jpg) ![ForcesMobile](assets\readme\Forces Page-1.jpg)
+![EnemyMobile](assets\readme\Chose Enemy-1.jpg) ![PlayMobile](assets\readme\Play Screen-1.jpg) ![VictoryMobile](assets\readme\Victory-Defeat Page-1.jpg)
+![ForcesMobile](assets\readme\Forces Page-1.jpg) ![EmailMobile](assets\readme\Email Page-1.jpg)
 
 #### Desktop/Tablet Wireframes
 
-
+![Intro](assets\readme\Into Page.jpg) ![Title](assets\readme\Title Page.jpg)
+![Forces](assets\readme\Forces Page.jpg) ![Enemy](assets\readme\Chose Enemy.jpg)
+![Play](assets\readme\Play Screen.jpg) ![Victory](assets\readme\Victory-Defeat Page.jpg)
+![Forces](assets\readme\Forces Page.jpg) ![Email](assets\readme\Email Page.jpg)
 
 #### Information Design
 - Information for each faction is dynamically obtained depending on which faction is selected.
