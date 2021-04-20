@@ -245,8 +245,8 @@ The site is split up into three different HTML pages, responsive at all screen s
 
  ### Content 
  Information and content about the Warhammer 40k factions and inspiration for the campaigns.
- (/https://warhammer40k.fandom.com/wiki/Warhammer_40k_Wiki)
- (/https://wh40k.lexicanum.com/wiki/Main_Page)
+ https://warhammer40k.fandom.com/wiki/Warhammer_40k_Wiki
+ https://wh40k.lexicanum.com/wiki/Main_Page
  
  ### Images
   ![image](/https://www.warhammer-community.com/wp-content/uploads/2019/02/40kAbaddon-Mar5-BlackLegionArt12uvfhjkb.jpg)
