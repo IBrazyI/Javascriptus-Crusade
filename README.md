@@ -157,21 +157,63 @@ The site is split up into three different HTML pages, responsive at all screen s
 - Checked that all links work correctly, taking the user to the desired page.
 - Nav bar loads after the intro sequence, and upon refreshing into sequence does not run.
 
+### Forces
+- Check that upon clicking each faction separately the information is correct.
+- Layout remains correct even when displaying assets with more or less text.
+
 ### Contact Us
 - Both links work and submit correctly.
 - Email validation works, only email addresses are allowed to be submitted.
 
+### Play
+#### Faction Selection
+- Faction selection works as intended.
+- Hovering over faction give a short summary of the faction.
+- Local storage stores the faction selected.
+- "Talking head" displays correct text cycles through the two sets of text and then remains hidden until page reload.
+![](assets/readme/talkinghead.jpg)
+
+#### Enemy Selection
+- Enemy selection works as intended.
+- Hovering over enemy gives a short summary
+- Local storage saves the enemy selected.
+- "talking head" displays correct text and remains hidden upon clicking.
+
+#### Game Screen
+- Game loads correct, correct questions and answers are loaded dependant on which faction and enemy were selected.
+- Game image loads correctly and different for which campaign was selected.
+- Testing each option displays the correct damage and health, then loads the next set of question and answers.
+- Tested using console.logs to display information within the code. 
+![](assets/readme/gameworking.jpg)
+
+#### Victory/Defeat
+- Victory page shows if player health is about 0 after the 5th and last question of the game.
+- Defeat page shows when player health reaches 0. Displays correctly.
+- Local storage is cleared after each round of the game to reset the faction and enemy.
+![](assets/readme/losegame.jpg)
+![](assets/readme/localstoragereset.jpg)
+
 ### Code Validators
+- HTML Validator shows no errors.
+![](assets/readme/htmlchecker.jpg)
+
+- CSS Validator shows no errors.
+![](assets/readme/csschecker.jpg)
 
 ### Devices
+- Galaxy S9: Works as intended.
+- Galaxy S20: Works as intended.
+- I phone 6: Works as intended.
+- I phone 11: Works as intended.
+- I Pad:  Works as intended.
+- Small screen laptop: Works as intended.
+- Large screen laptop: Works as intended.
+- Desktop:  Works as intended.
 
 ### Browsers 
-
-### User Stories
-#### First Time Visitor
-
-#### Returning User
-
+- Firefox: Working as intended no errors.
+- Microsoft Edge: Working as intended no errors.
+- Chrome: Working as intended no errors.
 
 <a name="Deployment"></a>
 
