@@ -73,16 +73,16 @@ With a minimalistic user interface and a space theme with both background and da
 ### Skeleton
 #### Mobile Wireframes
 
-![IntroMobile](assets\readme\Intro Page.jpg) ![TitleMobile](assets\readme\Title Page-1.jpg) ![ForcesMobile](assets\readme\Forces Page-1.jpg)
-![EnemyMobile](assets\readme\Chose Enemy-1.jpg) ![PlayMobile](assets\readme\Play Screen-1.jpg) ![VictoryMobile](assets\readme\Victory-Defeat Page-1.jpg)
-![ForcesMobile](assets\readme\Forces Page-1.jpg) ![EmailMobile](assets\readme\Email Page-1.jpg)
+![IntroMobile](.\assets\readme\Intro Page.jpg) ![TitleMobile](.\assets\readme\Title Page-1.jpg) ![ForcesMobile](.\assets\readme\Forces Page-1.jpg)
+![EnemyMobile](.\assets\readme\Chose Enemy-1.jpg) ![PlayMobile](.\assets\readme\Play Screen-1.jpg) ![VictoryMobile](.\assets\readme\Victory-Defeat Page-1.jpg)
+![ForcesMobile](.\assets\readme\Forces Page-1.jpg) ![EmailMobile](.\assets\readme\Email Page-1.jpg)
 
 #### Desktop/Tablet Wireframes
 
-![Intro](assets\readme\Into Page.jpg) ![Title](assets\readme\Title Page.jpg)
-![Forces](assets\readme\Forces Page.jpg) ![Enemy](assets\readme\Chose Enemy.jpg)
-![Play](assets\readme\Play Screen.jpg) ![Victory](assets\readme\Victory-Defeat Page.jpg)
-![Forces](assets\readme\Forces Page.jpg) ![Email](assets\readme\Email Page.jpg)
+![Intro](.\assets\readme\Into Page.jpg) ![Title](.\assets\readme\Title Page.jpg)
+![Forces](.\assets\readme\Forces Page.jpg) ![Enemy](.\assets\readme\Chose Enemy.jpg)
+![Play](.\assets\readme\Play Screen.jpg) ![Victory](.\assets\readme\Victory-Defeat Page.jpg)
+![Forces](.\assets\readme\Forces Page.jpg) ![Email](.\assets\readme\Email Page.jpg)
 
 #### Information Design
 - Information for each faction is dynamically obtained depending on which faction is selected.
@@ -111,11 +111,28 @@ Three different fonts have been selected for use on this site/game. All fonts ha
 
 
 ## Features
-
+The site is split up into three different HTML pages, responsive at all screen sizes and follow a similar style and aesthetic.
+- Index/Play: This is the initial landing page for the user, upon loading an intro animation plays setting the scene and helping to show the theme of the rest of the page.
+    Upon completion of the intro the player is landed at the main area of the page, where they can select each item on the nave bar but also select the faction they wish to
+    play in the game. They are then taken to the next area where they select the enemy they wish to face and one that is done they are taken to the game screen. At certain points
+    within the site a text box giving the player information and direction displays at the bottom of the screen. When the player reaches the play screen they are faced with a question
+    and three answers to pick from, these answers contain hidden values and the player must select what they think is best in the given situation. As they progress the situation will
+    become more and more dire and their choices will have larger effects. Upon victory or defeat the player is then taken to the relevant page where they can chose to continue back to
+    the faction selection area and play again.
+- Forces: Upon selecting the Forces 'nav' element the user will be taken to the page. Here they will be able to chose which faction they wish to find information on which is then obtained
+    dynamically using java script. This information is then displayed separately.
+- Contact us: Upon selecting this page the user is then taken an area where they can both sign up to a mailing list and submit their name and their own suggestions to the creator. These forms
+    are validated with the use of java script.
 #### Existing Features 
-
+- Basic text based game, with multiple options and a hidden health system giving the user the sense of choice.
+- Dynamic display of information using java script and pre defined variables rather than using HTML text.
+- Created the Index/Play page with HTML elements and changed the content using java script.
+- Created Forces page using only java script to create all elements, interactions and content.
 
 #### Features Left to Implement
+ - Add more factions and enemies to the game screen, increasing replayability.
+ - Add more options for each level of the game that have more interactions such as a 50/50 chance to change the outcome for better or worse. 
+ - Add links and more information to the lore and hobby of Warhammer 40k and letting the user know more about the hobby.
 
 
 <a name="technologies"></a>
@@ -123,10 +140,15 @@ Three different fonts have been selected for use on this site/game. All fonts ha
 ## Technologies Used
 
 ### Languages
-
-### Libraries
-
+- HTML5: Used as the basic structure for Index/Play page, also used to create header element for all pages.
+- CSS3: Used to style and structure all content.
+- Java script: Used to provide all functionality for all aspects of the site including; game play and interactions, dynamically changing information
+     displayed on pages and also for the intro sequence.
 ### Programs
+- VS Code: Where all coding took place.
+- Adobe XD: Used to create wireframes.
+- Git Hub: Used to host the websites repository.
+- Git Hub Desktop: Used to access the
 
 <a name="Testing"></a>
 
