@@ -1,6 +1,6 @@
 # Javascriptus-Crusade (Milestone Project 2)
 
-![Javascriptus Crusade](assets/images/readme/responsive.jpg)
+![Javascriptus Crusade](assets/readme/responsive.jpg)
 
 [Visit My Site Here](https://ibrazyi.github.io/Javascriptus-Crusade/)
 
@@ -8,9 +8,7 @@
 This website is both a old style text based game and a good starting point for those interested in learning about the Warhammer 40k universe. 
 Containing both information and a look into the Universe; who are the factions that populate it and the interactions between them.
 With a minimalistic user interface and a space theme with both background and dark colours it emanates the grim-dark theme of the setting.
-
-
-
+gi
 ## Table of Contents
 
 [UX](#ux)
@@ -73,13 +71,13 @@ With a minimalistic user interface and a space theme with both background and da
 ### Skeleton
 #### Mobile Wireframes
 
-![IntroMobile] (/assets/readme/Intro Page.jpg) ![TitleMobile] (/assets/readme/Title Page-1.jpg) ![ForcesMobile] (/assets/readme/Forces Page-1.jpg)
-![EnemyMobile] (/assets/readme/Chose Enemy-1.jpg) ![PlayMobile] (/assets/readme/Play Screen-1.jpg) ![VictoryMobile] (/assets/readme/Victory-Defeat Page-1.jpg)
-![ForcesMobile] (/assets/readme/Forces Page-1.jpg) ![EmailMobile] (/assets/readme/Email Page-1.jpg)
+![] (/assets/readme/Intro Page.jpg) ![] (/assets/readme/Title Page-1.jpg) ![] (/assets/readme/Forces Page-1.jpg)
+![] (/assets/readme/Chose Enemy-1.jpg) ![] (/assets/readme/Play Screen-1.jpg) ![] (/assets/readme/Victory-Defeat Page-1.jpg)
+![] (/assets/readme/Forces Page-1.jpg) ![] (/assets/readme/Email Page-1.jpg)
 
 #### Desktop/Tablet Wireframes
 
-![Intro] (/assets/readme/Into Page.jpg) ![Title] (/assets/readme/Title Page.jpg)
+![Intro] (Javascriptus-Crusade/assets/readme/Into Page.jpg) ![Title] (/assets/readme/Title Page.jpg)
 ![Forces] (/assets/readme/Forces Page.jpg) ![Enemy] (/assets/readme/Chose Enemy.jpg)
 ![Play] (/assets/readme/Play Screen.jpg) ![Victory] (/assets/readme/Victory-Defeat Page.jpg)
 ![Forces] (/assets/readme/Forces Page.jpg) ![Email] (/assets/readme/Email Page.jpg)
@@ -107,7 +105,7 @@ Three different fonts have been selected for use on this site/game. All fonts ha
 
 #### Colour Scheme
 
-![Colour Pallet](assets\readme\javascriptuscrusadepallet.png)
+![Colour Pallet](/assets/readme/javascriptuscrusadepallet.png)
 
 
 ## Features
