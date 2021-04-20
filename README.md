@@ -71,16 +71,12 @@ gi
 ### Skeleton
 #### Mobile Wireframes
 
-![] (/assets/readme/Intro Page.jpg) ![] (/assets/readme/Title Page-1.jpg) ![] (/assets/readme/Forces Page-1.jpg)
-![] (/assets/readme/Chose Enemy-1.jpg) ![] (/assets/readme/Play Screen-1.jpg) ![] (/assets/readme/Victory-Defeat Page-1.jpg)
-![] (/assets/readme/Forces Page-1.jpg) ![] (/assets/readme/Email Page-1.jpg)
+![MobileIntro](/assets/readme/intromobile.jpg) ![MobileTitle](/assets/readme/titlemobile.jpg) ![MobileFaction](/assets/readme/alliesmobile.jpg) ![MobileEnemy](/assets/readme/enemymobile.jpg)
+![MobileGame](/assets/readme/playmobile.jpg) ![MobileVictory](/assets/readme/victorymobile.jpg) ![MobileForces](/assets/readme/forcesmobile.jpg) ![MobileContact](/assets/readme/contactmobile.jpg)
 
 #### Desktop/Tablet Wireframes
 
-![Intro] (Javascriptus-Crusade/assets/readme/Into Page.jpg) ![Title] (/assets/readme/Title Page.jpg)
-![Forces] (/assets/readme/Forces Page.jpg) ![Enemy] (/assets/readme/Chose Enemy.jpg)
-![Play] (/assets/readme/Play Screen.jpg) ![Victory] (/assets/readme/Victory-Defeat Page.jpg)
-![Forces] (/assets/readme/Forces Page.jpg) ![Email] (/assets/readme/Email Page.jpg)
+
 
 #### Information Design
 - Information for each faction is dynamically obtained depending on which faction is selected.
