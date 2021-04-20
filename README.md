@@ -71,12 +71,13 @@ gi
 ### Skeleton
 #### Mobile Wireframes
 
-![MobileIntro](/assets/readme/intromobile.jpg) ![MobileTitle](/assets/readme/titlemobile.jpg) ![MobileFaction](/assets/readme/alliesmobile.jpg) ![MobileEnemy](/assets/readme/enemymobile.jpg)
+![MobileIntro](/assets/readme/intromobile.jpg) ![MobileTitle](/assets/readme/titlemobile.jpg) ![MobileFaction](/assets/readme/alliesmobile.jpg) ![MobileEnemy](/assets/readme/enenymobile.jpg)
 ![MobileGame](/assets/readme/playmobile.jpg) ![MobileVictory](/assets/readme/victorymobile.jpg) ![MobileForces](/assets/readme/forcesmobile.jpg) ![MobileContact](/assets/readme/contactmobile.jpg)
 
 #### Desktop/Tablet Wireframes
 
-
+![Intro](/assets/readme/intro.jpg) ![Title](/assets/readme/title.jpg) ![Faction](/assets/readme/allies.jpg) ![Enemy](/assets/readme/enemy.jpg)
+![Game](/assets/readme/play.jpg) ![Victory](/assets/readme/victory.jpg) ![Forces](/assets/readme/forces.jpg) ![Contact](/assets/readme/contact.jpg)
 
 #### Information Design
 - Information for each faction is dynamically obtained depending on which faction is selected.
