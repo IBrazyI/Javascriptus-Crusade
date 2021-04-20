@@ -73,9 +73,9 @@ With a minimalistic user interface and a space theme with both background and da
 ### Skeleton
 #### Mobile Wireframes
 
-![IntroMobile](.\assets\readme\Intro Page.jpg) ![TitleMobile](.\assets\readme\Title Page-1.jpg) ![ForcesMobile](.\assets\readme\Forces Page-1.jpg)
-![EnemyMobile](.\assets\readme\Chose Enemy-1.jpg) ![PlayMobile](.\assets\readme\Play Screen-1.jpg) ![VictoryMobile](.\assets\readme\Victory-Defeat Page-1.jpg)
-![ForcesMobile](.\assets\readme\Forces Page-1.jpg) ![EmailMobile](.\assets\readme\Email Page-1.jpg)
+![IntroMobile](/assets/readme/Intro Page.jpg) ![TitleMobile](/assets/readme/Title Page-1.jpg) ![ForcesMobile](/assets/readme/Forces Page-1.jpg)
+![EnemyMobile](/assets/readme/Chose Enemy-1.jpg) ![PlayMobile](/assets/readme/Play Screen-1.jpg) ![VictoryMobile](/assets/readme/Victory-Defeat Page-1.jpg)
+![ForcesMobile](/assets/readme/Forces Page-1.jpg) ![EmailMobile](/assets/readme/Email Page-1.jpg)
 
 #### Desktop/Tablet Wireframes
 
@@ -148,7 +148,12 @@ The site is split up into three different HTML pages, responsive at all screen s
 - VS Code: Where all coding took place.
 - Adobe XD: Used to create wireframes.
 - Git Hub: Used to host the websites repository.
-- Git Hub Desktop: Used to access the
+- Git Hub Desktop: Used to access the repository linking it to online Git Hub profile.
+- IAmResponsive: Used to test responsiveness of site.
+- Coolors: Used to display colour pallet used.
+- HTML Validator - Used to check HTML code for errors.
+- CSS Validator - Used to check CSS code for errors.
+- Java Script Validator - Used to check Java Script code for errors.
 
 <a name="Testing"></a>
 
