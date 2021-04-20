@@ -171,7 +171,7 @@ The site is split up into three different HTML pages, responsive at all screen s
 - Hovering over faction give a short summary of the faction.
 - Local storage stores the faction selected.
 - "Talking head" displays correct text cycles through the two sets of text and then remains hidden until page reload.
-![](assets/readme/talkinghead.jpg)
+![TalkingHead](assets/readme/talkinghead.jpg)
 
 #### Enemy Selection
 - Enemy selection works as intended.
@@ -184,21 +184,21 @@ The site is split up into three different HTML pages, responsive at all screen s
 - Game image loads correctly and different for which campaign was selected.
 - Testing each option displays the correct damage and health, then loads the next set of question and answers.
 - Tested using console.logs to display information within the code. 
-![](assets/readme/gameworking.jpg)
+![WorkingGame](assets/readme/gameworking.jpg)
 
 #### Victory/Defeat
 - Victory page shows if player health is about 0 after the 5th and last question of the game.
 - Defeat page shows when player health reaches 0. Displays correctly.
 - Local storage is cleared after each round of the game to reset the faction and enemy.
-![](assets/readme/losegame.jpg)
-![](assets/readme/localstoragereset.jpg)
+![LoseGame](assets/readme/losegame.jpg)
+![LocalStorage](assets/readme/localstoragereset.jpg)
 
 ### Code Validators
 - HTML Validator shows no errors.
-![](assets/readme/htmlchecker.jpg)
+![HTML](assets/readme/htmlchecker.jpg)
 
 - CSS Validator shows no errors.
-![](assets/readme/csschecker.jpg)
+![CSS](assets/readme/csschecker.jpg)
 
 ### Devices
 - Galaxy S9: Works as intended.
