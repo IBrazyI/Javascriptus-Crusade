@@ -8,7 +8,7 @@
 This website is both a old style text based game and a good starting point for those interested in learning about the Warhammer 40k universe. 
 Containing both information and a look into the Universe; who are the factions that populate it and the interactions between them.
 With a minimalistic user interface and a space theme with both background and dark colours it emanates the grim-dark theme of the setting.
-gi
+
 ## Table of Contents
 
 [UX](#ux)
@@ -171,7 +171,7 @@ The site is split up into three different HTML pages, responsive at all screen s
 - Hovering over faction give a short summary of the faction.
 - Local storage stores the faction selected.
 - "Talking head" displays correct text cycles through the two sets of text and then remains hidden until page reload.
-![TalkingHead](assets/readme/talkinghead.jpg)
+![TalkingHead](/assets/readme/talkinghead.jpg)
 
 #### Enemy Selection
 - Enemy selection works as intended.
@@ -184,21 +184,21 @@ The site is split up into three different HTML pages, responsive at all screen s
 - Game image loads correctly and different for which campaign was selected.
 - Testing each option displays the correct damage and health, then loads the next set of question and answers.
 - Tested using console.logs to display information within the code. 
-![WorkingGame](assets/readme/gameworking.jpg)
+![WorkingGame](/assets/readme/gameworking.jpg)
 
 #### Victory/Defeat
 - Victory page shows if player health is about 0 after the 5th and last question of the game.
 - Defeat page shows when player health reaches 0. Displays correctly.
 - Local storage is cleared after each round of the game to reset the faction and enemy.
-![LoseGame](assets/readme/losegame.jpg)
-![LocalStorage](assets/readme/localstoragereset.jpg)
+![LoseGame](/assets/readme/losegame.jpg)
+![LocalStorage](/assets/readme/localstoragereset.jpg)
 
 ### Code Validators
 - HTML Validator shows no errors.
-![HTML](assets/readme/htmlchecker.jpg)
+![HTML](/assets/readme/htmlchecker.jpg)
 
 - CSS Validator shows no errors.
-![CSS](assets/readme/csschecker.jpg)
+![CSS](/assets/readme/csschecker.jpg)
 
 ### Devices
 - Galaxy S9: Works as intended.
@@ -245,29 +245,29 @@ The site is split up into three different HTML pages, responsive at all screen s
 
  ### Content 
  Information and content about the Warhammer 40k factions and inspiration for the campaigns.
- [](https://warhammer40k.fandom.com/wiki/Warhammer_40k_Wiki)
- [](https://wh40k.lexicanum.com/wiki/Main_Page)
+ ![](/https://warhammer40k.fandom.com/wiki/Warhammer_40k_Wiki)
+ ![](/https://wh40k.lexicanum.com/wiki/Main_Page)
  
  ### Images
-  [](https://www.warhammer-community.com/wp-content/uploads/2019/02/40kAbaddon-Mar5-BlackLegionArt12uvfhjkb.jpg)
-  [](https://warofsigmarus.s3.amazonaws.com/uploads/blogging/picture1/4701/artwork-ultramarines-warhammer-40-000-black-legion-chaos-space-marines-hd-wallpaper-preview__1_.jpg)
-  [](https://i.imgur.com/xomj6rm.png)
-  [](https://cdna.artstation.com/p/assets/images/images/027/987/730/large/tatiana-makeeva-5255656565.jpg?1593150895)
-  [](https://images3.alphacoders.com/911/thumb-1920-911819.jpg)
-  [](https://64.media.tumblr.com/8d5b76e0eb171cd43bc59c18b505d6b4/tumblr_nrkfbl05O51tvfheeo1_1280.jpg)
-  [](https://i.pinimg.com/originals/f0/ea/c4/f0eac49e3b85c4dad914c259ab0e916e.jpg)
-  [](https://img.wallpapersafari.com/desktop/1920/1080/35/69/ul3GPX.jpg)
-  [](https://i.pinimg.com/originals/19/da/22/19da22198e62668146175fa495ef2aeb.jpg)
-  [](https://64.media.tumblr.com/6963030fabe246dc7b407bb59dfe88a4/cc770251cbad145c-69/s2048x3072/4be65f17e5d584abc5c5528db6449c51146e135f.jpg)
-  [](https://media.moddb.com/images/groups/1/3/2055/AB1141-DA-v-Tyranids.jpg)
-  [](https://warhammerart.com/wp-content/uploads/2015/10/PAS040C-Armageddon.jpg)
-  [](https://i.pinimg.com/originals/6b/eb/36/6beb36b11868ce26ddb7522533fb6ec6.jpg)
-  [](https://cdna.artstation.com/p/assets/images/images/009/669/554/4k/igor-sid-27-adeptus-mech-vs-necrons.jpg?1520260650)
-  [](https://www.warhammer-community.com/wp-content/uploads/2019/03/ShadowspearHero-Mar1-VanguardArt6nr.jpg)
-  [](https://64.media.tumblr.com/2b98f370d6b75010c0c4c06017bc00ab/tumblr_ox4h5ugMlk1vjjcaco1_1280.jpg)
-  [](https://www.teahub.io/photos/full/52-523020_warhammer-40k-space-marine.jpg)
-  [](https://cdn.wallpapersafari.com/27/86/0KrwL9.jpg)
-  [](https://w.wallha.com/ws/8/Dr7ZAfmV.jpg)
+  ![](/https://www.warhammer-community.com/wp-content/uploads/2019/02/40kAbaddon-Mar5-BlackLegionArt12uvfhjkb.jpg)
+  ![](/https://warofsigmarus.s3.amazonaws.com/uploads/blogging/picture1/4701/artwork-ultramarines-warhammer-40-000-black-legion-chaos-space-marines-hd-wallpaper-preview__1_.jpg)
+  ![](/https://i.imgur.com/xomj6rm.png)
+  ![](/https://cdna.artstation.com/p/assets/images/images/027/987/730/large/tatiana-makeeva-5255656565.jpg?1593150895)
+  ![](/https://images3.alphacoders.com/911/thumb-1920-911819.jpg)
+  ![](/https://64.media.tumblr.com/8d5b76e0eb171cd43bc59c18b505d6b4/tumblr_nrkfbl05O51tvfheeo1_1280.jpg)
+  ![](/https://i.pinimg.com/originals/f0/ea/c4/f0eac49e3b85c4dad914c259ab0e916e.jpg)
+  ![](/https://img.wallpapersafari.com/desktop/1920/1080/35/69/ul3GPX.jpg)
+  ![](/https://i.pinimg.com/originals/19/da/22/19da22198e62668146175fa495ef2aeb.jpg)
+  ![](/https://64.media.tumblr.com/6963030fabe246dc7b407bb59dfe88a4/cc770251cbad145c-69/s2048x3072/4be65f17e5d584abc5c5528db6449c51146e135f.jpg)
+  ![](/https://media.moddb.com/images/groups/1/3/2055/AB1141-DA-v-Tyranids.jpg)
+  ![](/https://warhammerart.com/wp-content/uploads/2015/10/PAS040C-Armageddon.jpg)
+  ![](/https://i.pinimg.com/originals/6b/eb/36/6beb36b11868ce26ddb7522533fb6ec6.jpg)
+  ![](/https://cdna.artstation.com/p/assets/images/images/009/669/554/4k/igor-sid-27-adeptus-mech-vs-necrons.jpg?1520260650)
+  ![](/https://www.warhammer-community.com/wp-content/uploads/2019/03/ShadowspearHero-Mar1-VanguardArt6nr.jpg)
+  ![](/https://64.media.tumblr.com/2b98f370d6b75010c0c4c06017bc00ab/tumblr_ox4h5ugMlk1vjjcaco1_1280.jpg)
+  ![](/https://www.teahub.io/photos/full/52-523020_warhammer-40k-space-marine.jpg)
+  ![](/https://cdn.wallpapersafari.com/27/86/0KrwL9.jpg)
+  ![](/https://w.wallha.com/ws/8/Dr7ZAfmV.jpg)
 
  ### Acknowledgements
 - Code Institute - Running the course and providing this opportunity. 
