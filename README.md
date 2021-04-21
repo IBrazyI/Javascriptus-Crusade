@@ -156,16 +156,22 @@ The site is split up into three different HTML pages, responsive at all screen s
 ### Bugs
 Intro sequence repeating when selecting the "play" nav element.
 - Created a session storage loop that plays when the intro sequence first plays that prevents it from happening until page is exited then reloaded.
+
 Images displaying incorrectly on smaller screen sizes.
 - Created custom image sizes at different screen sizes using media queries, also centred the images.
+
 Game not interacting as intended, questions not changing after each button press.
 - Ensured there were no typos or spelling errors within the content.js file, created "i" variable using a loop that iterated through the object.
+
 Player health not resetting after each game.
 - After each game sequence reset the health of each faction to the correct value, in case the user wanted to play more than one round.
+
 Game questions and answers displaying the wrong text.
 - Ensured that all campaigns contained their own function and objects.
+
 Local storage not accepting selected options until page had been refreshed.
 - Moved the local storage save function within the document so it took place before the campaign selection function. Also added a local storage reset after each playthrough.
+
 Question interactions repeating even after only one button press.
 - Changed the question answer buttons from event listeners to "on-click" events, this meant that event listeners had to be removed after each question as the buttons were re-used multiple times
     and were in the function of the game.
