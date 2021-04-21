@@ -1,7 +1,7 @@
 /*Troops*/
 
 const faction = {
-    spaceMarines: "Space marines are the genetically enhanced super soldiers of the Imperium of man. Feared through the galaxy and one of humanity's greatest defenders, they know no fear and wear thick ceramite armour that makes them almost invulnrable to small arms fire.",
+    spacemarines: "Space marines are the genetically enhanced super soldiers of the Imperium of man. Feared through the galaxy and one of humanity's greatest defenders, they know no fear and wear thick ceramite armour that makes them almost invulnrable to small arms fire.",
 
     admech: "The Adeptus Mechanicus is one of the most powerful organisations in the Imperium. More machine than human, they field large numbers of machine enhanced troops with technologically advanced weapons, while their gigantic warmachines stalk the battlefield.",
     
