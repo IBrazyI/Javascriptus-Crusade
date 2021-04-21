@@ -1,6 +1,6 @@
 
 
-/* Intro Segemnt */
+/* Intro Segemnt - Intro animation */
 function introSequence() {
 
 
@@ -75,7 +75,7 @@ navItem.addEventListener('click', () => noIntro());
 
 
 
-/* Talking Head */
+/* Talking Head - Text box givng context and instruction for the user*/
 function removeTalkingHead() {
     talkingHead.classList.add('remove');
 };
@@ -108,7 +108,7 @@ function gameText() {
 
 }
 
-/* Faction Selection */
+/* Faction Selection - Chose which faction the player wants to play as, changing answers and image */
 
 function factionSelection() {
     let spaceMarines = document.getElementById("spacemarines-image");
@@ -155,6 +155,7 @@ function factionSelection() {
 
 }
 
+/* Enemy Selection - Chose which enemy the player wishes to play against, changes question text and image */
 function enemySelection() {
     let orks = document.getElementById("orks-image");
     let chaos = document.getElementById("chaos-image");
@@ -199,7 +200,7 @@ function enemySelection() {
 
 }
 
-/* Game */
+/* Campaign Selection - Choses which sets of questions and answers to load based on local storage selections*/
 function campaignSelection() {
     let campaign = localStorage.getItem("selectedFaction") + localStorage.getItem("selectedEnemy");
     console.log(campaign)
@@ -236,6 +237,7 @@ function campaignSelection() {
     }
 };
 
+/* Game Function - Runs the game its self is seperate for each matchup cycles through questions and answers, subtraction from the factions starting health */
 function spaceMarinesVsOrks() {
     let optionOne = spaceMarinesVsOrksQuestions[i].choiceOnePower;
     let optionTwo = spaceMarinesVsOrksQuestions[i].choiceTwoPower;
