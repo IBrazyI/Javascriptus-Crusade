@@ -6,7 +6,7 @@
 
 ## Overview
 This website is both a old style text based game and a good starting point for those interested in learning about the Warhammer 40k universe. 
-Containing both information and a look into the Universe; who are the factions that populate it and the interactions between them.
+Containing both information and a look into the Universe; who the factions that populate it are and the interactions between them.
 With a minimalistic user interface and a space theme with both background and dark colours it emanates the grim-dark theme of the setting.
 
 ## Table of Contents
@@ -153,6 +153,26 @@ The site is split up into three different HTML pages, responsive at all screen s
 
 ## Testing
 
+### Bugs
+Intro sequence repeating when selecting the "play" nav element.
+- Created a session storage loop that plays when the intro sequence first plays that prevents it from happening until page is exited then reloaded.
+Images displaying incorrectly on smaller screen sizes.
+- Created custom image sizes at different screen sizes using media queries, also centred the images.
+Game not interacting as intended, questions not changing after each button press.
+- Ensured there were no typos or spelling errors within the content.js file, created "i" variable using a loop that iterated through the object.
+Player health not resetting after each game.
+- After each game sequence reset the health of each faction to the correct value, in case the user wanted to play more than one round.
+Game questions and answers displaying the wrong text.
+- Ensured that all campaigns contained their own function and objects.
+Local storage not accepting selected options until page had been refreshed.
+- Moved the local storage save function within the document so it took place before the campaign selection function. Also added a local storage reset after each playthrough.
+Question interactions repeating even after only one button press.
+- Changed the question answer buttons from event listeners to "on-click" events, this meant that event listeners had to be removed after each question as the buttons were re-used multiple times
+    and were in the function of the game.
+
+
+
+
 ### Nav Bar
 - Checked that all links work correctly, taking the user to the desired page.
 - Nav bar loads after the intro sequence, and upon refreshing into sequence does not run.
@@ -214,6 +234,7 @@ The site is split up into three different HTML pages, responsive at all screen s
 - Firefox: Working as intended no errors.
 - Microsoft Edge: Working as intended no errors.
 - Chrome: Working as intended no errors.
+- Safari: Working as intended no errors.
 
 <a name="Deployment"></a>
 
@@ -246,6 +267,7 @@ The site is split up into three different HTML pages, responsive at all screen s
  ### Content 
  Information and content about the Warhammer 40k factions and inspiration for the campaigns.
  https://warhammer40k.fandom.com/wiki/Warhammer_40k_Wiki
+ 
  https://wh40k.lexicanum.com/wiki/Main_Page
  
  ### Images
@@ -284,7 +306,7 @@ The site is split up into three different HTML pages, responsive at all screen s
   https://www.teahub.io/photos/full/52-523020_warhammer-40k-space-marine.jpg
 
   https://cdn.wallpapersafari.com/27/86/0KrwL9.jpg
-  
+
   https://w.wallha.com/ws/8/Dr7ZAfmV.jpg
 
  ### Acknowledgements
