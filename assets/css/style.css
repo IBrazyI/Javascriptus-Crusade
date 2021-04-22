@@ -9,7 +9,7 @@ body {
     margin: 0;
     background-color: #555555;
     min-height: 100vh;
-    background-image: url(/assets/images/spacebackground2.jpg);
+    background-image: url(./assets/images/spacebackground2.jpg);
     background-size: cover;
     background-position: center;
     
@@ -204,7 +204,7 @@ body {
 }
 
 .talking-head-image {
-    background-image: url(/assets/images/talkingskullsmall.jpg);
+    background-image: url(./assets/images/talkingskullsmall.jpg);
     background-size: cover;
     height: 150px;
     width: 150px;
@@ -318,16 +318,16 @@ body {
 
 
 #spacemarines-image {
-    background-image: url(/assets/images/spacemarines5.jpg);
+    background-image: url(./assets/images/spacemarines5.jpg);
 }
 
 
 #admech-image {
-    background-image: url(/assets/images/admech2.jpg);
+    background-image: url(./assets/images/admech2.jpg);
 }
 
 #guard-image {
-    background-image: url(/assets/images/guard2.jpg);
+    background-image: url(./assets/images/guard2.jpg);
 } 
 
 @media (min-width:700px) {
@@ -402,15 +402,15 @@ body {
 
 
 #orks-image {
-    background-image: url(/assets/images/orks2.jpg);
+    background-image: url(./assets/images/orks2.jpg);
 }
 
 #chaos-image {
-    background-image: url(/assets/images/chaos3.jpg);
+    background-image: url(./assets/images/chaos3.jpg);
 }
 
 #tyranids-image {
-    background-image: url(/assets/images/tyranids2.jpg);
+    background-image: url(./assets/images/tyranids2.jpg);
 } 
 
 @media (min-width:700px) {
@@ -470,7 +470,7 @@ body {
 .question-image {
     width: 100%;
     height: 300px;
-    background-image: url(/assets/images/orks4.jpg);
+    background-image: url(./assets/images/orks4.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -874,21 +874,21 @@ body {
 }
 
 #faction-space-marines{
-    background-image: url(/assets/images/spacemarines1.jpg);
+    background-image: url(./assets/images/spacemarines1.jpg);
     background-position: center;
     background-size: cover;
     justify-content: center;
 }
 
 #faction-ad-mech{
-    background-image: url(/assets/images/admech5.jpg);
+    background-image: url(./assets/images/admech5.jpg);
     background-position: center;
     background-size: cover;
     justify-content: center;
 }
 
 #faction-guard{
-    background-image: url(/assets/images/guard1.jpg);
+    background-image: url(./assets/images/guard1.jpg);
     background-position: center;
     background-size: cover;
     justify-content: center;
@@ -896,7 +896,7 @@ body {
 }
 
 #faction-orks{
-   background-image: url(/assets/images/orks1.webp);
+   background-image: url(./assets/images/orks1.webp);
    background-position: center;
    background-size: cover;
    justify-content: center;
@@ -904,14 +904,14 @@ body {
 }
 
 #faction-chaos{
-    background-image: url(/assets/images/chaos5.png);
+    background-image: url(./assets/images/chaos5.png);
     background-position: center;
     background-size: cover;
     justify-content: center;
 }
 
 #faction-tyranids{
-    background-image: url(/assets/images/tyranids3.jpg);
+    background-image: url(./assets/images/tyranids3.jpg);
     background-position: center;
     background-size: cover;
     justify-content: center;
