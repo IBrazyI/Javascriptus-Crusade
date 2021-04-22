@@ -269,6 +269,7 @@ Question interactions repeating even after only one button press.
 
 ### Technical
 - Google Fonts: Used for all fonts on the website.
+- ![Dev Ed](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q) - Used to create intro sequence, using the function created in this video. 
 
  ### Content 
  Information and content about the Warhammer 40k factions and inspiration for the campaigns.
